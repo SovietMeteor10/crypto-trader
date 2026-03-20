@@ -1,0 +1,1346 @@
+[
+  {
+    "strategy": "1A_dual_ma_cross",
+    "family": "1A",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 91,
+      "trades_per_week": 0.87,
+      "final_equity": 972.39,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 1.1968,
+      "val_sharpe": 0.7522,
+      "overfit": false,
+      "best_params": {
+        "fast_period": 5,
+        "slow_period": 184,
+        "atr_mult": 3.1116705420713333
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -9.4364,
+      "pct_positive": 27.3,
+      "consistent": false,
+      "window_sharpes": [
+        1.3105,
+        -2.4495,
+        0.0,
+        -4.2684,
+        2.4495,
+        -2.4495,
+        -3.4851,
+        -2.9648,
+        -3.8017,
+        -2.2146,
+        -3.117,
+        -2.4495,
+        -4.4823,
+        -2.4495,
+        2.4495,
+        0.0,
+        -178.9067,
+        2.4495,
+        -2.4495,
+        1.4462,
+        0.2316,
+        -2.4495
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "1A_dual_ma_cross",
+    "family": "1A",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "1d",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 12,
+      "trades_per_week": 0.12,
+      "final_equity": 1049.63,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "1A_dual_ma_cross",
+    "family": "1A",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 77,
+      "trades_per_week": 0.74,
+      "final_equity": 1099.41,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 1.4923,
+      "val_sharpe": 0.6564,
+      "overfit": true,
+      "best_params": {
+        "fast_period": 5,
+        "slow_period": 113,
+        "atr_mult": 2.435557208717226
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "1A_dual_ma_cross",
+    "family": "1A",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "1d",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 14,
+      "trades_per_week": 0.13,
+      "final_equity": 1128.69,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "1A_dual_ma_cross",
+    "family": "1A",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 78,
+      "trades_per_week": 0.75,
+      "final_equity": 1547.38,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 1.24,
+      "val_sharpe": 1.5989,
+      "overfit": false,
+      "best_params": {
+        "fast_period": 16,
+        "slow_period": 31,
+        "atr_mult": 1.8005025495113416
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -7.9175,
+      "pct_positive": 45.5,
+      "consistent": false,
+      "window_sharpes": [
+        0.0,
+        -2.4495,
+        -0.274,
+        0.1209,
+        2.4495,
+        2.1093,
+        -10.8237,
+        -167.1046,
+        3.4376,
+        -2.4495,
+        1.1567,
+        -2.4495,
+        -2.4495,
+        2.4495,
+        0.0,
+        -2.4495,
+        2.179,
+        -1.6401,
+        3.7019,
+        1.1166,
+        1.6337,
+        -2.4495
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "1A_dual_ma_cross",
+    "family": "1A",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "1d",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 11,
+      "trades_per_week": 0.11,
+      "final_equity": 2071.63,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "1B_breakout_volume",
+    "family": "1B",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 34,
+      "trades_per_week": 0.33,
+      "final_equity": 992.42,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "1B_breakout_volume",
+    "family": "1B",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 20,
+      "trades_per_week": 0.19,
+      "final_equity": 1227.32,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "1B_breakout_volume",
+    "family": "1B",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 32,
+      "trades_per_week": 0.31,
+      "final_equity": 1570.82,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "1C_trend_regime",
+    "family": "1C",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 200,
+      "trades_per_week": 1.92,
+      "final_equity": 986.67,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.7926,
+      "val_sharpe": -0.1713,
+      "overfit": true,
+      "best_params": {
+        "fast_period": 32,
+        "slow_period": 141,
+        "adx_period": 18,
+        "adx_threshold": 28
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "1C_trend_regime",
+    "family": "1C",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "1d",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 29,
+      "trades_per_week": 0.28,
+      "final_equity": 1027.15,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "1C_trend_regime",
+    "family": "1C",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 178,
+      "trades_per_week": 1.71,
+      "final_equity": 1081.2,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 1.4757,
+      "val_sharpe": -0.4811,
+      "overfit": true,
+      "best_params": {
+        "fast_period": 12,
+        "slow_period": 57,
+        "adx_period": 15,
+        "adx_threshold": 22
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "1C_trend_regime",
+    "family": "1C",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "1d",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 33,
+      "trades_per_week": 0.32,
+      "final_equity": 1053.53,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "1C_trend_regime",
+    "family": "1C",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 200,
+      "trades_per_week": 1.92,
+      "final_equity": 1339.25,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 1.5983,
+      "val_sharpe": 1.2415,
+      "overfit": false,
+      "best_params": {
+        "fast_period": 18,
+        "slow_period": 106,
+        "adx_period": 14,
+        "adx_threshold": 29
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -1.4669,
+      "pct_positive": 45.5,
+      "consistent": false,
+      "window_sharpes": [
+        3.3805,
+        1.3262,
+        -2.5877,
+        -3.0111,
+        2.4495,
+        2.5441,
+        -3.1877,
+        -1.9735,
+        -4.4602,
+        -0.6358,
+        -30.5855,
+        1.2353,
+        -0.0022,
+        3.2282,
+        2.1638,
+        -2.4495,
+        -2.5877,
+        -3.3591,
+        0.7375,
+        2.1715,
+        -4.4387,
+        7.7693
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "1C_trend_regime",
+    "family": "1C",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "1d",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 31,
+      "trades_per_week": 0.3,
+      "final_equity": 1495.68,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "2A_rsi_reversion",
+    "family": "2A",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 786,
+      "trades_per_week": 7.55,
+      "final_equity": 901.59,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": -0.8973,
+      "val_sharpe": -1.9657,
+      "overfit": false,
+      "best_params": {
+        "rsi_period": 19,
+        "oversold": 20,
+        "overbought": 78,
+        "max_hold_bars": 4
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -10.1357,
+      "pct_positive": 9.1,
+      "consistent": false,
+      "window_sharpes": [
+        0.2856,
+        -5.0846,
+        -1.3025,
+        -6.114,
+        -2.442,
+        -0.697,
+        -40.7156,
+        -4.5938,
+        -6.1781,
+        -2.962,
+        -0.8957,
+        -3.5987,
+        -3.8042,
+        -1.7904,
+        -68.182,
+        -2.8783,
+        0.8958,
+        -0.9128,
+        -1.6396,
+        -7.2376,
+        -0.8982,
+        -62.2389
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "2A_rsi_reversion",
+    "family": "2A",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 214,
+      "trades_per_week": 2.05,
+      "final_equity": 975.4,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.3557,
+      "val_sharpe": -1.5251,
+      "overfit": true,
+      "best_params": {
+        "rsi_period": 11,
+        "oversold": 33,
+        "overbought": 67,
+        "max_hold_bars": 21
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "2A_rsi_reversion",
+    "family": "2A",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 811,
+      "trades_per_week": 7.79,
+      "final_equity": 868.56,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": -1.2194,
+      "val_sharpe": -3.2909,
+      "overfit": false,
+      "best_params": {
+        "rsi_period": 21,
+        "oversold": 26,
+        "overbought": 73,
+        "max_hold_bars": 7
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -7.1893,
+      "pct_positive": 22.7,
+      "consistent": false,
+      "window_sharpes": [
+        -19.9024,
+        3.377,
+        -3.1829,
+        -34.3645,
+        -24.8319,
+        9.3395,
+        -3.0008,
+        -1.0195,
+        -4.5787,
+        -15.321,
+        -1.1359,
+        -7.6311,
+        0.2628,
+        -26.0074,
+        -13.0912,
+        8.0871,
+        -0.5804,
+        -0.0381,
+        -1.9488,
+        -16.6057,
+        0.0717,
+        -6.0634
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "2A_rsi_reversion",
+    "family": "2A",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 217,
+      "trades_per_week": 2.08,
+      "final_equity": 977.99,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.0832,
+      "val_sharpe": -0.8385,
+      "overfit": true,
+      "best_params": {
+        "rsi_period": 10,
+        "oversold": 29,
+        "overbought": 79,
+        "max_hold_bars": 19
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "2A_rsi_reversion",
+    "family": "2A",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 837,
+      "trades_per_week": 8.04,
+      "final_equity": 876.75,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.3596,
+      "val_sharpe": -1.9116,
+      "overfit": true,
+      "best_params": {
+        "rsi_period": 21,
+        "oversold": 20,
+        "overbought": 74,
+        "max_hold_bars": 22
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "2A_rsi_reversion",
+    "family": "2A",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 209,
+      "trades_per_week": 2.01,
+      "final_equity": 950.55,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.7027,
+      "val_sharpe": -1.4499,
+      "overfit": true,
+      "best_params": {
+        "rsi_period": 10,
+        "oversold": 30,
+        "overbought": 76,
+        "max_hold_bars": 8
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "2B_bollinger_reversion",
+    "family": "2B",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 661,
+      "trades_per_week": 6.35,
+      "final_equity": 921.32,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": -0.2518,
+      "val_sharpe": -1.3633,
+      "overfit": false,
+      "best_params": {
+        "period": 43,
+        "std_dev": 2.380625798755646
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -5.4686,
+      "pct_positive": 22.7,
+      "consistent": false,
+      "window_sharpes": [
+        0.7151,
+        -2.0416,
+        2.4934,
+        -2.3062,
+        -0.6018,
+        -3.8197,
+        4.4592,
+        -5.0448,
+        -3.0427,
+        -43.4134,
+        1.4276,
+        -0.5629,
+        -6.7745,
+        -1.811,
+        -25.534,
+        -2.0459,
+        -9.3185,
+        -0.7487,
+        -2.9977,
+        -15.9714,
+        3.6504,
+        -7.0201
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "2B_bollinger_reversion",
+    "family": "2B",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 146,
+      "trades_per_week": 1.4,
+      "final_equity": 947.4,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 1.6216,
+      "val_sharpe": -1.376,
+      "overfit": true,
+      "best_params": {
+        "period": 18,
+        "std_dev": 2.7098267617585092
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "2B_bollinger_reversion",
+    "family": "2B",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 630,
+      "trades_per_week": 6.05,
+      "final_equity": 848.36,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": -0.9185,
+      "val_sharpe": -1.3303,
+      "overfit": false,
+      "best_params": {
+        "period": 40,
+        "std_dev": 2.3156460124775875
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -21.6339,
+      "pct_positive": 9.1,
+      "consistent": false,
+      "window_sharpes": [
+        -25.0664,
+        -0.1793,
+        -0.9201,
+        -2.5941,
+        -16.2692,
+        -359.0448,
+        -0.8558,
+        -16.2436,
+        -4.555,
+        -53.8089,
+        -0.8971,
+        0.0,
+        -21.3266,
+        -5.1083,
+        -5.6211,
+        -1.4507,
+        0.2326,
+        -0.4399,
+        -0.4539,
+        0.0,
+        0.0,
+        38.6556
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "2B_bollinger_reversion",
+    "family": "2B",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 148,
+      "trades_per_week": 1.42,
+      "final_equity": 943.42,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.0,
+      "val_sharpe": 0.0,
+      "overfit": false,
+      "best_params": {
+        "period": 10,
+        "std_dev": 2.8900170297724626
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": 1.0734,
+      "pct_positive": 45.5,
+      "consistent": false,
+      "window_sharpes": [
+        -2.2027,
+        2.4495,
+        -2.4749,
+        10.1882,
+        19.3214,
+        -7.8478,
+        0.1458,
+        -2.2266,
+        4.0311,
+        -2.4495,
+        0.0,
+        1.3304,
+        -0.8167,
+        -2.1822,
+        2.5796,
+        -0.8746,
+        3.978,
+        3.4919,
+        0.0,
+        -3.654,
+        -1.6223,
+        2.4495
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "2B_bollinger_reversion",
+    "family": "2B",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 627,
+      "trades_per_week": 6.02,
+      "final_equity": 828.78,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.3807,
+      "val_sharpe": -2.6698,
+      "overfit": true,
+      "best_params": {
+        "period": 41,
+        "std_dev": 2.847465189614275
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "2B_bollinger_reversion",
+    "family": "2B",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 152,
+      "trades_per_week": 1.46,
+      "final_equity": 936.42,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.9382,
+      "val_sharpe": -1.4596,
+      "overfit": true,
+      "best_params": {
+        "period": 12,
+        "std_dev": 2.9235487575343826
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "2C_zscore_reversion",
+    "family": "2C",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 842,
+      "trades_per_week": 8.09,
+      "final_equity": 890.79,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": -1.8612,
+      "val_sharpe": -2.8154,
+      "overfit": false,
+      "best_params": {
+        "lookback": 149,
+        "entry_z": 2.9790436793927872,
+        "exit_z": 0.3106950166886584
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -9.7309,
+      "pct_positive": 13.6,
+      "consistent": false,
+      "window_sharpes": [
+        -1.4689,
+        -5.4757,
+        -4.0479,
+        -2.0964,
+        -2.0668,
+        -6.2281,
+        -2.5684,
+        -1.2409,
+        -18.1291,
+        -125.924,
+        -4.1432,
+        -4.5455,
+        5.231,
+        0.5158,
+        1.0504,
+        -11.5777,
+        -2.1438,
+        -3.7568,
+        -9.6992,
+        -0.3255,
+        -3.9558,
+        -11.4836
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "2C_zscore_reversion",
+    "family": "2C",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 224,
+      "trades_per_week": 2.15,
+      "final_equity": 942.03,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.0351,
+      "val_sharpe": -1.5492,
+      "overfit": true,
+      "best_params": {
+        "lookback": 85,
+        "entry_z": 2.9669189659560935,
+        "exit_z": 0.4384150838678835
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "2C_zscore_reversion",
+    "family": "2C",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 865,
+      "trades_per_week": 8.31,
+      "final_equity": 869.78,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": -0.9679,
+      "val_sharpe": -2.0989,
+      "overfit": false,
+      "best_params": {
+        "lookback": 142,
+        "entry_z": 2.775825237998904,
+        "exit_z": 0.10595297574373727
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -6.9882,
+      "pct_positive": 13.6,
+      "consistent": false,
+      "window_sharpes": [
+        -0.1182,
+        -4.3528,
+        -1.9121,
+        -3.4656,
+        0.6756,
+        -0.8696,
+        -10.4487,
+        -1.4277,
+        -5.5651,
+        -82.0474,
+        -4.6409,
+        -11.0697,
+        -0.317,
+        1.2505,
+        -9.7236,
+        -2.3118,
+        -2.9043,
+        -0.4863,
+        -2.7133,
+        0.5131,
+        -10.9626,
+        -0.8432
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "2C_zscore_reversion",
+    "family": "2C",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 227,
+      "trades_per_week": 2.18,
+      "final_equity": 998.16,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.2628,
+      "val_sharpe": -2.3821,
+      "overfit": true,
+      "best_params": {
+        "lookback": 55,
+        "entry_z": 1.8995917533246245,
+        "exit_z": 0.2904035702562535
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "2C_zscore_reversion",
+    "family": "2C",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 833,
+      "trades_per_week": 8.0,
+      "final_equity": 876.45,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.2246,
+      "val_sharpe": -1.6621,
+      "overfit": true,
+      "best_params": {
+        "lookback": 84,
+        "entry_z": 2.9197494364742425,
+        "exit_z": 0.05724676132437712
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "2C_zscore_reversion",
+    "family": "2C",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 212,
+      "trades_per_week": 2.04,
+      "final_equity": 936.93,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.0746,
+      "val_sharpe": 1.231,
+      "overfit": false,
+      "best_params": {
+        "lookback": 132,
+        "entry_z": 2.9370986374546653,
+        "exit_z": 0.3851453728345056
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -0.9362,
+      "pct_positive": 54.5,
+      "consistent": false,
+      "window_sharpes": [
+        -1.1643,
+        2.4495,
+        -5.7168,
+        2.4495,
+        -3.4858,
+        2.4495,
+        -2.4495,
+        -2.9635,
+        -2.3779,
+        3.8943,
+        2.4495,
+        2.0342,
+        -28.801,
+        1.4622,
+        -3.754,
+        0.9365,
+        2.4495,
+        6.9862,
+        2.4495,
+        -0.4748,
+        2.4495,
+        -1.8693
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "3A_funding_carry",
+    "family": "3A",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 317,
+      "trades_per_week": 3.04,
+      "final_equity": 949.88,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 1.578,
+      "val_sharpe": -0.2747,
+      "overfit": true,
+      "best_params": {
+        "funding_threshold": 0.0009993626763165812,
+        "hold_periods": 1
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "3A_funding_carry",
+    "family": "3A",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 394,
+      "trades_per_week": 3.78,
+      "final_equity": 981.29,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.6755,
+      "val_sharpe": -1.0445,
+      "overfit": true,
+      "best_params": {
+        "funding_threshold": 0.0009510597550540212,
+        "hold_periods": 3
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "3A_funding_carry",
+    "family": "3A",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 480,
+      "trades_per_week": 4.61,
+      "final_equity": 950.98,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 1.1534,
+      "val_sharpe": -1.6344,
+      "overfit": true,
+      "best_params": {
+        "funding_threshold": 0.00010316849617787926,
+        "hold_periods": 5
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "4A_vol_breakout",
+    "family": "4A",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 119,
+      "trades_per_week": 1.14,
+      "final_equity": 999.92,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 2.4303,
+      "val_sharpe": 0.1562,
+      "overfit": true,
+      "best_params": {
+        "vol_lookback": 132,
+        "spike_mult": 2.0594894796506877
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "4A_vol_breakout",
+    "family": "4A",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 30,
+      "trades_per_week": 0.29,
+      "final_equity": 963.31,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "4A_vol_breakout",
+    "family": "4A",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 133,
+      "trades_per_week": 1.28,
+      "final_equity": 1038.75,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 2.0734,
+      "val_sharpe": -1.6753,
+      "overfit": true,
+      "best_params": {
+        "vol_lookback": 131,
+        "spike_mult": 1.7332298015527716
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "4A_vol_breakout",
+    "family": "4A",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 29,
+      "trades_per_week": 0.28,
+      "final_equity": 1010.09,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "4A_vol_breakout",
+    "family": "4A",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "1h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 127,
+      "trades_per_week": 1.22,
+      "final_equity": 935.17,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 0.6022,
+      "val_sharpe": 2.2209,
+      "overfit": false,
+      "best_params": {
+        "vol_lookback": 108,
+        "spike_mult": 1.8285547884540252
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -0.7852,
+      "pct_positive": 45.5,
+      "consistent": false,
+      "window_sharpes": [
+        1.7129,
+        2.4495,
+        2.5361,
+        -2.4495,
+        -0.2309,
+        -2.4651,
+        -16.2186,
+        -1.8713,
+        -5.2237,
+        1.5497,
+        1.0897,
+        13.2444,
+        1.1149,
+        -1.2936,
+        2.2324,
+        -2.4481,
+        2.0529,
+        -0.665,
+        2.907,
+        -3.5584,
+        -2.4766,
+        -9.2634
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  },
+  {
+    "strategy": "4A_vol_breakout",
+    "family": "4A",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 29,
+      "trades_per_week": 0.28,
+      "final_equity": 973.99,
+      "viable": false
+    },
+    "conclusion": "REJECTED: INFREQUENT"
+  },
+  {
+    "strategy": "5A_cross_momentum",
+    "family": "5A",
+    "symbol": "BTC/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 76,
+      "trades_per_week": 0.73,
+      "final_equity": 960.64,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 1.1291,
+      "val_sharpe": -0.7887,
+      "overfit": true,
+      "best_params": {
+        "momentum_period": 151,
+        "rebalance_bars": 23
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "5A_cross_momentum",
+    "family": "5A",
+    "symbol": "ETH/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 59,
+      "trades_per_week": 0.57,
+      "final_equity": 1052.06,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 1.7717,
+      "val_sharpe": -1.6274,
+      "overfit": true,
+      "best_params": {
+        "momentum_period": 53,
+        "rebalance_bars": 5
+      }
+    },
+    "conclusion": "REJECTED: OVERFIT"
+  },
+  {
+    "strategy": "5A_cross_momentum",
+    "family": "5A",
+    "symbol": "SOL/USDT:USDT",
+    "timeframe": "4h",
+    "date": "2026-03-20",
+    "quick_screen": {
+      "trades": 66,
+      "trades_per_week": 0.63,
+      "final_equity": 1572.36,
+      "viable": true
+    },
+    "optimisation": {
+      "train_sharpe": 1.683,
+      "val_sharpe": 1.6004,
+      "overfit": false,
+      "best_params": {
+        "momentum_period": 36,
+        "rebalance_bars": 4
+      }
+    },
+    "walk_forward": {
+      "n_windows": 22,
+      "mean_oos_sharpe": -1.9795,
+      "pct_positive": 22.7,
+      "consistent": false,
+      "window_sharpes": [
+        2.4495,
+        -0.1001,
+        -1.3612,
+        -2.7981,
+        -2.4495,
+        -2.4654,
+        -1.3635,
+        -3.9067,
+        -4.8334,
+        -2.4495,
+        -11.6408,
+        -2.5538,
+        1.1354,
+        -2.4495,
+        -2.4495,
+        -2.4495,
+        -4.4398,
+        2.4265,
+        2.4495,
+        -2.4495,
+        0.6003,
+        -2.4495
+      ]
+    },
+    "conclusion": "REJECTED: INCONSISTENT"
+  }
+]
