@@ -1,0 +1,670 @@
+[08:30:03] 
+============================================================
+[08:30:03] TESTING: 1A_dual_ma_cross (Family 1A)
+[08:30:03] ============================================================
+[08:30:03] 
+  Quick screen: BTC/USDT:USDT 4h
+[08:30:04]   VIABLE: 0.87 trades/week
+[08:30:04]   Optimising BTC/USDT:USDT 4h...
+[08:30:55]   Train Sharpe: 1.05, params: {'fast_period': 14, 'slow_period': 187, 'atr_mult': 3.9797149442023887}
+[08:30:56]   Val Sharpe: 1.02, overfit: False
+[08:30:56]   Walk-forward BTC/USDT:USDT 4h...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 2.26, params: {'fast_period': 32, 'slow_period': 183, 'atr_mult': 2.86696402562501}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 2.48, params: {'fast_period': 24, 'slow_period': 164, 'atr_mult': 1.9918221148865252}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 2.64, params: {'fast_period': 5, 'slow_period': 170, 'atr_mult': 1.8873559731786695}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 2.19, params: {'fast_period': 5, 'slow_period': 199, 'atr_mult': 2.1167418811203302}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 1.98, params: {'fast_period': 5, 'slow_period': 199, 'atr_mult': 1.1969009632681078}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 0.70, params: {'fast_period': 22, 'slow_period': 172, 'atr_mult': 3.032585676235057}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 0.93, params: {'fast_period': 18, 'slow_period': 197, 'atr_mult': 1.4737160809608736}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 2.80, params: {'fast_period': 47, 'slow_period': 96, 'atr_mult': 1.5873960478586346}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 0.63, params: {'fast_period': 34, 'slow_period': 109, 'atr_mult': 1.759809172017857}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 1.33, params: {'fast_period': 35, 'slow_period': 23, 'atr_mult': 2.5191192256340593}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 1.09, params: {'fast_period': 13, 'slow_period': 22, 'atr_mult': 1.4159656941248207}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 2.10, params: {'fast_period': 9, 'slow_period': 43, 'atr_mult': 2.6328564835658965}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 1.28, params: {'fast_period': 8, 'slow_period': 21, 'atr_mult': 2.355921809096629}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 0.03, params: {'fast_period': 20, 'slow_period': 104, 'atr_mult': 1.7181144742654277}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 2.26, params: {'fast_period': 35, 'slow_period': 95, 'atr_mult': 2.057681601506449}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 3.56, params: {'fast_period': 44, 'slow_period': 110, 'atr_mult': 2.768932236017433}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 4.66, params: {'fast_period': 45, 'slow_period': 167, 'atr_mult': 1.9420129074683534}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 2.71, params: {'fast_period': 28, 'slow_period': 188, 'atr_mult': 2.2404003757431585}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 3.42, params: {'fast_period': 12, 'slow_period': 21, 'atr_mult': 3.146592322813806}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 2.09, params: {'fast_period': 46, 'slow_period': 22, 'atr_mult': 1.417542074245839}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 11.70, params: {'fast_period': 23, 'slow_period': 91, 'atr_mult': 3.4530719556236296}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 4.43, params: {'fast_period': 29, 'slow_period': 53, 'atr_mult': 3.174127558561759}
+[08:34:02]   WF mean OOS Sharpe: -18.27, 59% positive (22 windows)
+[08:34:02]   REJECTED: inconsistent (59% positive windows)
+[08:34:02] 
+  Quick screen: BTC/USDT:USDT 1d
+[08:34:02]   REJECTED: 0.12 trades/week (need >= 0.5)
+[08:34:02] 
+  Quick screen: ETH/USDT:USDT 4h
+[08:34:03]   VIABLE: 0.74 trades/week
+[08:34:03]   Optimising ETH/USDT:USDT 4h...
+[08:34:55]   Train Sharpe: 1.42, params: {'fast_period': 31, 'slow_period': 51, 'atr_mult': 2.5870724003006007}
+[08:34:56]   Val Sharpe: -1.06, overfit: True
+[08:34:56]   REJECTED: overfit (train=1.42, val=-1.06)
+[08:34:56] 
+  Quick screen: ETH/USDT:USDT 1d
+[08:34:56]   REJECTED: 0.13 trades/week (need >= 0.5)
+[08:34:56] 
+  Quick screen: SOL/USDT:USDT 4h
+[08:34:57]   VIABLE: 0.75 trades/week
+[08:34:57]   Optimising SOL/USDT:USDT 4h...
+[08:35:48]   Train Sharpe: 1.47, params: {'fast_period': 15, 'slow_period': 64, 'atr_mult': 3.458466072019832}
+[08:35:49]   Val Sharpe: 1.78, overfit: False
+[08:35:49]   Walk-forward SOL/USDT:USDT 4h...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 2.53, params: {'fast_period': 15, 'slow_period': 194, 'atr_mult': 2.9466119549337884}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 2.26, params: {'fast_period': 28, 'slow_period': 30, 'atr_mult': 3.9250795616025504}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 2.61, params: {'fast_period': 12, 'slow_period': 200, 'atr_mult': 2.025714857400331}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 3.07, params: {'fast_period': 33, 'slow_period': 174, 'atr_mult': 2.7551221628956895}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 1.69, params: {'fast_period': 22, 'slow_period': 38, 'atr_mult': 2.7481631474984316}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 1.50, params: {'fast_period': 17, 'slow_period': 162, 'atr_mult': 1.5371115019652115}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 3.94, params: {'fast_period': 12, 'slow_period': 36, 'atr_mult': 2.3704303889257625}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 1.81, params: {'fast_period': 46, 'slow_period': 196, 'atr_mult': 3.9730303711358217}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 2.74, params: {'fast_period': 39, 'slow_period': 38, 'atr_mult': 2.3036918294709494}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 0.71, params: {'fast_period': 16, 'slow_period': 139, 'atr_mult': 1.0046375829532455}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 3.01, params: {'fast_period': 6, 'slow_period': 22, 'atr_mult': 3.089414434225255}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 1.86, params: {'fast_period': 10, 'slow_period': 32, 'atr_mult': 3.845631622763242}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 1.44, params: {'fast_period': 44, 'slow_period': 20, 'atr_mult': 3.2879477213969213}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 1.65, params: {'fast_period': 5, 'slow_period': 45, 'atr_mult': 2.896226238279705}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 3.54, params: {'fast_period': 17, 'slow_period': 39, 'atr_mult': 1.74007850418779}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 4.19, params: {'fast_period': 14, 'slow_period': 44, 'atr_mult': 2.8057113326390533}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 3.87, params: {'fast_period': 11, 'slow_period': 51, 'atr_mult': 1.943945997837666}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 2.71, params: {'fast_period': 28, 'slow_period': 44, 'atr_mult': 3.970681714781539}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 2.09, params: {'fast_period': 49, 'slow_period': 51, 'atr_mult': 1.4930200719156974}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 3.38, params: {'fast_period': 50, 'slow_period': 37, 'atr_mult': 2.2000695684376925}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 1.93, params: {'fast_period': 11, 'slow_period': 38, 'atr_mult': 1.6738450607304727}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 1.39, params: {'fast_period': 5, 'slow_period': 99, 'atr_mult': 2.362215551981087}
+[08:38:53]   WF mean OOS Sharpe: 7.21, 45% positive (22 windows)
+[08:38:53]   REJECTED: inconsistent (46% positive windows)
+[08:38:53] 
+  Quick screen: SOL/USDT:USDT 1d
+[08:38:54]   REJECTED: 0.11 trades/week (need >= 0.5)
+[08:38:54] 
+============================================================
+[08:38:54] TESTING: 1B_breakout_volume (Family 1B)
+[08:38:54] ============================================================
+[08:38:54] 
+  Quick screen: BTC/USDT:USDT 4h
+[08:38:55]   REJECTED: 0.33 trades/week (need >= 0.5)
+[08:38:55] 
+  Quick screen: ETH/USDT:USDT 4h
+[08:38:56]   REJECTED: 0.19 trades/week (need >= 0.5)
+[08:38:56] 
+  Quick screen: SOL/USDT:USDT 4h
+[08:38:57]   REJECTED: 0.31 trades/week (need >= 0.5)
+[08:38:57] 
+============================================================
+[08:38:57] TESTING: 1C_trend_regime (Family 1C)
+[08:38:57] ============================================================
+[08:38:57] 
+  Quick screen: BTC/USDT:USDT 4h
+[08:38:58]   VIABLE: 1.92 trades/week
+[08:38:58]   Optimising BTC/USDT:USDT 4h...
+[08:39:21]   Train Sharpe: 0.92, params: {'fast_period': 27, 'slow_period': 134, 'adx_period': 28, 'adx_threshold': 38}
+[08:39:21]   Val Sharpe: 0.59, overfit: False
+[08:39:21]   Walk-forward BTC/USDT:USDT 4h...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 5.35, params: {'fast_period': 44, 'slow_period': 143, 'adx_period': 17, 'adx_threshold': 27}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 2.67, params: {'fast_period': 10, 'slow_period': 141, 'adx_period': 12, 'adx_threshold': 40}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 1.86, params: {'fast_period': 40, 'slow_period': 23, 'adx_period': 11, 'adx_threshold': 24}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 1.88, params: {'fast_period': 33, 'slow_period': 23, 'adx_period': 27, 'adx_threshold': 20}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 2.49, params: {'fast_period': 18, 'slow_period': 160, 'adx_period': 22, 'adx_threshold': 32}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 1.61, params: {'fast_period': 23, 'slow_period': 115, 'adx_period': 20, 'adx_threshold': 33}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 4.24, params: {'fast_period': 30, 'slow_period': 91, 'adx_period': 23, 'adx_threshold': 27}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 3.80, params: {'fast_period': 44, 'slow_period': 128, 'adx_period': 17, 'adx_threshold': 28}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 1.83, params: {'fast_period': 32, 'slow_period': 133, 'adx_period': 12, 'adx_threshold': 29}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: -1.72, params: {'fast_period': 46, 'slow_period': 200, 'adx_period': 22, 'adx_threshold': 20}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 1.41, params: {'fast_period': 11, 'slow_period': 88, 'adx_period': 30, 'adx_threshold': 36}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 3.46, params: {'fast_period': 15, 'slow_period': 199, 'adx_period': 13, 'adx_threshold': 36}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 2.95, params: {'fast_period': 44, 'slow_period': 124, 'adx_period': 20, 'adx_threshold': 38}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 2.42, params: {'fast_period': 34, 'slow_period': 71, 'adx_period': 12, 'adx_threshold': 33}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 2.71, params: {'fast_period': 26, 'slow_period': 198, 'adx_period': 25, 'adx_threshold': 35}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 3.54, params: {'fast_period': 23, 'slow_period': 181, 'adx_period': 10, 'adx_threshold': 26}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 3.89, params: {'fast_period': 50, 'slow_period': 83, 'adx_period': 27, 'adx_threshold': 31}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 4.50, params: {'fast_period': 48, 'slow_period': 140, 'adx_period': 19, 'adx_threshold': 35}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 3.87, params: {'fast_period': 11, 'slow_period': 24, 'adx_period': 13, 'adx_threshold': 22}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 2.16, params: {'fast_period': 10, 'slow_period': 89, 'adx_period': 25, 'adx_threshold': 23}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 2.61, params: {'fast_period': 5, 'slow_period': 92, 'adx_period': 14, 'adx_threshold': 30}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 4.32, params: {'fast_period': 37, 'slow_period': 41, 'adx_period': 13, 'adx_threshold': 29}
+[08:40:53]   WF mean OOS Sharpe: 1.30, 59% positive (22 windows)
+[08:40:53]   REJECTED: inconsistent (59% positive windows)
+[08:40:53] 
+  Quick screen: BTC/USDT:USDT 1d
+[08:40:53]   REJECTED: 0.28 trades/week (need >= 0.5)
+[08:40:53] 
+  Quick screen: ETH/USDT:USDT 4h
+[08:40:53]   VIABLE: 1.71 trades/week
+[08:40:53]   Optimising ETH/USDT:USDT 4h...
+[08:41:17]   Train Sharpe: 1.44, params: {'fast_period': 40, 'slow_period': 55, 'adx_period': 18, 'adx_threshold': 20}
+[08:41:17]   Val Sharpe: -1.51, overfit: True
+[08:41:17]   REJECTED: overfit (train=1.44, val=-1.51)
+[08:41:17] 
+  Quick screen: ETH/USDT:USDT 1d
+[08:41:17]   REJECTED: 0.32 trades/week (need >= 0.5)
+[08:41:17] 
+  Quick screen: SOL/USDT:USDT 4h
+[08:41:18]   VIABLE: 1.92 trades/week
+[08:41:18]   Optimising SOL/USDT:USDT 4h...
+[08:41:41]   Train Sharpe: 1.71, params: {'fast_period': 43, 'slow_period': 113, 'adx_period': 10, 'adx_threshold': 23}
+[08:41:41]   Val Sharpe: 1.29, overfit: False
+[08:41:41]   Walk-forward SOL/USDT:USDT 4h...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 3.08, params: {'fast_period': 11, 'slow_period': 121, 'adx_period': 23, 'adx_threshold': 32}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 4.85, params: {'fast_period': 22, 'slow_period': 112, 'adx_period': 23, 'adx_threshold': 28}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 4.60, params: {'fast_period': 32, 'slow_period': 153, 'adx_period': 24, 'adx_threshold': 22}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 2.82, params: {'fast_period': 20, 'slow_period': 41, 'adx_period': 13, 'adx_threshold': 32}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 1.75, params: {'fast_period': 22, 'slow_period': 194, 'adx_period': 21, 'adx_threshold': 33}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 3.67, params: {'fast_period': 50, 'slow_period': 184, 'adx_period': 18, 'adx_threshold': 24}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 4.42, params: {'fast_period': 43, 'slow_period': 182, 'adx_period': 22, 'adx_threshold': 32}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 2.55, params: {'fast_period': 8, 'slow_period': 200, 'adx_period': 10, 'adx_threshold': 28}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 1.69, params: {'fast_period': 46, 'slow_period': 172, 'adx_period': 13, 'adx_threshold': 27}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 4.28, params: {'fast_period': 45, 'slow_period': 65, 'adx_period': 28, 'adx_threshold': 25}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 2.86, params: {'fast_period': 30, 'slow_period': 100, 'adx_period': 26, 'adx_threshold': 24}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 2.96, params: {'fast_period': 44, 'slow_period': 79, 'adx_period': 27, 'adx_threshold': 25}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 1.64, params: {'fast_period': 16, 'slow_period': 144, 'adx_period': 23, 'adx_threshold': 38}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 2.24, params: {'fast_period': 17, 'slow_period': 145, 'adx_period': 26, 'adx_threshold': 37}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 2.79, params: {'fast_period': 8, 'slow_period': 115, 'adx_period': 28, 'adx_threshold': 28}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 4.28, params: {'fast_period': 5, 'slow_period': 148, 'adx_period': 14, 'adx_threshold': 23}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 3.88, params: {'fast_period': 28, 'slow_period': 59, 'adx_period': 25, 'adx_threshold': 23}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 3.38, params: {'fast_period': 37, 'slow_period': 151, 'adx_period': 26, 'adx_threshold': 30}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 4.39, params: {'fast_period': 20, 'slow_period': 46, 'adx_period': 25, 'adx_threshold': 27}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 1.38, params: {'fast_period': 47, 'slow_period': 42, 'adx_period': 16, 'adx_threshold': 40}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 1.83, params: {'fast_period': 45, 'slow_period': 41, 'adx_period': 19, 'adx_threshold': 39}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 11.78, params: {'fast_period': 21, 'slow_period': 42, 'adx_period': 28, 'adx_threshold': 29}
+[08:43:15]   WF mean OOS Sharpe: 0.95, 73% positive (22 windows)
+[08:43:15]   Perturbation test...
+[08:43:17]   Perturbation max drop: 26.6%, fragile: False
+[08:43:17]   Holdout SOL/USDT:USDT 4h...
+Fetching SOL/USDT:USDT 4h 2024-01-01 to 2025-03-20...
+Fetching BTC/USDT:USDT 4h 2024-01-01 to 2025-03-20...
+[08:43:22]   REJECTED: flags ['overfit', 'long_dd', 'consec_losses']
+[08:43:22] 
+  Quick screen: SOL/USDT:USDT 1d
+[08:43:22]   REJECTED: 0.3 trades/week (need >= 0.5)
+[08:43:22] 
+============================================================
+[08:43:22] TESTING: 2A_rsi_reversion (Family 2A)
+[08:43:22] ============================================================
+[08:43:22] 
+  Quick screen: BTC/USDT:USDT 1h
+[08:43:25]   VIABLE: 7.55 trades/week
+[08:43:25]   Optimising BTC/USDT:USDT 1h...
+[08:45:37]   Train Sharpe: -0.61, params: {'rsi_period': 16, 'oversold': 20, 'overbought': 67, 'max_hold_bars': 18}
+[08:45:38]   Val Sharpe: -4.17, overfit: False
+[08:45:38]   Walk-forward BTC/USDT:USDT 1h...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 0.87, params: {'rsi_period': 17, 'oversold': 23, 'overbought': 75, 'max_hold_bars': 4}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 1.49, params: {'rsi_period': 19, 'oversold': 32, 'overbought': 72, 'max_hold_bars': 14}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 3.01, params: {'rsi_period': 21, 'oversold': 26, 'overbought': 80, 'max_hold_bars': 21}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: -1.17, params: {'rsi_period': 11, 'oversold': 31, 'overbought': 72, 'max_hold_bars': 18}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 0.91, params: {'rsi_period': 21, 'oversold': 35, 'overbought': 60, 'max_hold_bars': 19}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 0.36, params: {'rsi_period': 18, 'oversold': 25, 'overbought': 63, 'max_hold_bars': 15}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 0.90, params: {'rsi_period': 18, 'oversold': 20, 'overbought': 63, 'max_hold_bars': 17}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 3.48, params: {'rsi_period': 19, 'oversold': 20, 'overbought': 68, 'max_hold_bars': 21}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 1.16, params: {'rsi_period': 16, 'oversold': 33, 'overbought': 66, 'max_hold_bars': 11}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: -0.45, params: {'rsi_period': 20, 'oversold': 23, 'overbought': 62, 'max_hold_bars': 19}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: -3.05, params: {'rsi_period': 15, 'oversold': 20, 'overbought': 74, 'max_hold_bars': 17}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: -2.79, params: {'rsi_period': 21, 'oversold': 20, 'overbought': 69, 'max_hold_bars': 21}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: -3.48, params: {'rsi_period': 21, 'oversold': 20, 'overbought': 67, 'max_hold_bars': 6}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: -1.71, params: {'rsi_period': 20, 'oversold': 34, 'overbought': 71, 'max_hold_bars': 24}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: -1.35, params: {'rsi_period': 16, 'oversold': 27, 'overbought': 76, 'max_hold_bars': 17}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: -1.04, params: {'rsi_period': 19, 'oversold': 27, 'overbought': 75, 'max_hold_bars': 19}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: -1.65, params: {'rsi_period': 20, 'oversold': 32, 'overbought': 79, 'max_hold_bars': 24}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 0.32, params: {'rsi_period': 21, 'oversold': 33, 'overbought': 77, 'max_hold_bars': 14}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: -0.77, params: {'rsi_period': 21, 'oversold': 26, 'overbought': 80, 'max_hold_bars': 15}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 0.11, params: {'rsi_period': 19, 'oversold': 23, 'overbought': 77, 'max_hold_bars': 16}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: -0.83, params: {'rsi_period': 18, 'oversold': 21, 'overbought': 79, 'max_hold_bars': 16}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -0.59, params: {'rsi_period': 13, 'oversold': 26, 'overbought': 77, 'max_hold_bars': 24}
+[08:53:08]   WF mean OOS Sharpe: -5.11, 14% positive (22 windows)
+[08:53:08]   REJECTED: inconsistent (14% positive windows)
+[08:53:08] 
+  Quick screen: BTC/USDT:USDT 4h
+[08:53:09]   VIABLE: 2.05 trades/week
+[08:53:09]   Optimising BTC/USDT:USDT 4h...
+[08:53:43]   Train Sharpe: 1.68, params: {'rsi_period': 8, 'oversold': 25, 'overbought': 80, 'max_hold_bars': 12}
+[08:53:43]   Val Sharpe: -1.66, overfit: True
+[08:53:43]   REJECTED: overfit (train=1.68, val=-1.66)
+[08:53:43] 
+  Quick screen: ETH/USDT:USDT 1h
+[08:53:46]   VIABLE: 7.79 trades/week
+[08:53:46]   Optimising ETH/USDT:USDT 1h...
+[08:55:56]   Train Sharpe: -0.20, params: {'rsi_period': 20, 'oversold': 31, 'overbought': 76, 'max_hold_bars': 20}
+[08:55:57]   Val Sharpe: -3.50, overfit: False
+[08:55:57]   Walk-forward ETH/USDT:USDT 1h...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 1.36, params: {'rsi_period': 12, 'oversold': 32, 'overbought': 80, 'max_hold_bars': 4}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 4.00, params: {'rsi_period': 18, 'oversold': 28, 'overbought': 77, 'max_hold_bars': 20}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 2.67, params: {'rsi_period': 18, 'oversold': 27, 'overbought': 80, 'max_hold_bars': 17}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 4.75, params: {'rsi_period': 21, 'oversold': 27, 'overbought': 77, 'max_hold_bars': 16}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 2.37, params: {'rsi_period': 14, 'oversold': 29, 'overbought': 63, 'max_hold_bars': 12}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 0.93, params: {'rsi_period': 19, 'oversold': 24, 'overbought': 67, 'max_hold_bars': 13}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: -0.37, params: {'rsi_period': 8, 'oversold': 20, 'overbought': 67, 'max_hold_bars': 16}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 0.60, params: {'rsi_period': 15, 'oversold': 20, 'overbought': 66, 'max_hold_bars': 16}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 0.16, params: {'rsi_period': 12, 'oversold': 20, 'overbought': 74, 'max_hold_bars': 17}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 0.19, params: {'rsi_period': 21, 'oversold': 24, 'overbought': 62, 'max_hold_bars': 11}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: -1.49, params: {'rsi_period': 21, 'oversold': 24, 'overbought': 78, 'max_hold_bars': 22}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: -2.90, params: {'rsi_period': 12, 'oversold': 29, 'overbought': 77, 'max_hold_bars': 24}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: -3.48, params: {'rsi_period': 15, 'oversold': 31, 'overbought': 75, 'max_hold_bars': 22}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: -0.09, params: {'rsi_period': 19, 'oversold': 21, 'overbought': 74, 'max_hold_bars': 20}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: -0.64, params: {'rsi_period': 20, 'oversold': 26, 'overbought': 67, 'max_hold_bars': 22}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: -1.73, params: {'rsi_period': 18, 'oversold': 33, 'overbought': 75, 'max_hold_bars': 17}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 1.48, params: {'rsi_period': 20, 'oversold': 39, 'overbought': 80, 'max_hold_bars': 12}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: -0.46, params: {'rsi_period': 18, 'oversold': 26, 'overbought': 74, 'max_hold_bars': 9}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 0.30, params: {'rsi_period': 21, 'oversold': 30, 'overbought': 80, 'max_hold_bars': 24}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: -1.89, params: {'rsi_period': 13, 'oversold': 24, 'overbought': 76, 'max_hold_bars': 19}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: -2.55, params: {'rsi_period': 17, 'oversold': 27, 'overbought': 73, 'max_hold_bars': 13}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -1.33, params: {'rsi_period': 21, 'oversold': 40, 'overbought': 80, 'max_hold_bars': 19}
+[09:03:19]   WF mean OOS Sharpe: -8.55, 23% positive (22 windows)
+[09:03:19]   REJECTED: inconsistent (23% positive windows)
+[09:03:19] 
+  Quick screen: ETH/USDT:USDT 4h
+[09:03:20]   VIABLE: 2.08 trades/week
+[09:03:20]   Optimising ETH/USDT:USDT 4h...
+[09:03:53]   Train Sharpe: 0.82, params: {'rsi_period': 21, 'oversold': 26, 'overbought': 80, 'max_hold_bars': 8}
+[09:03:53]   Val Sharpe: -0.02, overfit: True
+[09:03:53]   REJECTED: overfit (train=0.82, val=-0.02)
+[09:03:53] 
+  Quick screen: SOL/USDT:USDT 1h
+[09:03:55]   VIABLE: 8.04 trades/week
+[09:03:55]   Optimising SOL/USDT:USDT 1h...
+[09:06:04]   Train Sharpe: 0.53, params: {'rsi_period': 18, 'oversold': 29, 'overbought': 79, 'max_hold_bars': 18}
+[09:06:05]   Val Sharpe: -3.71, overfit: True
+[09:06:05]   REJECTED: overfit (train=0.53, val=-3.71)
+[09:06:05] 
+  Quick screen: SOL/USDT:USDT 4h
+[09:06:06]   VIABLE: 2.01 trades/week
+[09:06:06]   Optimising SOL/USDT:USDT 4h...
+[09:06:39]   Train Sharpe: 0.02, params: {'rsi_period': 8, 'oversold': 34, 'overbought': 76, 'max_hold_bars': 21}
+[09:06:39]   Val Sharpe: -3.67, overfit: True
+[09:06:39]   REJECTED: overfit (train=0.02, val=-3.67)
+[09:06:39] 
+============================================================
+[09:06:39] TESTING: 2B_bollinger_reversion (Family 2B)
+[09:06:39] ============================================================
+[09:06:39] 
+  Quick screen: BTC/USDT:USDT 1h
+[09:06:43]   VIABLE: 6.35 trades/week
+[09:06:43]   Optimising BTC/USDT:USDT 1h...
+[09:09:53]   Train Sharpe: 0.21, params: {'period': 41, 'std_dev': 2.485297459960488}
+[09:09:55]   Val Sharpe: -1.57, overfit: True
+[09:09:55]   REJECTED: overfit (train=0.21, val=-1.57)
+[09:09:55] 
+  Quick screen: BTC/USDT:USDT 4h
+[09:09:56]   VIABLE: 1.4 trades/week
+[09:09:56]   Optimising BTC/USDT:USDT 4h...
+[09:10:44]   Train Sharpe: 1.45, params: {'period': 16, 'std_dev': 2.9287428227493635}
+[09:10:45]   Val Sharpe: -0.35, overfit: True
+[09:10:45]   REJECTED: overfit (train=1.45, val=-0.35)
+[09:10:45] 
+  Quick screen: ETH/USDT:USDT 1h
+[09:10:48]   VIABLE: 6.05 trades/week
+[09:10:48]   Optimising ETH/USDT:USDT 1h...
+[09:13:59]   Train Sharpe: 0.22, params: {'period': 34, 'std_dev': 2.9926449174203933}
+[09:14:01]   Val Sharpe: -2.58, overfit: True
+[09:14:01]   REJECTED: overfit (train=0.22, val=-2.58)
+[09:14:01] 
+  Quick screen: ETH/USDT:USDT 4h
+[09:14:02]   VIABLE: 1.42 trades/week
+[09:14:02]   Optimising ETH/USDT:USDT 4h...
+[09:14:52]   Train Sharpe: -0.23, params: {'period': 30, 'std_dev': 2.367703309209047}
+[09:14:52]   Val Sharpe: 0.65, overfit: False
+[09:14:52]   Walk-forward ETH/USDT:USDT 4h...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 4.56, params: {'period': 10, 'std_dev': 2.3907001967833286}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 3.14, params: {'period': 13, 'std_dev': 2.82324528244837}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 2.62, params: {'period': 13, 'std_dev': 2.843785484459728}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 2.79, params: {'period': 36, 'std_dev': 2.185508282734981}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 5.07, params: {'period': 35, 'std_dev': 1.8830417722547785}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 2.91, params: {'period': 26, 'std_dev': 1.6679635117085927}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 0.79, params: {'period': 26, 'std_dev': 2.0678453144137654}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 0.68, params: {'period': 33, 'std_dev': 2.393329552235739}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 0.99, params: {'period': 50, 'std_dev': 1.7892958061489426}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 1.24, params: {'period': 46, 'std_dev': 1.6706226654231626}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 0.60, params: {'period': 15, 'std_dev': 1.8886495742645608}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 0.71, params: {'period': 40, 'std_dev': 1.8694493673689183}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 6.26, params: {'period': 39, 'std_dev': 2.694974625820086}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 8.10, params: {'period': 50, 'std_dev': 2.872722337334665}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 3.09, params: {'period': 23, 'std_dev': 2.7649234656680326}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 0.55, params: {'period': 22, 'std_dev': 2.5285793804590817}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: -0.03, params: {'period': 24, 'std_dev': 2.630566509706358}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 2.06, params: {'period': 10, 'std_dev': 2.755140805884813}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: -0.34, params: {'period': 10, 'std_dev': 2.11045105694074}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 3.90, params: {'period': 11, 'std_dev': 2.35697489176343}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 5.28, params: {'period': 14, 'std_dev': 2.822337479837258}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 3.24, params: {'period': 14, 'std_dev': 2.7901729647678515}
+[09:17:45]   WF mean OOS Sharpe: -1.07, 50% positive (22 windows)
+[09:17:45]   REJECTED: inconsistent (50% positive windows)
+[09:17:45] 
+  Quick screen: SOL/USDT:USDT 1h
+[09:17:49]   VIABLE: 6.02 trades/week
+[09:17:49]   Optimising SOL/USDT:USDT 1h...
+[09:21:00]   Train Sharpe: 1.03, params: {'period': 13, 'std_dev': 2.878065516847992}
+[09:21:02]   Val Sharpe: -1.45, overfit: True
+[09:21:02]   REJECTED: overfit (train=1.03, val=-1.45)
+[09:21:02] 
+  Quick screen: SOL/USDT:USDT 4h
+[09:21:03]   VIABLE: 1.46 trades/week
+[09:21:03]   Optimising SOL/USDT:USDT 4h...
+[09:21:51]   Train Sharpe: 0.48, params: {'period': 10, 'std_dev': 2.6434547915951323}
+[09:21:52]   Val Sharpe: -2.30, overfit: True
+[09:21:52]   REJECTED: overfit (train=0.48, val=-2.30)
+[09:21:52] 
+============================================================
+[09:21:52] TESTING: 2C_zscore_reversion (Family 2C)
+[09:21:52] ============================================================
+[09:21:52] 
+  Quick screen: BTC/USDT:USDT 1h
+[09:21:54]   VIABLE: 8.09 trades/week
+[09:21:54]   Optimising BTC/USDT:USDT 1h...
+[09:23:57]   Train Sharpe: -1.15, params: {'lookback': 115, 'entry_z': 2.9732678889885533, 'exit_z': 0.1706339508993251}
+[09:23:59]   Val Sharpe: -4.22, overfit: False
+[09:23:59]   Walk-forward BTC/USDT:USDT 1h...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 0.63, params: {'lookback': 87, 'entry_z': 2.984960217060822, 'exit_z': 0.24243408098947553}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: -0.07, params: {'lookback': 132, 'entry_z': 2.88564464639944, 'exit_z': 0.21196616326224152}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: -0.89, params: {'lookback': 121, 'entry_z': 2.9926648863696332, 'exit_z': 0.1193678722905484}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: -1.72, params: {'lookback': 36, 'entry_z': 2.2198198241131886, 'exit_z': 0.045523522453880944}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: -2.78, params: {'lookback': 129, 'entry_z': 2.9983195144679975, 'exit_z': 0.14846083095460494}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: -3.09, params: {'lookback': 122, 'entry_z': 2.999948735320183, 'exit_z': 0.18170305973758274}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 0.08, params: {'lookback': 158, 'entry_z': 2.8733986115369925, 'exit_z': 0.4182517485341685}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 0.79, params: {'lookback': 119, 'entry_z': 2.8564401049929433, 'exit_z': 0.32871291180713735}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: -1.00, params: {'lookback': 54, 'entry_z': 2.8797728677989984, 'exit_z': 0.00556702055137924}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: -1.29, params: {'lookback': 151, 'entry_z': 2.9380870371024033, 'exit_z': 0.3654592639696045}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: -1.67, params: {'lookback': 168, 'entry_z': 2.7608321308577692, 'exit_z': 0.4146865390865532}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: -3.57, params: {'lookback': 130, 'entry_z': 2.91031223105694, 'exit_z': 0.4764584731352847}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: -3.62, params: {'lookback': 133, 'entry_z': 2.9940505098502994, 'exit_z': 0.3853214755724244}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: -4.34, params: {'lookback': 124, 'entry_z': 2.885082402085901, 'exit_z': 0.15143006059042768}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: -3.66, params: {'lookback': 71, 'entry_z': 2.593640304017779, 'exit_z': 0.2593866689489792}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: -3.17, params: {'lookback': 25, 'entry_z': 2.995576049053091, 'exit_z': 0.37034779930121403}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: -1.98, params: {'lookback': 91, 'entry_z': 2.9876789631954694, 'exit_z': 0.13511257203065255}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: -1.56, params: {'lookback': 36, 'entry_z': 2.883160302191021, 'exit_z': 0.4117900491056194}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: -2.48, params: {'lookback': 123, 'entry_z': 2.5005397652583663, 'exit_z': 0.09715167968327959}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: -0.30, params: {'lookback': 76, 'entry_z': 2.40433467462349, 'exit_z': 0.4291901691037858}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: -0.33, params: {'lookback': 70, 'entry_z': 2.615572391240457, 'exit_z': 0.3369429214796812}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -0.89, params: {'lookback': 69, 'entry_z': 2.125436061951035, 'exit_z': 0.3125503224084425}
+[09:31:05]   WF mean OOS Sharpe: -3.08, 14% positive (22 windows)
+[09:31:05]   REJECTED: inconsistent (14% positive windows)
+[09:31:05] 
+  Quick screen: BTC/USDT:USDT 4h
+[09:31:06]   VIABLE: 2.15 trades/week
+[09:31:06]   Optimising BTC/USDT:USDT 4h...
+[09:31:38]   Train Sharpe: -0.89, params: {'lookback': 132, 'entry_z': 2.990995329620085, 'exit_z': 0.0006914521481227662}
+[09:31:39]   Val Sharpe: -2.59, overfit: False
+[09:31:39]   Walk-forward BTC/USDT:USDT 4h...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: -0.76, params: {'lookback': 153, 'entry_z': 2.969062256978131, 'exit_z': 0.1892911649221991}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 0.62, params: {'lookback': 59, 'entry_z': 2.780857851429511, 'exit_z': 0.44573333193845777}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 0.93, params: {'lookback': 164, 'entry_z': 2.9799032007072714, 'exit_z': 0.4965247111029391}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 1.12, params: {'lookback': 112, 'entry_z': 2.835519478281141, 'exit_z': 0.2001223732784742}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 0.49, params: {'lookback': 86, 'entry_z': 2.0020935504132993, 'exit_z': 0.32190559217847936}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 1.29, params: {'lookback': 47, 'entry_z': 2.985234465464356, 'exit_z': 0.1216129087186294}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: -0.56, params: {'lookback': 107, 'entry_z': 2.9964896106418037, 'exit_z': 0.20941365690448016}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: -0.52, params: {'lookback': 73, 'entry_z': 2.1974145536204905, 'exit_z': 0.06880899530940979}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: -0.89, params: {'lookback': 38, 'entry_z': 2.884829918102066, 'exit_z': 0.03802186047246327}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: -1.68, params: {'lookback': 146, 'entry_z': 2.2765110761017477, 'exit_z': 0.0030745351995228876}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: -2.36, params: {'lookback': 156, 'entry_z': 2.965264217100177, 'exit_z': 0.46032598678745695}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: -1.74, params: {'lookback': 159, 'entry_z': 2.3567892201027383, 'exit_z': 0.3601154127865679}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: -1.31, params: {'lookback': 159, 'entry_z': 2.3323920613531746, 'exit_z': 0.3669286073661846}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: -1.24, params: {'lookback': 159, 'entry_z': 2.5274353073201117, 'exit_z': 0.41070415515049463}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: -2.03, params: {'lookback': 159, 'entry_z': 2.16216374464244, 'exit_z': 0.028757455755349312}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: -0.89, params: {'lookback': 77, 'entry_z': 2.6624262762751556, 'exit_z': 0.012988989803229474}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: -2.57, params: {'lookback': 40, 'entry_z': 2.989771171764019, 'exit_z': 0.3066973639649636}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: -1.75, params: {'lookback': 76, 'entry_z': 2.4100310597558914, 'exit_z': 0.3770219464477882}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: -2.09, params: {'lookback': 155, 'entry_z': 2.376128162269922, 'exit_z': 0.37242731937157836}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 1.82, params: {'lookback': 24, 'entry_z': 2.429145200376997, 'exit_z': 0.07931079717903641}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 2.62, params: {'lookback': 160, 'entry_z': 2.8067580427083865, 'exit_z': 0.43777013494796374}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -0.33, params: {'lookback': 69, 'entry_z': 2.9877148833504896, 'exit_z': 0.0008485362626057986}
+[09:33:34]   WF mean OOS Sharpe: -1.99, 18% positive (22 windows)
+[09:33:34]   REJECTED: inconsistent (18% positive windows)
+[09:33:34] 
+  Quick screen: ETH/USDT:USDT 1h
+[09:33:36]   VIABLE: 8.31 trades/week
+[09:33:36]   Optimising ETH/USDT:USDT 1h...
+[09:35:41]   Train Sharpe: -0.89, params: {'lookback': 156, 'entry_z': 2.9833392155509237, 'exit_z': 0.04717539767642205}
+[09:35:42]   Val Sharpe: -3.13, overfit: False
+[09:35:42]   Walk-forward ETH/USDT:USDT 1h...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 0.96, params: {'lookback': 82, 'entry_z': 2.4468382973776697, 'exit_z': 0.30393966790785276}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 0.92, params: {'lookback': 112, 'entry_z': 2.743345633729283, 'exit_z': 0.29790886752760987}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: -0.41, params: {'lookback': 96, 'entry_z': 2.3438624751613264, 'exit_z': 0.05339915472064777}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: -2.53, params: {'lookback': 153, 'entry_z': 2.807210674134955, 'exit_z': 0.08864294683741818}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: -3.23, params: {'lookback': 25, 'entry_z': 2.9479829668592603, 'exit_z': 0.21186663555637975}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: -2.60, params: {'lookback': 28, 'entry_z': 2.7347440761818733, 'exit_z': 0.013897713274362178}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: -2.65, params: {'lookback': 130, 'entry_z': 2.5522993988715212, 'exit_z': 0.2447234290469684}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: -0.83, params: {'lookback': 24, 'entry_z': 2.107486918001586, 'exit_z': 0.06817134473637393}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: -0.82, params: {'lookback': 34, 'entry_z': 2.853887776479882, 'exit_z': 0.008977208458594187}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 0.37, params: {'lookback': 25, 'entry_z': 2.8981418175100084, 'exit_z': 0.39201282260224785}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: -2.01, params: {'lookback': 146, 'entry_z': 2.6978435682721766, 'exit_z': 0.2765194847572664}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: -3.09, params: {'lookback': 155, 'entry_z': 2.8740877689815028, 'exit_z': 0.2390492807959232}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: -3.00, params: {'lookback': 25, 'entry_z': 2.800435937562851, 'exit_z': 0.3697308454200302}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: -1.68, params: {'lookback': 155, 'entry_z': 2.7872663344489483, 'exit_z': 0.045758867529028135}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: -3.76, params: {'lookback': 149, 'entry_z': 2.999878084910293, 'exit_z': 0.0017178880665964652}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: -2.05, params: {'lookback': 161, 'entry_z': 2.8755197025272787, 'exit_z': 0.05608507024314946}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: -3.45, params: {'lookback': 86, 'entry_z': 2.788772033205345, 'exit_z': 0.07902423766405249}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: -1.19, params: {'lookback': 151, 'entry_z': 2.8424087343751463, 'exit_z': 0.3663321747040644}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: -1.56, params: {'lookback': 147, 'entry_z': 2.8038647204251728, 'exit_z': 0.2874965053027104}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: -2.23, params: {'lookback': 141, 'entry_z': 2.9139228021475136, 'exit_z': 0.15766240570126472}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: -1.48, params: {'lookback': 112, 'entry_z': 2.9989405867796375, 'exit_z': 0.0017651224528444712}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -1.17, params: {'lookback': 67, 'entry_z': 1.8521933997155948, 'exit_z': 0.0800384372567248}
+[09:42:33]   WF mean OOS Sharpe: -11.88, 9% positive (22 windows)
+[09:42:33]   REJECTED: inconsistent (9% positive windows)
+[09:42:33] 
+  Quick screen: ETH/USDT:USDT 4h
+[09:42:34]   VIABLE: 2.18 trades/week
+[09:42:34]   Optimising ETH/USDT:USDT 4h...
+[09:43:05]   Train Sharpe: -0.97, params: {'lookback': 68, 'entry_z': 2.1228249173895666, 'exit_z': 0.26453220371091835}
+[09:43:06]   Val Sharpe: -5.70, overfit: False
+[09:43:06]   Walk-forward ETH/USDT:USDT 4h...
