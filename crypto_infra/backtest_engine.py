@@ -58,10 +58,10 @@ class BacktestEngine:
         signal = signal_module.generate(data, params)
         signal_module.validate_output(signal, data)
 
-        equity = initial_equity
+        cash = initial_equity
         equity_series = []
         trades = []
-        position = None  # {direction, size, entry_price, entry_time, funding_cost}
+        position = None  # {direction, size, entry_price, entry_time, open_fee, funding_cost}
 
         # Compute rolling volatility for sizer (20-period annualised)
         returns = data["close"].pct_change()
@@ -70,9 +70,15 @@ class BacktestEngine:
         rolling_vol = returns.rolling(20).std() * np.sqrt(periods_per_year)
         rolling_vol = rolling_vol.fillna(returns.std() * np.sqrt(periods_per_year))
 
-        for i, (ts, row) in enumerate(data.iterrows()):
-            sig = signal.iloc[i]
-            price = row["close"]
+        # FIX: Start from bar 1. Signal at bar i-1 is acted on at bar i's close.
+        # Bar 0 has no prior signal so we skip it.
+        # This eliminates look-ahead bias: signal uses data up to T, trade enters at T+1.
+        equity_series.append(initial_equity)  # bar 0: no action
+
+        for i in range(1, len(data)):
+            sig = signal.iloc[i - 1]   # FIX: use PREVIOUS bar's signal
+            price = data["close"].iloc[i]
+            ts = data.index[i]
             vol = rolling_vol.iloc[i] if rolling_vol.iloc[i] > 0 else 0.01
 
             # Check if position needs closing (signal changed or flipped)
@@ -90,8 +96,6 @@ class BacktestEngine:
                     )
                     pnl_raw = (close_result["fill_price"] - position["entry_price"]) * \
                               position["size"] * position["direction"]
-                    total_cost = close_result["fee_usdt"] + position.get("open_fee", 0) + \
-                                 position.get("funding_cost", 0)
                     pnl_net = pnl_raw - close_result["fee_usdt"] - position.get("funding_cost", 0)
 
                     trades.append({
@@ -102,55 +106,55 @@ class BacktestEngine:
                         "size": position["size"],
                         "direction": position["direction"],
                         "pnl_usdt": pnl_net,
-                        "pnl_pct": pnl_net / equity * 100 if equity > 0 else 0,
+                        "pnl_pct": pnl_net / cash * 100 if cash > 0 else 0,
                         "cost_usdt": close_result["fee_usdt"] + position.get("open_fee", 0),
                         "funding_cost_usdt": position.get("funding_cost", 0),
                     })
 
-                    equity += pnl_net
-                    self.sizer_module.record_trade(pnl_net / max(equity, 1) * 100)
+                    cash += pnl_net
+                    self.sizer_module.record_trade(pnl_net / max(cash, 1) * 100)
                     position = None
 
             # Open new position if signal is non-zero and we are flat
             if sig != 0 and position is None:
-                size = self.sizer_module.compute_size(sig, equity, price, vol)
-                if size <= 0:
-                    equity_series.append(equity)
-                    continue
-
-                # Liquidation check
-                liq = self.sizer_module.check_liquidation_risk(
-                    price, size, equity, self.sizer_module.leverage, sig,
-                )
-                if not liq["safe"]:
-                    logger.warning(
-                        f"Skipping trade at {ts}: liquidation too close "
-                        f"({liq['distance_pct']:.1%} < 15%)"
+                size = self.sizer_module.compute_size(sig, cash, price, vol)
+                if size > 0:
+                    # Liquidation check
+                    liq = self.sizer_module.check_liquidation_risk(
+                        price, size, cash, self.sizer_module.leverage, sig,
                     )
-                    equity_series.append(equity)
-                    continue
+                    if not liq["safe"]:
+                        logger.warning(
+                            f"Skipping trade at {ts}: liquidation too close "
+                            f"({liq['distance_pct']:.1%} < 15%)"
+                        )
+                    else:
+                        open_result = self.cost_module.apply_open(price, size, symbol, sig)
+                        cash -= open_result["fee_usdt"]
 
-                open_result = self.cost_module.apply_open(price, size, symbol, sig)
-                equity -= open_result["fee_usdt"]
+                        position = {
+                            "direction": sig,
+                            "size": size,
+                            "entry_price": open_result["fill_price"],
+                            "entry_time": ts,
+                            "open_fee": open_result["fee_usdt"],
+                            "funding_cost": 0.0,
+                        }
 
-                position = {
-                    "direction": sig,
-                    "size": size,
-                    "entry_price": open_result["fill_price"],
-                    "entry_time": ts,
-                    "open_fee": open_result["fee_usdt"],
-                    "funding_cost": 0.0,
-                }
-
-            equity_series.append(equity)
+            # FIX: Mark-to-market equity includes open position value
+            if position is not None:
+                mtm_pnl = (price - position["entry_price"]) * \
+                           position["size"] * position["direction"]
+                equity_series.append(cash + mtm_pnl)
+            else:
+                equity_series.append(cash)
 
         # Close any remaining position at last bar
         if position is not None:
-            last_row = data.iloc[-1]
+            last_price = data["close"].iloc[-1]
             last_ts = data.index[-1]
-            price = last_row["close"]
             close_result = self.cost_module.apply_close(
-                position["entry_price"], price, position["size"],
+                position["entry_price"], last_price, position["size"],
                 symbol, position["direction"],
             )
             pnl_raw = (close_result["fill_price"] - position["entry_price"]) * \
@@ -164,11 +168,13 @@ class BacktestEngine:
                 "size": position["size"],
                 "direction": position["direction"],
                 "pnl_usdt": pnl_net,
-                "pnl_pct": pnl_net / equity * 100 if equity > 0 else 0,
+                "pnl_pct": pnl_net / cash * 100 if cash > 0 else 0,
                 "cost_usdt": close_result["fee_usdt"] + position.get("open_fee", 0),
                 "funding_cost_usdt": position.get("funding_cost", 0),
             })
-            equity += pnl_net
+            cash += pnl_net
+            # Update last equity to reflect final close
+            equity_series[-1] = cash
 
         eq_series = pd.Series(equity_series, index=data.index, name="equity")
         trades_df = pd.DataFrame(trades) if trades else pd.DataFrame(columns=[
