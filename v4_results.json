@@ -1,0 +1,221 @@
+{
+  "exp1": {
+    "BTC": {
+      "result": "INCONSISTENT",
+      "train_sr": -0.4437,
+      "val_sr": -5.1517,
+      "wf_pct": 22.7,
+      "wf_mean_sr": -3.1656,
+      "params": {
+        "atr_period": 41,
+        "entry_threshold": 1.9562788199890608,
+        "max_hold_bars": 1
+      }
+    },
+    "ETH": {
+      "result": "OVERFIT",
+      "train_sr": 0.7083849739834017,
+      "val_sr": -2.6274
+    },
+    "SOL": {
+      "result": "OVERFIT",
+      "train_sr": 0.37104569722824754,
+      "val_sr": -1.8535
+    }
+  },
+  "exp2": {
+    "tv0.15_lev3.0": {
+      "train_sr": 1.5707,
+      "train": {
+        "sharpe": 1.5707,
+        "return": 1991.85,
+        "max_dd": 51.19,
+        "max_dd_days": 200,
+        "consec_losing": 2,
+        "trades": 136,
+        "passes_all": false
+      },
+      "validation": {
+        "sharpe": 0.8779,
+        "return": 110.52,
+        "max_dd": 59.72,
+        "max_dd_days": 276,
+        "consec_losing": 3,
+        "trades": 59,
+        "passes_all": false
+      },
+      "holdout": {
+        "sharpe": -0.2754,
+        "return": -55.21,
+        "max_dd": 79.71,
+        "max_dd_days": 322,
+        "consec_losing": 7,
+        "trades": 108,
+        "passes_all": false
+      }
+    },
+    "tv0.15_lev5.0": {
+      "train_sr": 1.4787,
+      "train": {
+        "sharpe": 1.4787,
+        "return": 6931.7,
+        "max_dd": 73.06,
+        "max_dd_days": 200,
+        "consec_losing": 2,
+        "trades": 136,
+        "passes_all": false
+      },
+      "validation": {
+        "sharpe": 0.8927,
+        "return": 149.11,
+        "max_dd": 81.15,
+        "max_dd_days": 285,
+        "consec_losing": 3,
+        "trades": 59,
+        "passes_all": false
+      },
+      "holdout": {
+        "sharpe": -0.2701,
+        "return": -82.52,
+        "max_dd": 94.58,
+        "max_dd_days": 322,
+        "consec_losing": 7,
+        "trades": 108,
+        "passes_all": false
+      }
+    },
+    "tv0.2_lev3.0": {
+      "train_sr": 1.5102,
+      "train": {
+        "sharpe": 1.5102,
+        "return": 3654.55,
+        "max_dd": 65.85,
+        "max_dd_days": 200,
+        "consec_losing": 2,
+        "trades": 136,
+        "passes_all": false
+      },
+      "validation": {
+        "sharpe": 0.8985,
+        "return": 138.1,
+        "max_dd": 71.42,
+        "max_dd_days": 284,
+        "consec_losing": 3,
+        "trades": 59,
+        "passes_all": false
+      },
+      "holdout": {
+        "sharpe": -0.3162,
+        "return": -71.74,
+        "max_dd": 89.2,
+        "max_dd_days": 322,
+        "consec_losing": 7,
+        "trades": 108,
+        "passes_all": false
+      }
+    },
+    "tv0.2_lev5.0": {
+      "train_sr": 1.4131,
+      "train": {
+        "sharpe": 1.4131,
+        "return": 11426.89,
+        "max_dd": 86.48,
+        "max_dd_days": 200,
+        "consec_losing": 3,
+        "trades": 136,
+        "passes_all": false
+      },
+      "validation": {
+        "sharpe": 0.9188,
+        "return": 141.91,
+        "max_dd": 90.67,
+        "max_dd_days": 325,
+        "consec_losing": 3,
+        "trades": 59,
+        "passes_all": false
+      },
+      "holdout": {
+        "sharpe": -0.3242,
+        "return": -94.39,
+        "max_dd": 98.65,
+        "max_dd_days": 322,
+        "consec_losing": 7,
+        "trades": 108,
+        "passes_all": false
+      }
+    },
+    "tv0.25_lev3.0": {
+      "train_sr": 1.448,
+      "train": {
+        "sharpe": 1.448,
+        "return": 5518.7,
+        "max_dd": 77.39,
+        "max_dd_days": 200,
+        "consec_losing": 2,
+        "trades": 136,
+        "passes_all": false
+      },
+      "validation": {
+        "sharpe": 0.9708,
+        "return": 186.19,
+        "max_dd": 77.49,
+        "max_dd_days": 284,
+        "consec_losing": 3,
+        "trades": 59,
+        "passes_all": false
+      },
+      "holdout": {
+        "sharpe": -0.3712,
+        "return": -81.61,
+        "max_dd": 93.42,
+        "max_dd_days": 322,
+        "consec_losing": 7,
+        "trades": 108,
+        "passes_all": false
+      }
+    },
+    "tv0.25_lev5.0": {
+      "train_sr": 1.352,
+      "train": {
+        "sharpe": 1.352,
+        "return": 12421.1,
+        "max_dd": 93.99,
+        "max_dd_days": 200,
+        "consec_losing": 4,
+        "trades": 136,
+        "passes_all": false
+      },
+      "validation": {
+        "sharpe": 0.9879,
+        "return": 153.07,
+        "max_dd": 94.54,
+        "max_dd_days": 327,
+        "consec_losing": 3,
+        "trades": 59,
+        "passes_all": false
+      },
+      "holdout": {
+        "sharpe": -0.3926,
+        "return": -97.94,
+        "max_dd": 99.57,
+        "max_dd_days": 322,
+        "consec_losing": 7,
+        "trades": 108,
+        "passes_all": false
+      }
+    }
+  },
+  "exp3": {
+    "result": "INCONSISTENT",
+    "train_sr": -3.516,
+    "val_sr": -8.3252,
+    "wf_pct": 0.0,
+    "wf_mean_sr": 0.0,
+    "params": {
+      "btc_lookback": 3,
+      "btc_threshold": 0.0059120431315506546,
+      "hold_bars": 10,
+      "min_btc_vol_mult": 2.2636813357863814
+    }
+  }
+}
