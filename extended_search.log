@@ -1,0 +1,613 @@
+[23:30:36] 
+============================================================
+TESTING: 1C_RF_A_vol_filter (Family 1C-RF-A)
+============================================================
+[23:30:36]   Screen: SOL/USDT:USDT 4h
+[23:30:37]   VIABLE: 1.57 tpw
+[23:30:37]   Optimising...
+[23:30:59]   Train SR: 2.59, Val SR: -0.37, overfit: True
+[23:30:59] 
+============================================================
+TESTING: 1C_RF_C_btc_filter (Family 1C-RF-C)
+============================================================
+[23:30:59]   Screen: SOL/USDT:USDT 4h
+[23:30:59]   VIABLE: 1.12 tpw
+[23:30:59]   Optimising...
+[23:31:22]   Train SR: 2.00, Val SR: 1.81, overfit: False
+[23:31:22]   Walk-forward...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 5.51, params: {'fast_period': 24, 'slow_period': 110, 'adx_period': 21, 'adx_threshold': 30}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 3.95, params: {'fast_period': 27, 'slow_period': 34, 'adx_period': 29, 'adx_threshold': 24}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 3.45, params: {'fast_period': 40, 'slow_period': 58, 'adx_period': 17, 'adx_threshold': 31}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 3.13, params: {'fast_period': 34, 'slow_period': 56, 'adx_period': 26, 'adx_threshold': 28}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 3.84, params: {'fast_period': 12, 'slow_period': 128, 'adx_period': 28, 'adx_threshold': 25}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 6.20, params: {'fast_period': 13, 'slow_period': 150, 'adx_period': 22, 'adx_threshold': 34}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 4.55, params: {'fast_period': 10, 'slow_period': 131, 'adx_period': 24, 'adx_threshold': 29}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 2.62, params: {'fast_period': 39, 'slow_period': 154, 'adx_period': 10, 'adx_threshold': 36}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 3.22, params: {'fast_period': 38, 'slow_period': 20, 'adx_period': 13, 'adx_threshold': 40}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 3.65, params: {'fast_period': 35, 'slow_period': 85, 'adx_period': 25, 'adx_threshold': 26}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 5.15, params: {'fast_period': 14, 'slow_period': 61, 'adx_period': 20, 'adx_threshold': 27}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 2.36, params: {'fast_period': 37, 'slow_period': 93, 'adx_period': 25, 'adx_threshold': 25}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 2.25, params: {'fast_period': 32, 'slow_period': 45, 'adx_period': 25, 'adx_threshold': 36}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 2.87, params: {'fast_period': 15, 'slow_period': 55, 'adx_period': 22, 'adx_threshold': 40}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 5.04, params: {'fast_period': 22, 'slow_period': 118, 'adx_period': 15, 'adx_threshold': 38}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 4.85, params: {'fast_period': 9, 'slow_period': 112, 'adx_period': 24, 'adx_threshold': 30}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 5.00, params: {'fast_period': 44, 'slow_period': 146, 'adx_period': 20, 'adx_threshold': 27}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 4.22, params: {'fast_period': 21, 'slow_period': 172, 'adx_period': 14, 'adx_threshold': 40}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 4.66, params: {'fast_period': 29, 'slow_period': 30, 'adx_period': 25, 'adx_threshold': 27}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 5.63, params: {'fast_period': 15, 'slow_period': 59, 'adx_period': 24, 'adx_threshold': 28}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 4.23, params: {'fast_period': 5, 'slow_period': 151, 'adx_period': 28, 'adx_threshold': 26}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 6.49, params: {'fast_period': 15, 'slow_period': 88, 'adx_period': 29, 'adx_threshold': 28}
+[23:32:51]   WF: mean OOS SR -9.77, 68% positive (22 windows)
+[23:32:51]   Perturbation test...
+[23:32:53]   Perturbation: 32.2% drop, fragile: True
+[23:32:53]   Holdout...
+[23:32:53]   REJECTED: flags ['long_dd']
+[23:32:53] 
+============================================================
+TESTING: 1C_RF_D_funding_filter (Family 1C-RF-D)
+============================================================
+[23:32:53]   Screen: SOL/USDT:USDT 4h
+[23:32:54]   VIABLE: 3.57 tpw
+[23:32:54]   Optimising...
+[23:33:16]   Train SR: 1.46, Val SR: -0.96, overfit: True
+[23:33:16] 
+============================================================
+TESTING: 6A_session_breakout (Family 6A)
+============================================================
+[23:33:16]   Screen: BTC/USDT:USDT 1h
+[23:33:22]   VIABLE: 7.26 tpw
+[23:33:22]   Optimising...
+[23:38:06]   Train SR: -1.96, Val SR: -1.36, overfit: False
+[23:38:06]   Walk-forward...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: -0.51, params: {'session': 'ny', 'confirmation_pct': 0.1739826110755351, 'stop_atr_mult': 2.7721403615859868}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: -2.68, params: {'session': 'asia', 'confirmation_pct': 0.2729493774749185, 'stop_atr_mult': 2.657740085176072}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: -1.22, params: {'session': 'london', 'confirmation_pct': 0.14394936969632507, 'stop_atr_mult': 1.8394112774417846}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: -1.96, params: {'session': 'london', 'confirmation_pct': 0.155584575885234, 'stop_atr_mult': 2.59645173961165}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: -0.19, params: {'session': 'london', 'confirmation_pct': 0.26722882323510927, 'stop_atr_mult': 2.7261855024744546}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: -0.99, params: {'session': 'london', 'confirmation_pct': 0.33053257716241063, 'stop_atr_mult': 2.242655785753916}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 0.27, params: {'session': 'asia', 'confirmation_pct': 0.23333480356179923, 'stop_atr_mult': 2.5076926902402428}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: -1.90, params: {'session': 'asia', 'confirmation_pct': 0.2124937725950702, 'stop_atr_mult': 2.9738510426598967}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: -2.29, params: {'session': 'asia', 'confirmation_pct': 0.2477672863748833, 'stop_atr_mult': 2.081913451759083}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 0.27, params: {'session': 'asia', 'confirmation_pct': 0.24093179740982665, 'stop_atr_mult': 2.8425612349388176}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 1.75, params: {'session': 'asia', 'confirmation_pct': 0.230874986084326, 'stop_atr_mult': 1.9401173107449372}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 2.05, params: {'session': 'ny', 'confirmation_pct': 0.30784210158321884, 'stop_atr_mult': 2.993873049329689}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 2.02, params: {'session': 'london', 'confirmation_pct': 0.14791051384323434, 'stop_atr_mult': 2.795208195468357}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: -1.41, params: {'session': 'london', 'confirmation_pct': 0.3776427952404102, 'stop_atr_mult': 2.748858613017182}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: -0.38, params: {'session': 'ny', 'confirmation_pct': 0.4375777863221017, 'stop_atr_mult': 2.2834186681515867}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 0.28, params: {'session': 'ny', 'confirmation_pct': 0.4962479301136813, 'stop_atr_mult': 2.9938875664907476}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 2.66, params: {'session': 'asia', 'confirmation_pct': 0.3397519700931197, 'stop_atr_mult': 2.884429501776688}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 1.86, params: {'session': 'asia', 'confirmation_pct': 0.16859899137922724, 'stop_atr_mult': 2.8583797809858464}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 0.21, params: {'session': 'asia', 'confirmation_pct': 0.17118808718247475, 'stop_atr_mult': 2.8154955839205233}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: -0.06, params: {'session': 'asia', 'confirmation_pct': 0.38684916162169175, 'stop_atr_mult': 2.8293955614956783}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 0.88, params: {'session': 'ny', 'confirmation_pct': 0.4539380032113398, 'stop_atr_mult': 2.503101992274913}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -0.55, params: {'session': 'ny', 'confirmation_pct': 0.4074145087611708, 'stop_atr_mult': 2.541020331767563}
+[23:54:00]   WF: mean OOS SR -5.82, 18% positive (22 windows)
+[23:54:00]   Screen: SOL/USDT:USDT 1h
+[23:54:06]   VIABLE: 7.34 tpw
+[23:54:06]   Optimising...
+[23:58:48]   Train SR: -0.47, Val SR: -1.05, overfit: False
+[23:58:48]   Walk-forward...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 1.07, params: {'session': 'ny', 'confirmation_pct': 0.21306750578699526, 'stop_atr_mult': 2.1256746545341256}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 0.34, params: {'session': 'ny', 'confirmation_pct': 0.2363665056751857, 'stop_atr_mult': 1.353454979467763}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 7.64, params: {'session': 'london', 'confirmation_pct': 0.33397807627812726, 'stop_atr_mult': 2.3227849982737556}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 1.91, params: {'session': 'london', 'confirmation_pct': 0.320132883096426, 'stop_atr_mult': 1.9097008394208141}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 0.80, params: {'session': 'ny', 'confirmation_pct': 0.20639743792391285, 'stop_atr_mult': 2.615013306356171}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: -0.74, params: {'session': 'london', 'confirmation_pct': 0.10329603110098333, 'stop_atr_mult': 2.462967304161227}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: -0.79, params: {'session': 'london', 'confirmation_pct': 0.1354821512871008, 'stop_atr_mult': 2.353543249275349}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: -1.12, params: {'session': 'london', 'confirmation_pct': 0.31305679117902835, 'stop_atr_mult': 2.986542790443372}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: -1.90, params: {'session': 'london', 'confirmation_pct': 0.1784228022124888, 'stop_atr_mult': 2.9753871735741697}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 1.76, params: {'session': 'asia', 'confirmation_pct': 0.1415998230469611, 'stop_atr_mult': 2.7204373713196484}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 4.04, params: {'session': 'asia', 'confirmation_pct': 0.3937371240906885, 'stop_atr_mult': 1.4625727984944854}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 3.42, params: {'session': 'asia', 'confirmation_pct': 0.14167970762383222, 'stop_atr_mult': 2.9406079367393345}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 0.31, params: {'session': 'ny', 'confirmation_pct': 0.41904615905066134, 'stop_atr_mult': 2.470589374706407}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: -1.41, params: {'session': 'asia', 'confirmation_pct': 0.27436496635492397, 'stop_atr_mult': 2.7438107890851873}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: -0.16, params: {'session': 'ny', 'confirmation_pct': 0.23058712100369, 'stop_atr_mult': 2.740379145933127}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 1.58, params: {'session': 'london', 'confirmation_pct': 0.345721356045375, 'stop_atr_mult': 2.040599126423401}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 2.26, params: {'session': 'london', 'confirmation_pct': 0.1699021817143832, 'stop_atr_mult': 2.356847433502626}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: -1.30, params: {'session': 'london', 'confirmation_pct': 0.43571751002725867, 'stop_atr_mult': 2.675296760401798}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: -0.24, params: {'session': 'asia', 'confirmation_pct': 0.3862151199369007, 'stop_atr_mult': 2.573409527062232}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 1.28, params: {'session': 'asia', 'confirmation_pct': 0.17144378443261557, 'stop_atr_mult': 2.7652935434444093}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: -0.59, params: {'session': 'ny', 'confirmation_pct': 0.13883660755636346, 'stop_atr_mult': 2.850071076112848}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -1.99, params: {'session': 'london', 'confirmation_pct': 0.1575763254110109, 'stop_atr_mult': 2.984394787212564}
+[00:14:31]   WF: mean OOS SR -3.64, 32% positive (22 windows)
+[00:14:31] 
+============================================================
+TESTING: 6B_funding_momentum (Family 6B)
+============================================================
+[00:14:31]   Screen: BTC/USDT:USDT 1h
+[00:14:34]   VIABLE: 27.77 tpw
+[00:14:34]   Optimising...
+[00:16:43]   Train SR: -2.09, Val SR: -7.08, overfit: False
+[00:16:43]   Walk-forward...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: -1.52, params: {'funding_threshold': 0.000902878201190457, 'entry_delay_bars': 3, 'hold_bars': 8}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: -1.38, params: {'funding_threshold': 0.0007175983753282696, 'entry_delay_bars': 3, 'hold_bars': 6}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 0.08, params: {'funding_threshold': 0.00027189511315949916, 'entry_delay_bars': 3, 'hold_bars': 6}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 0.81, params: {'funding_threshold': 0.000749871722995632, 'entry_delay_bars': 1, 'hold_bars': 8}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: -0.27, params: {'funding_threshold': 0.0007995854991745491, 'entry_delay_bars': 2, 'hold_bars': 7}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: -0.71, params: {'funding_threshold': 0.0005852024623750434, 'entry_delay_bars': 1, 'hold_bars': 7}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: -1.17, params: {'funding_threshold': 0.0008244431237607773, 'entry_delay_bars': 1, 'hold_bars': 7}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: -1.99, params: {'funding_threshold': 0.00033614119034564233, 'entry_delay_bars': 1, 'hold_bars': 8}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: -1.49, params: {'funding_threshold': 0.0009012763466190472, 'entry_delay_bars': 2, 'hold_bars': 7}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: -3.07, params: {'funding_threshold': 0.00048617609235020436, 'entry_delay_bars': 2, 'hold_bars': 7}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: -3.53, params: {'funding_threshold': 0.000948244611512606, 'entry_delay_bars': 3, 'hold_bars': 8}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: -3.12, params: {'funding_threshold': 0.0004511001723249568, 'entry_delay_bars': 3, 'hold_bars': 6}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: -3.63, params: {'funding_threshold': 0.0004565257895024536, 'entry_delay_bars': 2, 'hold_bars': 7}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: -5.56, params: {'funding_threshold': 0.0007208411530613677, 'entry_delay_bars': 2, 'hold_bars': 6}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: -3.82, params: {'funding_threshold': 0.00022633872002344983, 'entry_delay_bars': 2, 'hold_bars': 6}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: -4.77, params: {'funding_threshold': 0.0003962936256709584, 'entry_delay_bars': 2, 'hold_bars': 6}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: -3.43, params: {'funding_threshold': 0.00032238923272657783, 'entry_delay_bars': 3, 'hold_bars': 8}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: -1.82, params: {'funding_threshold': 0.0009223831517609057, 'entry_delay_bars': 2, 'hold_bars': 7}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: -0.76, params: {'funding_threshold': 0.0008925975099625377, 'entry_delay_bars': 2, 'hold_bars': 7}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: -0.95, params: {'funding_threshold': 0.0006962528424356027, 'entry_delay_bars': 2, 'hold_bars': 7}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: -4.36, params: {'funding_threshold': 0.0003605477503035066, 'entry_delay_bars': 3, 'hold_bars': 8}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -3.30, params: {'funding_threshold': 0.00047590099881015765, 'entry_delay_bars': 1, 'hold_bars': 8}
+[00:24:00]   WF: mean OOS SR -11.66, 18% positive (22 windows)
+[00:24:00]   Screen: SOL/USDT:USDT 1h
+[00:24:02]   VIABLE: 27.9 tpw
+[00:24:02]   Optimising...
+[00:26:13]   Train SR: -1.40, Val SR: -4.67, overfit: False
+[00:26:13]   Walk-forward...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: -0.10, params: {'funding_threshold': 0.0004182029062845119, 'entry_delay_bars': 3, 'hold_bars': 6}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: -2.87, params: {'funding_threshold': 0.0009821939351176688, 'entry_delay_bars': 1, 'hold_bars': 3}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 0.45, params: {'funding_threshold': 0.0006951510165669949, 'entry_delay_bars': 3, 'hold_bars': 8}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: -2.35, params: {'funding_threshold': 0.00021441957859330823, 'entry_delay_bars': 1, 'hold_bars': 6}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 0.46, params: {'funding_threshold': 0.0004670958694912669, 'entry_delay_bars': 2, 'hold_bars': 7}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 0.19, params: {'funding_threshold': 0.0009990632646228032, 'entry_delay_bars': 3, 'hold_bars': 5}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: -0.20, params: {'funding_threshold': 0.0005439674679702539, 'entry_delay_bars': 3, 'hold_bars': 6}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 0.35, params: {'funding_threshold': 0.0008979017587613336, 'entry_delay_bars': 2, 'hold_bars': 7}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 1.39, params: {'funding_threshold': 0.000916984979479206, 'entry_delay_bars': 3, 'hold_bars': 7}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: -1.19, params: {'funding_threshold': 0.0008934344103002738, 'entry_delay_bars': 3, 'hold_bars': 8}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: -2.61, params: {'funding_threshold': 0.000711936807156409, 'entry_delay_bars': 2, 'hold_bars': 8}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: -3.32, params: {'funding_threshold': 0.0002718322753437257, 'entry_delay_bars': 3, 'hold_bars': 4}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: -1.86, params: {'funding_threshold': 0.0009194812366176575, 'entry_delay_bars': 1, 'hold_bars': 8}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: -4.99, params: {'funding_threshold': 0.0005061439973795805, 'entry_delay_bars': 1, 'hold_bars': 6}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: -2.57, params: {'funding_threshold': 0.00075976827081138, 'entry_delay_bars': 2, 'hold_bars': 7}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: -2.81, params: {'funding_threshold': 0.0002909111529113596, 'entry_delay_bars': 2, 'hold_bars': 5}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: -2.48, params: {'funding_threshold': 0.0005283452494609833, 'entry_delay_bars': 3, 'hold_bars': 8}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: -2.89, params: {'funding_threshold': 0.0008182989429797975, 'entry_delay_bars': 3, 'hold_bars': 6}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: -2.15, params: {'funding_threshold': 0.00037054854920172506, 'entry_delay_bars': 3, 'hold_bars': 7}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 0.21, params: {'funding_threshold': 0.0008072375723077072, 'entry_delay_bars': 2, 'hold_bars': 8}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: -3.01, params: {'funding_threshold': 0.0005914548590493262, 'entry_delay_bars': 2, 'hold_bars': 8}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -1.66, params: {'funding_threshold': 0.0007420833596716277, 'entry_delay_bars': 1, 'hold_bars': 8}
+[00:33:26]   WF: mean OOS SR -7.93, 14% positive (22 windows)
+[00:33:26] 
+============================================================
+TESTING: 7A_basis_carry (Family 7A)
+============================================================
+[00:33:26]   Screen: BTC/USDT:USDT 1h
+[00:33:30]   VIABLE: 5.78 tpw
+[00:33:30]   Optimising...
+[00:36:37]   Train SR: 0.46, Val SR: -2.50, overfit: True
+[00:36:37]   Screen: SOL/USDT:USDT 1h
+[00:36:41]   VIABLE: 5.83 tpw
+[00:36:41]   Optimising...
+[00:39:50]   Train SR: -0.81, Val SR: -2.15, overfit: False
+[00:39:50]   Walk-forward...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 0.19, params: {'entry_funding_threshold': 0.0005083492618036862, 'exit_funding_threshold': 0.00010490240647137848, 'price_stop_pct': 1.8215723014248375}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: -0.58, params: {'entry_funding_threshold': 0.0009519725575722676, 'exit_funding_threshold': 0.00015697329190377045, 'price_stop_pct': 2.6544358686781826}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: -1.16, params: {'entry_funding_threshold': 0.0006498671492342257, 'exit_funding_threshold': -9.065751146365906e-05, 'price_stop_pct': 1.518000250284162}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: -0.70, params: {'entry_funding_threshold': 0.0009962224781979708, 'exit_funding_threshold': -7.463968206788096e-05, 'price_stop_pct': 1.9811723568444775}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: -0.16, params: {'entry_funding_threshold': 0.000985930317334281, 'exit_funding_threshold': 8.02562156032148e-05, 'price_stop_pct': 1.8838261154852338}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: -0.83, params: {'entry_funding_threshold': 0.000862879099932426, 'exit_funding_threshold': 0.00019695705969177482, 'price_stop_pct': 2.2756422645384657}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: -4.23, params: {'entry_funding_threshold': 0.0007916428877633377, 'exit_funding_threshold': -6.94609577536994e-05, 'price_stop_pct': 1.469783043137133}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: -3.34, params: {'entry_funding_threshold': 0.0006673666249522177, 'exit_funding_threshold': -7.087164651208485e-05, 'price_stop_pct': 0.7880096229002185}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 0.99, params: {'entry_funding_threshold': 0.0007837957990386051, 'exit_funding_threshold': 0.00013330530940165074, 'price_stop_pct': 0.7116000551758707}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: -0.86, params: {'entry_funding_threshold': 0.000993770581660735, 'exit_funding_threshold': 0.00019796601065166466, 'price_stop_pct': 1.3246329515966253}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: -2.36, params: {'entry_funding_threshold': 0.000999881417946833, 'exit_funding_threshold': -9.956513451127958e-05, 'price_stop_pct': 0.7007417044905607}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: -3.85, params: {'entry_funding_threshold': 0.0009996815727076017, 'exit_funding_threshold': 0.00011803745881315025, 'price_stop_pct': 1.4873424638979145}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: -0.49, params: {'entry_funding_threshold': 0.00047877699044017734, 'exit_funding_threshold': 0.00018041768404895774, 'price_stop_pct': 1.8035747511292364}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 0.94, params: {'entry_funding_threshold': 0.0006953095976681926, 'exit_funding_threshold': 8.289723537031371e-05, 'price_stop_pct': 2.360443081031593}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: -1.65, params: {'entry_funding_threshold': 0.0007004241247783852, 'exit_funding_threshold': 6.793593086568878e-05, 'price_stop_pct': 1.233042158693728}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: -2.69, params: {'entry_funding_threshold': 0.0007614798254063546, 'exit_funding_threshold': 8.825172379402442e-05, 'price_stop_pct': 2.9682052259169134}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: -3.29, params: {'entry_funding_threshold': 0.0003040476778767088, 'exit_funding_threshold': 0.00011573057713607373, 'price_stop_pct': 0.858561313077253}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: -0.46, params: {'entry_funding_threshold': 0.0002752683182605698, 'exit_funding_threshold': -5.709080966432595e-05, 'price_stop_pct': 2.660421872961665}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 0.28, params: {'entry_funding_threshold': 0.0009861040225758806, 'exit_funding_threshold': -4.4403859666753096e-05, 'price_stop_pct': 2.8977736764031445}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: -0.86, params: {'entry_funding_threshold': 0.000996107968216848, 'exit_funding_threshold': -9.33893396000158e-05, 'price_stop_pct': 1.3828451321721347}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: -2.38, params: {'entry_funding_threshold': 0.0009978324150275598, 'exit_funding_threshold': -6.548219163869797e-05, 'price_stop_pct': 1.2998331344946932}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -1.61, params: {'entry_funding_threshold': 0.0009926484419450028, 'exit_funding_threshold': -4.640800422998887e-06, 'price_stop_pct': 2.4824116533914147}
+[00:50:34]   WF: mean OOS SR -16.37, 23% positive (22 windows)
+[00:50:34] 
+============================================================
+TESTING: 7B_funding_trend (Family 7B)
+============================================================
+[00:50:34]   Screen: BTC/USDT:USDT 1h
+[00:50:37]   VIABLE: 1.93 tpw
+[00:50:37]   Optimising...
+[00:53:10]   Train SR: 0.00, Val SR: 0.00, overfit: False
+[00:53:10]   Walk-forward...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 1.55, params: {'lookback_periods': 10, 'trend_threshold': 0.00019184260026789825}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 1.55, params: {'lookback_periods': 10, 'trend_threshold': 0.0002255012128067634}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 1.93, params: {'lookback_periods': 9, 'trend_threshold': 0.00010567283795560615}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 0.00, params: {'lookback_periods': 12, 'trend_threshold': 0.00017670054346033277}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 0.00, params: {'lookback_periods': 12, 'trend_threshold': 0.00017927811035707038}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 0.00, params: {'lookback_periods': 12, 'trend_threshold': 0.00012375716264548175}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 0.00, params: {'lookback_periods': 12, 'trend_threshold': 9.891015498469477e-05}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 0.00, params: {'lookback_periods': 11, 'trend_threshold': 0.00014996825046439147}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 0.00, params: {'lookback_periods': 11, 'trend_threshold': 0.00019162700062230954}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 1.55, params: {'lookback_periods': 9, 'trend_threshold': 0.0002679398736341453}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 2.28, params: {'lookback_periods': 7, 'trend_threshold': 0.00012352774891334314}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 1.33, params: {'lookback_periods': 8, 'trend_threshold': 0.00026641032325342193}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 0.00, params: {'lookback_periods': 11, 'trend_threshold': 0.00024994098305893665}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 0.00, params: {'lookback_periods': 11, 'trend_threshold': 0.00015142316910171647}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 0.00, params: {'lookback_periods': 11, 'trend_threshold': 0.0002459732456095119}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 0.00, params: {'lookback_periods': 11, 'trend_threshold': 0.00013360703256716316}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 1.67, params: {'lookback_periods': 8, 'trend_threshold': 0.00029971735645981925}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 1.17, params: {'lookback_periods': 8, 'trend_threshold': 0.00017906811880636785}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 0.91, params: {'lookback_periods': 8, 'trend_threshold': 0.00021849411934191665}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 1.55, params: {'lookback_periods': 9, 'trend_threshold': 0.00020644179788079558}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 1.54, params: {'lookback_periods': 7, 'trend_threshold': 0.00018425223272618173}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 2.71, params: {'lookback_periods': 7, 'trend_threshold': 0.00019452415399251198}
+[01:01:34]   WF: mean OOS SR -1.22, 5% positive (22 windows)
+[01:01:34]   Screen: BTC/USDT:USDT 4h
+[01:01:35]   VIABLE: 0.59 tpw
+[01:01:35]   Optimising...
+[01:02:09]   Train SR: 0.04, Val SR: -1.50, overfit: True
+[01:02:09]   Screen: SOL/USDT:USDT 1h
+[01:02:12]   VIABLE: 2.38 tpw
+[01:02:12]   Optimising...
+[01:04:42]   Train SR: 1.00, Val SR: 0.00, overfit: True
+[01:04:42]   Screen: SOL/USDT:USDT 4h
+[01:04:43]   REJECTED: 0.49 tpw
+[01:04:43] 
+============================================================
+TESTING: 8A_volume_weighted_momentum (Family 8A)
+============================================================
+[01:04:43]   Screen: BTC/USDT:USDT 1h
+[01:04:46]   VIABLE: 4.63 tpw
+[01:04:46]   Optimising...
+[01:06:56]   Train SR: 1.11, Val SR: -0.30, overfit: True
+[01:06:56]   Screen: BTC/USDT:USDT 4h
+[01:06:57]   VIABLE: 1.17 tpw
+[01:06:57]   Optimising...
+[01:07:31]   Train SR: 2.03, Val SR: 0.41, overfit: True
+[01:07:31]   Screen: SOL/USDT:USDT 1h
+[01:07:33]   VIABLE: 4.93 tpw
+[01:07:33]   Optimising...
+[01:09:42]   Train SR: 0.22, Val SR: 0.28, overfit: False
+[01:09:42]   Walk-forward...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: -0.41, params: {'volume_lookback': 100, 'volume_z_threshold': 2.4515814939850906, 'price_move_pct': 1.5180653894491978, 'hold_bars': 2}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 2.06, params: {'volume_lookback': 62, 'volume_z_threshold': 1.5679664426823758, 'price_move_pct': 0.3157408065866313, 'hold_bars': 8}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 2.19, params: {'volume_lookback': 81, 'volume_z_threshold': 1.8355876918630154, 'price_move_pct': 1.9248400418257872, 'hold_bars': 11}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 1.52, params: {'volume_lookback': 106, 'volume_z_threshold': 2.7012719924119155, 'price_move_pct': 1.2869676197241704, 'hold_bars': 2}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 2.96, params: {'volume_lookback': 96, 'volume_z_threshold': 2.024281455572453, 'price_move_pct': 0.5727748918283118, 'hold_bars': 9}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 3.79, params: {'volume_lookback': 153, 'volume_z_threshold': 2.2553612110728123, 'price_move_pct': 1.913266646038622, 'hold_bars': 8}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 2.57, params: {'volume_lookback': 100, 'volume_z_threshold': 1.0423644758120834, 'price_move_pct': 1.88037355094424, 'hold_bars': 12}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 3.09, params: {'volume_lookback': 57, 'volume_z_threshold': 2.2149507392302312, 'price_move_pct': 1.2004485915767804, 'hold_bars': 7}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 2.54, params: {'volume_lookback': 66, 'volume_z_threshold': 2.5850212639724797, 'price_move_pct': 1.0812758547749157, 'hold_bars': 10}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 0.91, params: {'volume_lookback': 74, 'volume_z_threshold': 2.9960749354531604, 'price_move_pct': 1.9754235402964127, 'hold_bars': 12}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 5.17, params: {'volume_lookback': 120, 'volume_z_threshold': 1.9107653029329208, 'price_move_pct': 1.3855063419969598, 'hold_bars': 12}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 1.25, params: {'volume_lookback': 72, 'volume_z_threshold': 1.0010248671310504, 'price_move_pct': 1.5813466590429133, 'hold_bars': 8}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 1.20, params: {'volume_lookback': 141, 'volume_z_threshold': 1.7049430689914198, 'price_move_pct': 0.8461702437606808, 'hold_bars': 7}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 2.18, params: {'volume_lookback': 108, 'volume_z_threshold': 2.9795958473026074, 'price_move_pct': 0.30105466079399756, 'hold_bars': 12}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 4.22, params: {'volume_lookback': 97, 'volume_z_threshold': 1.7166413618539362, 'price_move_pct': 1.9876838936940653, 'hold_bars': 11}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 2.70, params: {'volume_lookback': 83, 'volume_z_threshold': 2.4644864243615667, 'price_move_pct': 0.754167233020758, 'hold_bars': 10}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 1.34, params: {'volume_lookback': 27, 'volume_z_threshold': 2.359587745676354, 'price_move_pct': 0.33546193364212185, 'hold_bars': 9}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 0.09, params: {'volume_lookback': 125, 'volume_z_threshold': 2.8820096938945814, 'price_move_pct': 0.670162479092181, 'hold_bars': 10}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: -1.00, params: {'volume_lookback': 144, 'volume_z_threshold': 2.587389374030067, 'price_move_pct': 0.8996446894558323, 'hold_bars': 8}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 1.49, params: {'volume_lookback': 39, 'volume_z_threshold': 1.2978748487361425, 'price_move_pct': 1.1908692226916175, 'hold_bars': 11}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 1.04, params: {'volume_lookback': 129, 'volume_z_threshold': 2.0768272238954184, 'price_move_pct': 1.5723080082520235, 'hold_bars': 10}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -0.01, params: {'volume_lookback': 70, 'volume_z_threshold': 2.795103111231787, 'price_move_pct': 1.4211510611437563, 'hold_bars': 10}
+[01:17:04]   WF: mean OOS SR -2.69, 50% positive (22 windows)
+[01:17:04]   Screen: SOL/USDT:USDT 4h
+[01:17:04]   VIABLE: 1.21 tpw
+[01:17:04]   Optimising...
+[01:17:38]   Train SR: 2.02, Val SR: 0.91, overfit: True
+[01:17:38] 
+============================================================
+TESTING: 8B_nr7_breakout (Family 8B)
+============================================================
+[01:17:38]   Screen: BTC/USDT:USDT 4h
+[01:17:39]   VIABLE: 4.95 tpw
+[01:17:39]   Optimising...
+[01:18:51]   Train SR: -1.39, Val SR: 1.74, overfit: False
+[01:18:51]   Walk-forward...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: -0.45, params: {'lookback': 10, 'breakout_pct': 0.26348787604069757}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: -0.27, params: {'lookback': 10, 'breakout_pct': 0.3574561465917515}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: -1.89, params: {'lookback': 10, 'breakout_pct': 0.19340157116040993}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: -1.57, params: {'lookback': 10, 'breakout_pct': 0.41184631920951076}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: -2.69, params: {'lookback': 8, 'breakout_pct': 0.31326231906219304}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: -2.71, params: {'lookback': 5, 'breakout_pct': 0.49997130090544595}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: -1.43, params: {'lookback': 5, 'breakout_pct': 0.48850802433563534}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: -2.71, params: {'lookback': 6, 'breakout_pct': 0.45225270279622987}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: -2.95, params: {'lookback': 5, 'breakout_pct': 0.24915814614299503}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 0.36, params: {'lookback': 6, 'breakout_pct': 0.25448652615410505}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 4.47, params: {'lookback': 8, 'breakout_pct': 0.3585835724097771}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 5.39, params: {'lookback': 10, 'breakout_pct': 0.3881328623666854}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 4.22, params: {'lookback': 10, 'breakout_pct': 0.4072888595979043}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 1.83, params: {'lookback': 10, 'breakout_pct': 0.1406310913080275}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 0.87, params: {'lookback': 10, 'breakout_pct': 0.48887984401296214}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 0.42, params: {'lookback': 10, 'breakout_pct': 0.32886349461724995}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 1.74, params: {'lookback': 10, 'breakout_pct': 0.48336310203959443}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 3.60, params: {'lookback': 10, 'breakout_pct': 0.26672188936350266}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 0.52, params: {'lookback': 10, 'breakout_pct': 0.4776620340453711}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: -0.60, params: {'lookback': 10, 'breakout_pct': 0.4999058856409614}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: -1.77, params: {'lookback': 9, 'breakout_pct': 0.10646917364039848}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -1.66, params: {'lookback': 7, 'breakout_pct': 0.23061847450837883}
+[01:23:06]   WF: mean OOS SR -4.67, 45% positive (22 windows)
+[01:23:06]   Screen: SOL/USDT:USDT 4h
+[01:23:08]   VIABLE: 5.06 tpw
+[01:23:08]   Optimising...
+[01:24:24]   Train SR: -0.95, Val SR: -2.56, overfit: False
+[01:24:24]   Walk-forward...
+Window 1/22: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: -0.15, params: {'lookback': 8, 'breakout_pct': 0.33941780209257744}
+Window 2/22: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 1.38, params: {'lookback': 5, 'breakout_pct': 0.39465217697467325}
+Window 3/22: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: -0.10, params: {'lookback': 8, 'breakout_pct': 0.235992206800141}
+Window 4/22: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: -2.58, params: {'lookback': 8, 'breakout_pct': 0.39170198500770126}
+Window 5/22: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: -2.50, params: {'lookback': 5, 'breakout_pct': 0.4346318971252646}
+Window 6/22: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: -2.37, params: {'lookback': 5, 'breakout_pct': 0.3214071473793148}
+Window 7/22: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 1.02, params: {'lookback': 5, 'breakout_pct': 0.32742693472028567}
+Window 8/22: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: -0.26, params: {'lookback': 9, 'breakout_pct': 0.2862017611908213}
+Window 9/22: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: -1.42, params: {'lookback': 10, 'breakout_pct': 0.10204747225957536}
+Window 10/22: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 0.20, params: {'lookback': 10, 'breakout_pct': 0.2336597496382926}
+Window 11/22: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: -0.10, params: {'lookback': 6, 'breakout_pct': 0.16059610405419986}
+Window 12/22: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: -0.35, params: {'lookback': 9, 'breakout_pct': 0.49339524067702245}
+Window 13/22: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: -0.10, params: {'lookback': 7, 'breakout_pct': 0.2223955011880693}
+Window 14/22: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: -1.29, params: {'lookback': 6, 'breakout_pct': 0.18693375975719376}
+Window 15/22: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: -3.51, params: {'lookback': 5, 'breakout_pct': 0.31247998926249}
+Window 16/22: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: -0.76, params: {'lookback': 5, 'breakout_pct': 0.4664330202770436}
+Window 17/22: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: -0.16, params: {'lookback': 10, 'breakout_pct': 0.3705745797109896}
+Window 18/22: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: -1.78, params: {'lookback': 5, 'breakout_pct': 0.4095472223760904}
+Window 19/22: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: -2.21, params: {'lookback': 8, 'breakout_pct': 0.4923499436661263}
+Window 20/22: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: -2.14, params: {'lookback': 6, 'breakout_pct': 0.4847188057385611}
+Window 21/22: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: -2.88, params: {'lookback': 8, 'breakout_pct': 0.49833730439902524}
+Window 22/22: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: -1.91, params: {'lookback': 5, 'breakout_pct': 0.13270570080589064}
+[01:28:51]   WF: mean OOS SR -2.49, 32% positive (22 windows)
+[01:28:51] 
+============================================================
+TESTING: 8C_volume_range_squeeze (Family 8C)
+============================================================
+[01:28:51]   Screen: BTC/USDT:USDT 4h
+[01:28:52]   REJECTED: 0.0 tpw
+[01:28:52]   Screen: SOL/USDT:USDT 4h
+[01:28:53]   REJECTED: 0.0 tpw
+[01:28:53] 
+============================================================
+EXTENDED SEARCH COMPLETE
+============================================================
+[01:28:53] Entries: 21
+[01:28:53] Candidates: 0
+[01:28:53] 
+SUMMARY:
+[01:28:53] Strategy                       Sym    TF   Screen   Train    Val      WF%      HO SR    Result
+[01:28:53] --------------------------------------------------------------------------------------------------------------
+[01:28:53] 1C_RF_A_vol_filter             SOL    4h   1.57     2.591    -0.3677  -        -        REJECTED: OVERFIT
+[01:28:53] 1C_RF_C_btc_filter             SOL    4h   1.12     2.0048   1.8121   68.2     1.0725   REJECTED: FLAGS [long_dd]
+[01:28:53] 1C_RF_D_funding_filter         SOL    4h   3.57     1.4634   -0.9615  -        -        REJECTED: OVERFIT
+[01:28:53] 6A_session_breakout            BTC    1h   7.26     -1.9607  -1.3553  18.2     -        REJECTED: INCONSISTENT
+[01:28:53] 6A_session_breakout            SOL    1h   7.34     -0.4666  -1.0515  31.8     -        REJECTED: INCONSISTENT
+[01:28:53] 6B_funding_momentum            BTC    1h   27.77    -2.0876  -7.078   18.2     -        REJECTED: INCONSISTENT
+[01:28:53] 6B_funding_momentum            SOL    1h   27.9     -1.404   -4.6745  13.6     -        REJECTED: INCONSISTENT
+[01:28:53] 7A_basis_carry                 BTC    1h   5.78     0.4552   -2.4973  -        -        REJECTED: OVERFIT
+[01:28:53] 7A_basis_carry                 SOL    1h   5.83     -0.8091  -2.1536  22.7     -        REJECTED: INCONSISTENT
+[01:28:53] 7B_funding_trend               BTC    1h   1.93     0.0      0.0      4.5      -        REJECTED: INCONSISTENT
+[01:28:53] 7B_funding_trend               BTC    4h   0.59     0.0411   -1.5035  -        -        REJECTED: OVERFIT
+[01:28:53] 7B_funding_trend               SOL    1h   2.38     1.0016   0.0      -        -        REJECTED: OVERFIT
+[01:28:53] 7B_funding_trend               SOL    4h   0.49     -        -        -        -        REJECTED: INFREQUENT
+[01:28:53] 8A_volume_weighted_momentum    BTC    1h   4.63     1.1125   -0.3027  -        -        REJECTED: OVERFIT
+[01:28:53] 8A_volume_weighted_momentum    BTC    4h   1.17     2.0331   0.411    -        -        REJECTED: OVERFIT
+[01:28:53] 8A_volume_weighted_momentum    SOL    1h   4.93     0.2192   0.2767   50.0     -        REJECTED: INCONSISTENT
+[01:28:53] 8A_volume_weighted_momentum    SOL    4h   1.21     2.0158   0.9112   -        -        REJECTED: OVERFIT
+[01:28:53] 8B_nr7_breakout                BTC    4h   4.95     -1.3912  1.7352   45.5     -        REJECTED: INCONSISTENT
+[01:28:53] 8B_nr7_breakout                SOL    4h   5.06     -0.9503  -2.564   31.8     -        REJECTED: INCONSISTENT
+[01:28:53] 8C_volume_range_squeeze        BTC    4h   0.0      -        -        -        -        REJECTED: INFREQUENT
+[01:28:53] 8C_volume_range_squeeze        SOL    4h   0.0      -        -        -        -        REJECTED: INFREQUENT
