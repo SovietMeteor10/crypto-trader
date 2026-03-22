@@ -190,10 +190,31 @@ SOL OFI MA 1H (t=2.60 at 4H horizon) used as entry gate in SJM neutral regime.
 - `research/MARKET_STRUCTURE_REPORT.md` — characterisation report
 - `outputs/research/market_structure_results.json` — structured results
 
-## Next steps
+## 2026-03-22 — Market Structure Phase 2: ALL FOUR EXPERIMENTS FAILED
 
-1. **V3 is deployable** with the active drawdown metric interpretation
-2. The EVT conservative config is the safest option (0.34% max DD, 0.90 Sharpe)
-3. **Market structure signals are actionable** — L/S ratio (t=4.6) and smart_dumb_div (t=4.2) are the strongest signals found
-4. **Phase 2 recommendation**: Gate V3 entries with L/S ratio + smart_dumb_div, use BTC structure as SOL confirmation
-5. Only viable at funded account scale ($25k+), not retail ($1k)
+### Experiments run
+| Experiment | Val Sharpe | WF% | Result |
+|-----------|-----------|-----|--------|
+| B1: V3 + smart money gate | 2.63 | 42.9 | FAIL: WF too low |
+| B2: V3 + BTC structure SJM | 0.02 | — | FAIL: overfit |
+| A: Standalone contrarian BTC 1H | -1.04 | — | FAIL: overfit |
+| C: BTC→SOL cross-asset | 0.88 | 22.7 | FAIL: WF too low |
+
+### Why they all failed
+Market structure features are **non-stationary**: L/S ratio distributions, smart money divergence patterns, and cross-asset relationships shift between regime periods. Models fit on one regime produce garbage predictions in the next. Statistical significance (t=4.6) does not equal tradeability.
+
+### Conclusion
+V3 baseline (Sharpe 0.91, WF 60.7%) remains the best configuration. The ceiling for retail systematic crypto on Binance perpetuals at this infrastructure level is approximately Sharpe 0.9.
+
+### Deliverables
+- `strategies/sol_1c_sjm_smartmoney.py`, `sol_1c_btc_structure.py`, `market_structure_contrarian.py`
+- `run_phase2_b1.py`, `run_phase2_b2.py`, `run_phase2_a.py`, `run_phase2_c.py`
+- `REPORT_PHASE2.md` — full results comparison + prop firm analysis
+
+## Final status — Research complete
+
+1. **V3 is the deployable strategy**: SOL 1C + SJM, Sharpe 0.91, EVT conservative (0.34% max DD)
+2. **Paper trade 3 months** before live
+3. **Funded account path**: $25k+ capital, expect 5-8%/month, prop firm pass rate ~55-65%
+4. **87+ configurations tested** across OHLCV, order flow, and market structure — V3 is the ceiling
+5. No further strategy research warranted until new data sources (order book depth, DeFi, options) available
