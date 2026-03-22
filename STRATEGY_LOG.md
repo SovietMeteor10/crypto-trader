@@ -300,3 +300,16 @@ to 53.6%, below the 60% threshold. The order flow signal (t=2.60 in characterisa
 is too weak and noisy at 15-min resolution to usefully filter 4H trend entries.
 
 **The order flow data does not improve V3.** V3 baseline (Sharpe 0.91) remains best.
+
+
+### Phase2-B1: V3 + smart money gate
+
+smart_div_threshold: -0.0508
+Entries surviving filter: 109.1%
+Train Sharpe: 1.9345
+Val Sharpe: 2.6294
+WF % positive: 42.9
+Holdout Sharpe: not run
+All flags clear: NO
+Delta vs V3 (0.91): N/A
+Conclusion: FAIL: WF too low (42.9%)
