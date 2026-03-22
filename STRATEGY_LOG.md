@@ -394,3 +394,31 @@ Dir accuracy: 50.5%
 Coverage: 69.8%
 Delta vs V3: -0.73
 Conclusion: FAIL: holdout 0.18
+
+
+### MTF-A: V3 + Daily Filter + LS Gate
+
+Daily MA period: 20
+Daily buffer: 0.9867720377153604%
+LS quantile high: 0.8428758381700371
+Use LS filter: False
+Signal survival rate vs V3: 103.0%
+Train Sharpe: 2.5923
+Val Sharpe: 3.1381
+WF % positive: 57.1
+Holdout Sharpe: not run
+Delta vs V3 (0.91): N/A
+All flags clear: NO
+Conclusion: FAIL: WF 57.1%
+
+### MTF-B: Supertrend SOL 4H
+
+ATR period: 19
+Multiplier: 3.5104482600764686
+Use daily filter: True
+Train Sharpe: 4.0535
+Val Sharpe: 3.4002
+WF % positive: 92.9
+Holdout Sharpe: 3.3687
+Correlation with V3 holdout: 0.5277
+Conclusion: holdout 3.37, corr 0.53

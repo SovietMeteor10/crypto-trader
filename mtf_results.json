@@ -1,0 +1,47 @@
+{
+  "A_diagnostic": {
+    "base_trades": 66,
+    "mtf_trades": 68,
+    "survival": 103.0
+  },
+  "A": {
+    "best_params": {
+      "daily_ma_period": 20,
+      "daily_buffer_pct": 0.9867720377153604,
+      "ls_quantile_high": 0.8428758381700371,
+      "ls_quantile_low": 0.17540456514065567,
+      "ls_rolling_window": 331,
+      "use_ls_filter": false
+    },
+    "train_sharpe": 2.5923,
+    "val_sharpe": 3.1381,
+    "train_trades": 116,
+    "val_trades": 52,
+    "overfit_check": "PASS",
+    "wf_pct": 57.1,
+    "wf_mean": 1.4338,
+    "holdout_sharpe": "not run",
+    "conclusion": "FAIL: WF 57.1%"
+  },
+  "B": {
+    "best_params": {
+      "atr_period": 19,
+      "multiplier": 3.5104482600764686,
+      "use_daily_filter": true,
+      "daily_ma_period": 26,
+      "daily_buffer_pct": 0.1049375497071539
+    },
+    "train_sharpe": 4.0535,
+    "val_sharpe": 3.4002,
+    "train_trades": 40,
+    "val_trades": 18,
+    "overfit_check": "PASS",
+    "wf_pct": 92.9,
+    "wf_mean": 3.4101,
+    "holdout_sharpe": 3.3687,
+    "holdout_trades": 41,
+    "delta": 2.4622,
+    "corr_with_v3": 0.5277,
+    "conclusion": "holdout 3.37, corr 0.53"
+  }
+}
