@@ -313,3 +313,15 @@ Holdout Sharpe: not run
 All flags clear: NO
 Delta vs V3 (0.91): N/A
 Conclusion: FAIL: WF too low (42.9%)
+
+
+### Phase2-B2: V3 + BTC structure SJM
+
+Best params: {'fast_period': 22, 'slow_period': 196, 'adx_period': 12, 'adx_threshold': 37, 'sjm_lambda': 0.33304350681789774, 'sjm_window': 314, 'trade_in_neutral': False}
+Train Sharpe: 0.8011
+Val Sharpe: 0.0198
+WF % positive: N/A
+Holdout Sharpe: N/A
+All flags clear: NO
+Delta vs V3 (0.91): N/A
+Conclusion: FAIL: overfit

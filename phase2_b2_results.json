@@ -1,0 +1,22 @@
+{
+  "experiment": "Phase2-B2: V3 + BTC structure SJM",
+  "diagnostic": {
+    "val_sharpe": 1.2215,
+    "trades": 109
+  },
+  "best_params": {
+    "fast_period": 22,
+    "slow_period": 196,
+    "adx_period": 12,
+    "adx_threshold": 37,
+    "sjm_lambda": 0.33304350681789774,
+    "sjm_window": 314,
+    "trade_in_neutral": false
+  },
+  "train_sharpe": 0.8011,
+  "val_sharpe": 0.0198,
+  "train_trades": 106,
+  "val_trades": 94,
+  "overfit_check": "FAIL",
+  "conclusion": "FAIL: overfit"
+}
