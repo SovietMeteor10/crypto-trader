@@ -152,11 +152,48 @@ SOL OFI MA 1H (t=2.60 at 4H horizon) used as entry gate in SJM neutral regime.
 - `run_ofi_experiment.py` — experiment runner
 - `ofi_experiment_results.json` — structured results
 
+## 2026-03-22 — Market Structure Phase 1: Characterisation Complete
+
+### Data acquired
+- Binance daily metrics (OI, LS ratios, taker volume) from data vault: 1,096 days
+- BTC + SOL, 2022-2024, 1H resolution, 40 features per asset
+- Spot OHLCV for basis calculation
+- Total disk: 17 MB
+
+### Key findings — STRONGEST SIGNALS YET
+
+**L/S ratio (global crowd positioning):**
+- BTC: t=-4.60 at 1H (contrarian: crowd long → negative returns)
+- SOL: t=-4.52 at 1H
+- 3x stronger than any order flow signal from previous session
+- Consistent across 1H, 4H, 24H horizons
+
+**Smart money divergence (top traders vs crowd):**
+- BTC: t=4.19 at 24H hypothesis test
+- SOL: t=3.40 at 24H
+- **Cross-asset signal**: BTC smart_dumb_div → SOL ret at t=3.26
+- Mechanistic: top traders positioned correctly ahead of moves
+
+**Regime-conditional:** Partially dependent — strongest in recovery/ranging, weakest during violent events and peak bull
+
+**Null results:**
+- Squeeze setup: zero events (condition too stringent)
+- Funding reversals: inconsistent across years
+- OI regime ANOVA: marginal BTC, not significant SOL
+- All-feature Ridge regression: massive overfit
+
+### Deliverables
+- `data/market_structure.py` — API pipeline
+- `data/download_metrics.py` — data vault daily metrics downloader
+- `data/build_unified_features.py` — unified 40-feature builder
+- `research/market_structure_analysis.py` — full statistical analysis
+- `research/MARKET_STRUCTURE_REPORT.md` — characterisation report
+- `outputs/research/market_structure_results.json` — structured results
+
 ## Next steps
 
 1. **V3 is deployable** with the active drawdown metric interpretation
 2. The EVT conservative config is the safest option (0.34% max DD, 0.90 Sharpe)
-3. Recommend 3-month paper trade before live deployment
-4. Only viable at funded account scale ($25k+), not retail ($1k)
-5. Order flow data does NOT improve V3 — this avenue is exhausted
-6. To improve beyond Sharpe 0.91: need different asset class, higher-frequency data, or fundamentally different approach
+3. **Market structure signals are actionable** — L/S ratio (t=4.6) and smart_dumb_div (t=4.2) are the strongest signals found
+4. **Phase 2 recommendation**: Gate V3 entries with L/S ratio + smart_dumb_div, use BTC structure as SOL confirmation
+5. Only viable at funded account scale ($25k+), not retail ($1k)
