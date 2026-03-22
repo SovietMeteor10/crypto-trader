@@ -132,11 +132,31 @@ Three experiments attempted to push V3 holdout Sharpe above 1.2:
 - `outputs/research/characterisation_results.json` — structured results
 - `outputs/research/basic_stats/` — all plots
 
+## 2026-03-22 — Order Flow Phase 2: OFI-Filtered V3 — FAIL
+
+### Hypothesis
+SOL OFI MA 1H (t=2.60 at 4H horizon) used as entry gate in SJM neutral regime.
+
+### Result: FAIL — WF 53.6% (< 60% threshold)
+
+- Val Sharpe degrades: 2.00 → 1.43 (OFI filter hurts V3)
+- OFI filter creates entry churn in neutral regime (218% "survival" = more trades)
+- Optuna best threshold: -0.0688 (train Sharpe unchanged at 1.77 — OFI has no effect during 2021-2022 train period)
+- WF drops from 60.7% to 53.6%
+- Holdout not run
+
+**Conclusion:** The order flow data does not improve V3. The t=2.60 OFI signal is too weak and noisy at 15-min to usefully filter 4H trend entries. V3 baseline (Sharpe 0.91) remains the best configuration.
+
+### Deliverables
+- `strategies/sol_1c_sjm_ofi.py` — OFI-filtered V3 strategy
+- `run_ofi_experiment.py` — experiment runner
+- `ofi_experiment_results.json` — structured results
+
 ## Next steps
 
 1. **V3 is deployable** with the active drawdown metric interpretation
 2. The EVT conservative config is the safest option (0.34% max DD, 0.90 Sharpe)
 3. Recommend 3-month paper trade before live deployment
 4. Only viable at funded account scale ($25k+), not retail ($1k)
-5. Order flow features may add marginal value as entry timing filters in V3
-6. Phase 2 (if pursued): integrate Roll spread + arrival rate as V3 entry confirmation
+5. Order flow data does NOT improve V3 — this avenue is exhausted
+6. To improve beyond Sharpe 0.91: need different asset class, higher-frequency data, or fundamentally different approach

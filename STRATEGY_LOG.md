@@ -275,3 +275,28 @@ was not triggered per the stopping rules.
 **V3 baseline remains the best configuration.** None of the three improvements
 managed to pass all validation gates. The trailing stop (Exp 2) came closest
 with strong val Sharpe and OOS mean, but lacked consistency across WF windows.
+
+---
+
+## OFI-Filtered V3 (Order Flow Phase 2)
+
+### OFI-Filtered V3
+
+OFI neutral threshold: -0.0688
+Neutral regime entries surviving filter: 218.2% (filter creates entry churn, not reduces it)
+Train Sharpe: 1.7705
+Val Sharpe: 1.4273
+WF % positive: 53.6
+Holdout Sharpe: not run
+All flags clear: NO
+Delta vs V3 baseline (0.91): N/A (holdout not run)
+Conclusion: FAIL: WF too low (53.6%)
+
+**Analysis:** The OFI filter in neutral regime degrades V3 rather than improving it.
+Val Sharpe drops from 2.00 (baseline) to 1.43 (OFI-filtered). The filter causes
+entry/exit churn in neutral regime — when OFI flips sign, positions get closed and
+re-entered, adding transaction costs and whipsawing. WF consistency drops from 60.7%
+to 53.6%, below the 60% threshold. The order flow signal (t=2.60 in characterisation)
+is too weak and noisy at 15-min resolution to usefully filter 4H trend entries.
+
+**The order flow data does not improve V3.** V3 baseline (Sharpe 0.91) remains best.
