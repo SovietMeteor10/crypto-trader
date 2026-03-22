@@ -1,0 +1,36 @@
+{
+  "part1": {
+    "ma_uses_same_day": true,
+    "engine_lag": "1 bar (4H)",
+    "total_execution_delay": "4 hours from daily close",
+    "leverage": "3x confirmed"
+  },
+  "HOLDOUT 2024-2026": {
+    "trades": 82,
+    "win_rate": 92.7,
+    "profit_factor": 64.4,
+    "expectancy": 782.61,
+    "max_consec_losses": 1,
+    "max_consec_wins": 36,
+    "avg_win_pct": 9.4,
+    "avg_loss_pct": -2.54,
+    "avg_duration_days": 9.7,
+    "total_return_pct": 637.9,
+    "max_dd_pct": -2.4,
+    "directional_accuracy": 53.1
+  },
+  "2022 BEAR MARKET": {
+    "trades": 46,
+    "win_rate": 87.0,
+    "profit_factor": 24.61,
+    "expectancy": 492.51,
+    "max_consec_losses": 2,
+    "max_consec_wins": 15,
+    "avg_win_pct": 10.71,
+    "avg_loss_pct": -2.38,
+    "avg_duration_days": 7.6,
+    "total_return_pct": 225.1,
+    "max_dd_pct": -1.4,
+    "directional_accuracy": 53.0
+  }
+}
