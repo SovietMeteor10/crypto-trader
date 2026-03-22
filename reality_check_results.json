@@ -1,0 +1,290 @@
+{
+  "A": {
+    "holdout": {
+      "monthly": 6.08,
+      "daily": 3.14,
+      "bar_4h": 2.9
+    },
+    "bear_2022": {
+      "monthly": 7.38,
+      "daily": 3.82,
+      "bar_4h": 3.81
+    },
+    "full": {
+      "monthly": 2.32,
+      "daily": 2.34,
+      "bar_4h": 2.19
+    }
+  },
+  "B": {
+    "BTC": {
+      "Holdout": {
+        "monthly": 5.04,
+        "daily": 3.3,
+        "return": 29.1,
+        "max_dd": -1.2
+      },
+      "2022": {
+        "monthly": 5.45,
+        "daily": 3.23,
+        "return": 13.1,
+        "max_dd": -1.3
+      }
+    },
+    "ETH": {
+      "Holdout": {
+        "monthly": 5.57,
+        "daily": 3.11,
+        "return": 40.4,
+        "max_dd": -1.5
+      },
+      "2022": {
+        "monthly": 5.61,
+        "daily": 3.03,
+        "return": 17.5,
+        "max_dd": -1.4
+      }
+    },
+    "SOL": {
+      "Holdout": {
+        "monthly": 6.08,
+        "daily": 3.14,
+        "return": 50.1,
+        "max_dd": -2.1
+      },
+      "2022": {
+        "monthly": 7.38,
+        "daily": 3.82,
+        "return": 29.2,
+        "max_dd": -2.1
+      }
+    }
+  },
+  "C": [
+    {
+      "start": "2024-04-15",
+      "end": "2024-07-13",
+      "net_change": 2.4,
+      "crosses": 14,
+      "return": 5.5,
+      "max_dd": -1.2,
+      "daily_sharpe": 3.92
+    },
+    {
+      "start": "2024-07-14",
+      "end": "2024-10-11",
+      "net_change": 1.4,
+      "crosses": 9,
+      "return": 4.0,
+      "max_dd": -1.7,
+      "daily_sharpe": 3.12
+    },
+    {
+      "start": "2021-09-13",
+      "end": "2021-12-11",
+      "net_change": 1.4,
+      "crosses": 9,
+      "return": 6.5,
+      "max_dd": -1.4,
+      "daily_sharpe": 3.01
+    },
+    {
+      "start": "2023-02-05",
+      "end": "2023-05-05",
+      "net_change": 2.8,
+      "crosses": 13,
+      "return": 2.3,
+      "max_dd": -1.6,
+      "daily_sharpe": 2.02
+    },
+    {
+      "start": "2025-05-10",
+      "end": "2025-08-07",
+      "net_change": 1.5,
+      "crosses": 8,
+      "return": 3.5,
+      "max_dd": -1.2,
+      "daily_sharpe": 2.93
+    }
+  ],
+  "D": [
+    {
+      "fraction": 0.01,
+      "monthly": 6.04,
+      "daily": 3.12,
+      "bar_4h": 2.88,
+      "return": 22.6,
+      "max_dd": -1.1,
+      "worst_month": 0.04
+    },
+    {
+      "fraction": 0.02,
+      "monthly": 6.08,
+      "daily": 3.14,
+      "bar_4h": 2.9,
+      "return": 50.1,
+      "max_dd": -2.1,
+      "worst_month": 0.1
+    },
+    {
+      "fraction": 0.05,
+      "monthly": 6.19,
+      "daily": 3.2,
+      "bar_4h": 2.96,
+      "return": 173.0,
+      "max_dd": -4.8,
+      "worst_month": 0.46
+    },
+    {
+      "fraction": 0.1,
+      "monthly": 6.35,
+      "daily": 3.29,
+      "bar_4h": 3.06,
+      "return": 619.6,
+      "max_dd": -8.7,
+      "worst_month": 1.49
+    },
+    {
+      "fraction": 0.2,
+      "monthly": 6.6,
+      "daily": 3.45,
+      "bar_4h": 3.22,
+      "return": 4461.9,
+      "max_dd": -15.0,
+      "worst_month": 4.61
+    },
+    {
+      "fraction": 0.3,
+      "monthly": 6.75,
+      "daily": 3.58,
+      "bar_4h": 3.36,
+      "return": 25925.6,
+      "max_dd": -21.0,
+      "worst_month": 7.0
+    }
+  ],
+  "E": {
+    "10": {
+      "2022": 5.14,
+      "2023": 4.63,
+      "Holdout": 5.43,
+      "Full": 4.22
+    },
+    "15": {
+      "2022": 4.71,
+      "2023": 3.49,
+      "Holdout": 3.93,
+      "Full": 3.38
+    },
+    "20": {
+      "2022": 3.5,
+      "2023": 3.2,
+      "Holdout": 3.03,
+      "Full": 2.75
+    },
+    "26": {
+      "2022": 3.82,
+      "2023": 2.84,
+      "Holdout": 3.14,
+      "Full": 2.34
+    },
+    "30": {
+      "2022": 3.45,
+      "2023": 2.77,
+      "Holdout": 2.57,
+      "Full": 2.2
+    },
+    "50": {
+      "2022": 2.55,
+      "2023": 2.25,
+      "Holdout": 1.74,
+      "Full": 1.69
+    },
+    "100": {
+      "2022": 2.56,
+      "2023": 1.03,
+      "Holdout": 1.58,
+      "Full": 1.05
+    }
+  },
+  "F": {
+    "mean": 4.33,
+    "median": 4.51,
+    "std": 1.59,
+    "min": 1.0,
+    "max": 6.89,
+    "pct_positive": 100.0,
+    "values": [
+      5.67,
+      1.58,
+      1.0,
+      3.07,
+      6.66,
+      4.61,
+      5.72,
+      2.73,
+      4.05,
+      2.68,
+      3.13,
+      4.41,
+      1.37,
+      4.82,
+      4.75,
+      6.82,
+      3.98,
+      3.53,
+      4.19,
+      6.89,
+      5.64,
+      6.27,
+      4.67,
+      4.85,
+      3.63,
+      3.0,
+      5.5,
+      5.92
+    ]
+  },
+  "G": {
+    "Always long": {
+      "monthly": 0.01,
+      "daily": -0.03,
+      "return": -0.8
+    },
+    "Always short": {
+      "monthly": 0.06,
+      "daily": 0.09,
+      "return": 0.7
+    },
+    "Random daily (42)": {
+      "monthly": -1.26,
+      "daily": -0.95,
+      "return": -12.5
+    },
+    "Random daily (123)": {
+      "monthly": -1.65,
+      "daily": -1.09,
+      "return": -13.4
+    },
+    "Random daily (999)": {
+      "monthly": -1.14,
+      "daily": -0.85,
+      "return": -11.5
+    },
+    "Daily MA (26)": {
+      "monthly": 6.08,
+      "daily": 3.14,
+      "return": 50.1
+    }
+  },
+  "H": {
+    "baseline_return": 50.1,
+    "baseline_daily_sharpe": 3.14,
+    "slippage_drag_pct": 0.6,
+    "delayed_return": 41.5,
+    "delayed_sharpe": 2.63,
+    "funding_drag_pct": 4.2,
+    "adjusted_return": 45.3,
+    "adjusted_sharpe": 2.84
+  }
+}
