@@ -337,3 +337,15 @@ Holdout Sharpe: N/A
 All flags clear: NO
 Delta vs V3 (0.91): N/A
 Conclusion: FAIL: overfit
+
+
+### Phase2-C: BTC→SOL cross-asset
+
+Best params: {'smart_div_threshold': 0.09398121564997641, 'hold_bars': 7}
+Train Sharpe: 1.5427
+Val Sharpe: 0.8764
+WF % positive: 22.7
+Holdout Sharpe: not run
+All flags clear: NO
+Delta vs V3 (0.91): N/A
+Conclusion: FAIL: WF too low (22.7%)

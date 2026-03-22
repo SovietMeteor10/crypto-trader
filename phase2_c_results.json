@@ -1,0 +1,15 @@
+{
+  "experiment": "Phase2-C: BTC\u2192SOL cross-asset",
+  "best_params": {
+    "smart_div_threshold": 0.09398121564997641,
+    "hold_bars": 7
+  },
+  "train_sharpe": 1.5427,
+  "val_sharpe": 0.8764,
+  "train_trades": 29,
+  "val_trades": 146,
+  "wf_pct_positive": 22.7,
+  "wf_mean_sharpe": -0.8554,
+  "holdout_sharpe": "not run",
+  "conclusion": "FAIL: WF too low (22.7%)"
+}
