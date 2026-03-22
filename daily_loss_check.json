@@ -1,0 +1,80 @@
+{
+  "BTC": {
+    "worst_days": [
+      {
+        "date": "2021-01-11",
+        "loss_pct": -8.39,
+        "position": "SHORT",
+        "asset_chg": -7.4
+      },
+      {
+        "date": "2021-02-23",
+        "loss_pct": -5.2,
+        "position": "SHORT",
+        "asset_chg": -9.6
+      },
+      {
+        "date": "2021-03-01",
+        "loss_pct": -5.08,
+        "position": "SHORT",
+        "asset_chg": 9.8
+      },
+      {
+        "date": "2024-03-20",
+        "loss_pct": -4.89,
+        "position": "SHORT",
+        "asset_chg": 9.5
+      },
+      {
+        "date": "2021-06-04",
+        "loss_pct": -4.51,
+        "position": "SHORT",
+        "asset_chg": -6.2
+      }
+    ],
+    "days_over_3pct": 24,
+    "days_over_5pct": 3,
+    "days_over_8pct": 1,
+    "total_days": 1904,
+    "worst_single_day": -8.39
+  },
+  "SOL": {
+    "worst_days": [
+      {
+        "date": "2021-09-13",
+        "loss_pct": -17.1,
+        "position": "SHORT",
+        "asset_chg": -2.8
+      },
+      {
+        "date": "2021-02-25",
+        "loss_pct": -14.72,
+        "position": "LONG",
+        "asset_chg": -19.6
+      },
+      {
+        "date": "2021-02-28",
+        "loss_pct": -10.06,
+        "position": "SHORT",
+        "asset_chg": -0.6
+      },
+      {
+        "date": "2021-01-05",
+        "loss_pct": -9.77,
+        "position": "LONG",
+        "asset_chg": -14.0
+      },
+      {
+        "date": "2023-11-16",
+        "loss_pct": -9.5,
+        "position": "LONG",
+        "asset_chg": -11.7
+      }
+    ],
+    "days_over_3pct": 98,
+    "days_over_5pct": 34,
+    "days_over_8pct": 8,
+    "total_days": 1904,
+    "worst_single_day": -17.1
+  }
+}
