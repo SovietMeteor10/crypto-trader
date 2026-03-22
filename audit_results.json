@@ -1,0 +1,56 @@
+{
+  "check1": {
+    "verdict": "PASS",
+    "note": "BacktestEngine applies 1-bar lag. Signal at bar T executes at bar T+1 (4H later).",
+    "engine_lag": true,
+    "signal_shift": false
+  },
+  "check2": {
+    "verdict": "PASS",
+    "note": "Costs reduce return by 2.3% \u2014 material and correctly applied.",
+    "ret_with_costs": 50.1,
+    "ret_no_costs": 52.4,
+    "cost_drag": 2.3
+  },
+  "check3": {
+    "verdict": "PASS",
+    "note": "Engine uses signal.iloc[i-1] for bar i. Daily signal propagates with 4H execution delay."
+  },
+  "check4": {
+    "verdict": "PASS",
+    "note": "11430 bars, no NaN/zero/dupes, 0 extreme moves."
+  },
+  "check5": {
+    "verdict": "FAIL",
+    "note": "Manual +61.2% vs Engine +50.1% \u2014 discrepancy 11.1%.",
+    "manual_ret": 61.2,
+    "engine_ret": 50.1
+  },
+  "check6": {
+    "verdict": "PASS",
+    "note": "MA=26 from Supertrend Optuna on train period. Sensitivity test shows robustness across MA values."
+  },
+  "check7": {
+    "verdict": "PASS",
+    "note": "Funding costs included in backtest engine."
+  },
+  "check8": {
+    "verdict": "PASS",
+    "note": "Position size $60 is negligible vs SOL liquidity. Slippage <1bp."
+  },
+  "check9": {
+    "verdict": "PASS",
+    "note": "28 windows, no overlapping test periods."
+  },
+  "check10": {
+    "verdict": "FAIL",
+    "note": "Random Sharpe=-5.16, Always-long=0.01. Possible backtester bias."
+  },
+  "overall": "INVALID",
+  "corrected": {
+    "holdout_sharpe": 6.08,
+    "total_return": 50.1,
+    "manual_return": 61.2,
+    "max_dd": -2.1
+  }
+}
