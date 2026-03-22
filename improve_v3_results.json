@@ -31,5 +31,29 @@
     "wf_pct_positive": 53.6,
     "wf_mean_sharpe": 1.0633,
     "conclusion": "FAIL: WF too low (53.6%)"
+  },
+  "exp3_portfolio": {
+    "correlation": 0.2366,
+    "btc_sjm": {
+      "best_params": {
+        "fast_period": 42,
+        "slow_period": 106,
+        "adx_period": 30,
+        "adx_threshold": 23,
+        "sjm_lambda": 4.708356961239312,
+        "sjm_window": 669,
+        "trade_in_neutral": false
+      },
+      "train_sharpe": 1.3246,
+      "val_sharpe": 0.8689,
+      "train_trades": 87,
+      "val_trades": 33,
+      "overfit_check": "PASS",
+      "wf_windows": 28,
+      "wf_pct_positive": 42.9,
+      "wf_mean_sharpe": -0.5844,
+      "conclusion": "FAIL: WF too low (42.9%)"
+    },
+    "conclusion": "FAIL: BTC SJM FAIL: WF too low (42.9%)"
   }
 }
