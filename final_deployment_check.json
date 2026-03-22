@@ -1,0 +1,68 @@
+[
+  {
+    "label": "SOL MA=10 0.6x \u2014 2022",
+    "return": 2866.2,
+    "max_dd": -15.3,
+    "worst_mo": 18.19,
+    "wr": 79.3,
+    "pf": 14.64,
+    "mcl": 2,
+    "sharpe_d": 5.39,
+    "trades": 58
+  },
+  {
+    "label": "BTC MA=10 0.6x \u2014 2022",
+    "return": 458.0,
+    "max_dd": -10.7,
+    "worst_mo": 2.44,
+    "wr": 76.4,
+    "pf": 9.44,
+    "mcl": 2,
+    "sharpe_d": 4.66,
+    "trades": 72
+  },
+  {
+    "label": "ETH MA=10 0.6x \u2014 2022",
+    "return": 1151.6,
+    "max_dd": -11.0,
+    "worst_mo": 3.65,
+    "wr": 87.9,
+    "pf": 14.2,
+    "mcl": 2,
+    "sharpe_d": 5.22,
+    "trades": 58
+  },
+  {
+    "label": "SOL MA=10 0.6x \u2014 Holdout",
+    "return": 45454.1,
+    "max_dd": -12.0,
+    "worst_mo": 5.55,
+    "wr": 89.5,
+    "pf": 126.54,
+    "mcl": 2,
+    "sharpe_d": 5.66,
+    "trades": 133
+  },
+  {
+    "label": "BTC MA=10 0.6x \u2014 Holdout",
+    "return": 3155.3,
+    "max_dd": -6.7,
+    "worst_mo": 3.72,
+    "wr": 81.1,
+    "pf": 22.27,
+    "mcl": 3,
+    "sharpe_d": 5.22,
+    "trades": 143
+  },
+  {
+    "label": "ETH MA=10 0.6x \u2014 Holdout",
+    "return": 13472.8,
+    "max_dd": -11.4,
+    "worst_mo": 5.87,
+    "wr": 82.6,
+    "pf": 33.14,
+    "mcl": 4,
+    "sharpe_d": 5.41,
+    "trades": 149
+  }
+]
