@@ -364,3 +364,33 @@ Dir accuracy: 43.0%
 Coverage: 28.2%
 Delta vs V3: -0.86
 Conclusion: FAIL
+
+
+### LGBM-V2: LightGBM fixed data+features+target
+
+Fixes: extended data to 2020, reduced 79→14 features, binary classification
+Features: ['ls_ratio_last', 'ls_ratio_mean', 'smart_dumb_div_last', 'smart_dumb_div_mean', 'taker_ratio_last', 'crowd_long_last', 'oi_chg_1h_mean', 'ret_1d', 'ret_1w', 'rvol_1w', 'adx_14', 'ma_cross_12_26', 'btc_macro_trend', 'vol_regime']
+Best config: conf=N/A, depth=N/A, leaves=N/A, lr=N/A
+Disguised momentum: NO
+WF % positive: 0.0%
+WF mean OOS Sharpe: -999.00
+Holdout Sharpe: N/A
+Dir accuracy: 0.0%
+Coverage: 0.0%
+Delta vs V3: N/A
+Conclusion: FAIL: WF 0.0%
+
+
+### LGBM-V2: LightGBM fixed data+features+target
+
+Fixes: extended data to 2020, reduced 79→14 features, binary classification
+Features: ['ls_ratio_last', 'ls_ratio_mean', 'smart_dumb_div_last', 'smart_dumb_div_mean', 'taker_ratio_last', 'crowd_long_last', 'oi_chg_1h_mean', 'ret_1d', 'ret_1w', 'rvol_1w', 'adx_14', 'ma_cross_12_26', 'btc_macro_trend', 'vol_regime']
+Best config: conf=0.52, depth=3, leaves=8, lr=0.05
+Disguised momentum: NO
+WF % positive: 100.0%
+WF mean OOS Sharpe: 2.49
+Holdout Sharpe: 0.18
+Dir accuracy: 50.5%
+Coverage: 69.8%
+Delta vs V3: -0.73
+Conclusion: FAIL: holdout 0.18

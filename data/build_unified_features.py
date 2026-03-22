@@ -13,7 +13,7 @@ import pandas as pd
 from pathlib import Path
 
 CACHE_DIR = Path("/home/ubuntu/projects/crypto-trader/data_cache/market_structure")
-START = '2022-01-01'
+START = '2020-09-01'
 END = '2024-12-31'
 
 

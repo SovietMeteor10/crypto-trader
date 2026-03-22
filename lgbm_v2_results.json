@@ -1,0 +1,254 @@
+{
+  "config_0": {
+    "params": {
+      "confidence_threshold": 0.52,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 1.0,
+    "wf_mean": 2.392371626678836,
+    "coverage": 0.21944444444444444,
+    "accuracy": 0.5040939452704158,
+    "windows": [
+      {
+        "test_sharpe": 3.0094410313706663,
+        "train_sharpe": 2.09131843497439,
+        "dir_acc": 0.48717948717948717,
+        "coverage": 0.10833333333333334,
+        "n_trades": 54,
+        "top_features": [
+          "ret_1d",
+          "ls_ratio_mean",
+          "smart_dumb_div_last",
+          "oi_chg_1h_mean",
+          "rvol_1w"
+        ]
+      },
+      {
+        "test_sharpe": 1.775302221987006,
+        "train_sharpe": 3.108082902394782,
+        "dir_acc": 0.5210084033613446,
+        "coverage": 0.33055555555555555,
+        "n_trades": 118,
+        "top_features": [
+          "ret_1d",
+          "taker_ratio_last",
+          "smart_dumb_div_mean",
+          "oi_chg_1h_mean",
+          "rvol_1w"
+        ]
+      }
+    ]
+  },
+  "config_1": {
+    "params": {
+      "confidence_threshold": 0.55,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 1.0,
+    "wf_mean": 2.1765564932193806,
+    "coverage": 0.05694444444444444,
+    "accuracy": 0.5192307692307692,
+    "windows": [
+      {
+        "test_sharpe": 2.779010604819202,
+        "train_sharpe": -1.2872098520442912,
+        "dir_acc": 0.5,
+        "coverage": 0.005555555555555556,
+        "n_trades": 4,
+        "top_features": [
+          "ret_1d",
+          "ls_ratio_mean",
+          "smart_dumb_div_last",
+          "oi_chg_1h_mean",
+          "rvol_1w"
+        ]
+      },
+      {
+        "test_sharpe": 1.5741023816195592,
+        "train_sharpe": 1.7451105012850665,
+        "dir_acc": 0.5384615384615384,
+        "coverage": 0.10833333333333334,
+        "n_trades": 64,
+        "top_features": [
+          "ret_1d",
+          "taker_ratio_last",
+          "smart_dumb_div_mean",
+          "oi_chg_1h_mean",
+          "rvol_1w"
+        ]
+      }
+    ]
+  },
+  "config_2": {
+    "params": {
+      "confidence_threshold": 0.52,
+      "max_depth": 3,
+      "num_leaves": 8,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 1.0,
+    "wf_mean": 2.4920926405292487,
+    "coverage": 0.19305555555555554,
+    "accuracy": 0.49067255768286694,
+    "windows": [
+      {
+        "test_sharpe": 2.6801159298409902,
+        "train_sharpe": 1.473179977484086,
+        "dir_acc": 0.47619047619047616,
+        "coverage": 0.11666666666666667,
+        "n_trades": 52,
+        "top_features": [
+          "ret_1d",
+          "ls_ratio_mean",
+          "smart_dumb_div_last",
+          "oi_chg_1h_mean",
+          "taker_ratio_last"
+        ]
+      },
+      {
+        "test_sharpe": 2.3040693512175077,
+        "train_sharpe": 3.4539432084188504,
+        "dir_acc": 0.5051546391752577,
+        "coverage": 0.26944444444444443,
+        "n_trades": 96,
+        "top_features": [
+          "taker_ratio_last",
+          "ret_1d",
+          "rvol_1w",
+          "ret_1w",
+          "ls_ratio_mean"
+        ]
+      }
+    ]
+  },
+  "config_3": {
+    "params": {
+      "confidence_threshold": 0.52,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.02,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 1.0,
+    "wf_mean": 1.315693479750088,
+    "coverage": 0.1513888888888889,
+    "accuracy": 0.5086274509803921,
+    "windows": [
+      {
+        "test_sharpe": 2.363101597451782,
+        "train_sharpe": 1.796969743560813,
+        "dir_acc": 0.47058823529411764,
+        "coverage": 0.09444444444444444,
+        "n_trades": 48,
+        "top_features": [
+          "ret_1d",
+          "ls_ratio_mean",
+          "smart_dumb_div_last",
+          "oi_chg_1h_mean",
+          "taker_ratio_last"
+        ]
+      },
+      {
+        "test_sharpe": 0.2682853620483939,
+        "train_sharpe": 2.82871634190488,
+        "dir_acc": 0.5466666666666666,
+        "coverage": 0.20833333333333334,
+        "n_trades": 102,
+        "top_features": [
+          "ret_1d",
+          "taker_ratio_last",
+          "smart_dumb_div_mean",
+          "oi_chg_1h_mean",
+          "rvol_1w"
+        ]
+      }
+    ]
+  },
+  "config_4": {
+    "params": {
+      "confidence_threshold": 0.55,
+      "max_depth": 4,
+      "num_leaves": 31,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 1.0,
+    "wf_mean": 2.1765564932193806,
+    "coverage": 0.05694444444444444,
+    "accuracy": 0.5192307692307692,
+    "windows": [
+      {
+        "test_sharpe": 2.779010604819202,
+        "train_sharpe": -1.2872098520442912,
+        "dir_acc": 0.5,
+        "coverage": 0.005555555555555556,
+        "n_trades": 4,
+        "top_features": [
+          "ret_1d",
+          "ls_ratio_mean",
+          "smart_dumb_div_last",
+          "oi_chg_1h_mean",
+          "rvol_1w"
+        ]
+      },
+      {
+        "test_sharpe": 1.5741023816195592,
+        "train_sharpe": 1.7451105012850665,
+        "dir_acc": 0.5384615384615384,
+        "coverage": 0.10833333333333334,
+        "n_trades": 64,
+        "top_features": [
+          "ret_1d",
+          "taker_ratio_last",
+          "smart_dumb_div_mean",
+          "oi_chg_1h_mean",
+          "rvol_1w"
+        ]
+      }
+    ]
+  },
+  "holdout": {
+    "sharpe": 0.18411781750051553,
+    "trades": 762,
+    "coverage": 0.6981416373681567,
+    "dir_accuracy": 0.5053956834532374,
+    "worst_month": -0.2829888457064682,
+    "best_month": 0.47471353880495437
+  },
+  "summary": {
+    "best_wf_pct": 1.0,
+    "best_wf_mean": 2.4920926405292487,
+    "holdout_sharpe": 0.18411781750051553,
+    "delta_vs_v3": -0.7258821824994846,
+    "features_used": [
+      "ls_ratio_last",
+      "ls_ratio_mean",
+      "smart_dumb_div_last",
+      "smart_dumb_div_mean",
+      "taker_ratio_last",
+      "crowd_long_last",
+      "oi_chg_1h_mean",
+      "ret_1d",
+      "ret_1w",
+      "rvol_1w",
+      "adx_14",
+      "ma_cross_12_26",
+      "btc_macro_trend",
+      "vol_regime"
+    ],
+    "n_features": 14,
+    "disguised_momentum": false
+  }
+}
