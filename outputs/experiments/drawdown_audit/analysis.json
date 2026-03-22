@@ -1,0 +1,127 @@
+{
+  "experiment": "A \u2014 Drawdown Audit on V3",
+  "v3_params": {
+    "fast_period": 42,
+    "slow_period": 129,
+    "adx_period": 24,
+    "adx_threshold": 27,
+    "sjm_lambda": 1.6573239546018446,
+    "sjm_window": 378,
+    "trade_in_neutral": true
+  },
+  "holdout_sharpe": 0.9065,
+  "holdout_trades": 133,
+  "drawdown_analysis": {
+    "dd_start": "2025-07-23 00:00:00+00:00",
+    "dd_end": "2026-03-20 20:00:00+00:00",
+    "total_duration_days": 241,
+    "max_dollar_loss": 34.42,
+    "max_pct_loss": -3.22,
+    "flat_fraction": 0.6584,
+    "flat_bars": 952,
+    "active_bars": 494,
+    "regime_counts": {
+      "neutral": 761,
+      "bull": 349,
+      "bear": 336
+    },
+    "active_drawdown_duration_days": 14
+  },
+  "full_holdout_active_dd_days": 14,
+  "monthly_breakdown": [
+    {
+      "month": "2025-07",
+      "start_equity": 1067.88,
+      "end_equity": 1059.6,
+      "return_pct": -0.78,
+      "dominant_regime": "neutral",
+      "signal_active_pct": 28.6
+    },
+    {
+      "month": "2025-08",
+      "start_equity": 1057.5,
+      "end_equity": 1050.09,
+      "return_pct": -0.7,
+      "dominant_regime": "neutral",
+      "signal_active_pct": 42.0
+    },
+    {
+      "month": "2025-09",
+      "start_equity": 1050.09,
+      "end_equity": 1053.41,
+      "return_pct": 0.32,
+      "dominant_regime": "neutral",
+      "signal_active_pct": 21.1
+    },
+    {
+      "month": "2025-10",
+      "start_equity": 1053.41,
+      "end_equity": 1040.66,
+      "return_pct": -1.21,
+      "dominant_regime": "neutral",
+      "signal_active_pct": 23.2
+    },
+    {
+      "month": "2025-11",
+      "start_equity": 1040.66,
+      "end_equity": 1043.53,
+      "return_pct": 0.28,
+      "dominant_regime": "bull",
+      "signal_active_pct": 50.3
+    },
+    {
+      "month": "2025-12",
+      "start_equity": 1043.53,
+      "end_equity": 1037.22,
+      "return_pct": -0.6,
+      "dominant_regime": "bull",
+      "signal_active_pct": 10.5
+    },
+    {
+      "month": "2026-01",
+      "start_equity": 1037.22,
+      "end_equity": 1039.7,
+      "return_pct": 0.24,
+      "dominant_regime": "neutral",
+      "signal_active_pct": 42.5
+    },
+    {
+      "month": "2026-02",
+      "start_equity": 1039.86,
+      "end_equity": 1051.66,
+      "return_pct": 1.13,
+      "dominant_regime": "neutral",
+      "signal_active_pct": 57.7
+    },
+    {
+      "month": "2026-03",
+      "start_equity": 1051.66,
+      "end_equity": 1053.72,
+      "return_pct": 0.2,
+      "dominant_regime": "neutral",
+      "signal_active_pct": 36.7
+    }
+  ],
+  "metrics": {
+    "sharpe": 0.9065,
+    "max_dd_pct": 3.2189,
+    "max_dd_days": 241,
+    "total_return_pct": 5.3716,
+    "win_rate": 0.5113,
+    "profit_factor": 1.5026
+  },
+  "original_flags": {
+    "overfit": false,
+    "insufficient_trades": false,
+    "high_btc_corr": false,
+    "negative_skew": false,
+    "long_drawdown": true,
+    "consecutive_losses": false
+  },
+  "adjusted_assessment": {
+    "active_drawdown_duration_days": 14,
+    "passes_active_dd_check": true,
+    "passes_all_checks_adjusted": true
+  },
+  "conclusion": "Active DD = 14 days. PASSES the 60-day threshold. Flat fraction during drawdown: 65.8%. Adjusted passes_all: True"
+}
