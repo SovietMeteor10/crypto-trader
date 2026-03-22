@@ -1,0 +1,21 @@
+{
+  "experiment": "Phase2-A: Standalone contrarian BTC 1H",
+  "diagnostic": {
+    "val_sharpe": -4.2938,
+    "trades": 992
+  },
+  "best_params": {
+    "crowd_quantile_high": 0.8881917525898656,
+    "crowd_quantile_low": 0.2043510426107178,
+    "rolling_window": 336,
+    "max_hold_bars": 12,
+    "require_smart_confirm": true,
+    "smart_div_threshold": -0.16714549919598412
+  },
+  "train_sharpe": 0.9874,
+  "val_sharpe": -1.0411,
+  "train_trades": 30,
+  "val_trades": 114,
+  "overfit_check": "FAIL",
+  "conclusion": "FAIL: overfit"
+}

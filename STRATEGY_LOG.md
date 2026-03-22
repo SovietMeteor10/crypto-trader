@@ -325,3 +325,15 @@ Holdout Sharpe: N/A
 All flags clear: NO
 Delta vs V3 (0.91): N/A
 Conclusion: FAIL: overfit
+
+
+### Phase2-A: Standalone contrarian BTC 1H
+
+Best params: {'crowd_quantile_high': 0.8881917525898656, 'crowd_quantile_low': 0.2043510426107178, 'rolling_window': 336, 'max_hold_bars': 12, 'require_smart_confirm': True, 'smart_div_threshold': -0.16714549919598412}
+Train Sharpe: 0.9874
+Val Sharpe: -1.0411
+WF % positive: N/A
+Holdout Sharpe: N/A
+All flags clear: NO
+Delta vs V3 (0.91): N/A
+Conclusion: FAIL: overfit
