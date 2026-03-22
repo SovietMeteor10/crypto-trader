@@ -435,3 +435,58 @@ Holdout Sharpe: 9.7375
 Delta vs V3 (0.91): +8.83
 All flags clear: YES
 Conclusion: PASS
+
+
+## Enhancement Experiments
+
+### exp1_Holdout
+  Baseline (SOL MA26): WR=92.7%, PF=64.4, DD=-8.7%, Ret=619.6%
+  1A: Multi (BTC+ETH+SOL): WR=%, PF=, DD=-4.4%, Ret=187.1%
+  1B: SOL MA10: WR=89.5%, PF=90.6, DD=-6.8%, Ret=2229.1%
+  1B: SOL MA15: WR=87.3%, PF=46.12, DD=-8.3%, Ret=1044.1%
+  1B: SOL MA20: WR=87.8%, PF=28.97, DD=-8.8%, Ret=584.0%
+  1C: Dual MA (10/26): WR=46.4%, PF=2.63, DD=%, Ret=62.2%
+
+### exp1_2022
+  Baseline (SOL MA26): WR=87.0%, PF=24.61, DD=-9.0%, Ret=244.8%
+  1A: Multi (BTC+ETH+SOL): WR=%, PF=, DD=-5.7%, Ret=105.2%
+  1B: SOL MA10: WR=79.3%, PF=17.16, DD=-8.1%, Ret=484.0%
+  1B: SOL MA15: WR=92.3%, PF=60.41, DD=-8.2%, Ret=360.4%
+  1B: SOL MA20: WR=82.4%, PF=16.13, DD=-8.2%, Ret=210.8%
+  1C: Dual MA (10/26): WR=66.7%, PF=3.76, DD=%, Ret=28.5%
+
+### exp2_Holdout
+  Baseline (no stop): WR=92.7%, PF=64.4, DD=%, Ret=637.7%
+  2A: Stop 3%: WR=81.7%, PF=20.83, DD=%, Ret=430.1%
+  2A: Stop 5%: WR=82.9%, PF=23.52, DD=%, Ret=461.9%
+  2A: Stop 8%: WR=82.9%, PF=22.22, DD=%, Ret=455.1%
+  2A: Stop 10%: WR=82.9%, PF=22.22, DD=%, Ret=455.1%
+  2C: Time 3d: WR=79.8%, PF=19.24, DD=%, Ret=447.9%
+  2C: Time 5d: WR=81.2%, PF=21.07, DD=%, Ret=451.2%
+  2C: Time 7d: WR=81.0%, PF=21.08, DD=%, Ret=451.6%
+
+### exp2_2022
+  Baseline (no stop): WR=87.0%, PF=24.61, DD=%, Ret=225.0%
+  2A: Stop 3%: WR=75.5%, PF=16.77, DD=%, Ret=148.6%
+  2A: Stop 5%: WR=80.9%, PF=20.03, DD=%, Ret=181.1%
+  2A: Stop 8%: WR=82.6%, PF=24.49, DD=%, Ret=185.4%
+  2A: Stop 10%: WR=82.6%, PF=24.49, DD=%, Ret=185.4%
+  2C: Time 3d: WR=83.0%, PF=24.1, DD=%, Ret=185.4%
+  2C: Time 5d: WR=82.6%, PF=24.49, DD=%, Ret=185.4%
+  2C: Time 7d: WR=82.6%, PF=24.49, DD=%, Ret=185.4%
+
+### exp3_Holdout
+  Lev 0.3x (frac=10%): WR=92.7%, PF=64.4, DD=-8.7%, Ret=619.6%
+  Lev 0.6x (frac=20%): WR=92.7%, PF=83.71, DD=-15.0%, Ret=4461.9%
+  Lev 1.0x (frac=33%): WR=92.7%, PF=117.64, DD=-22.7%, Ret=42991.7%
+  Lev 1.5x (frac=50%): WR=92.7%, PF=186.86, DD=-30.9%, Ret=653998.8%
+  Lev 2.0x (frac=67%): WR=92.7%, PF=293.4, DD=-37.6%, Ret=8121747.1%
+  Lev 3.0x (frac=100%): WR=92.7%, PF=640.98, DD=-46.3%, Ret=362116704.0%
+
+### exp3_2022
+  Lev 0.3x (frac=10%): WR=87.0%, PF=24.61, DD=-9.0%, Ret=244.8%
+  Lev 0.6x (frac=20%): WR=87.0%, PF=20.76, DD=-15.3%, Ret=985.5%
+  Lev 1.0x (frac=33%): WR=87.0%, PF=17.42, DD=-22.9%, Ret=4226.0%
+  Lev 1.5x (frac=50%): WR=87.0%, PF=14.71, DD=-31.8%, Ret=22667.4%
+  Lev 2.0x (frac=67%): WR=87.0%, PF=12.98, DD=-39.2%, Ret=104751.5%
+  Lev 3.0x (frac=100%): WR=87.0%, PF=10.92, DD=-49.3%, Ret=1032106.6%
