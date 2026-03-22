@@ -372,23 +372,21 @@ def main():
     vpin_dict = {}
 
     for symbol in SYMBOLS:
-        parquet_path = str(CACHE_DIR / f"{symbol}_{START}_{END}.parquet")
-        bars_cache = CACHE_DIR / f"{symbol}_bars_15min.parquet"
-
+        # Load pre-computed bars
+        bars_cache = CACHE_DIR / f"{symbol}_bars_15m.parquet"
         if bars_cache.exists():
             print(f"\nLoading cached bars for {symbol}")
             bars = pd.read_parquet(bars_cache)
             bars.index = pd.DatetimeIndex(bars.index)
         else:
-            print(f"\nComputing 15min bars for {symbol}...")
-            bars = compute_bar_features_chunked(parquet_path, freq='15min', chunk_days=14)
-            bars.to_parquet(bars_cache)
-            print(f"Saved bars to {bars_cache}")
+            raise FileNotFoundError(
+                f"Run data/compute_features.py first to generate {bars_cache}"
+            )
 
         bars_dict[symbol] = bars
         print(f"{symbol}: {len(bars):,} bars, {bars.index.min()} to {bars.index.max()}")
 
-        # VPIN — compute on 3-month sample for speed
+        # Load pre-computed VPIN
         vpin_cache = CACHE_DIR / f"{symbol}_vpin.parquet"
         if vpin_cache.exists():
             print(f"Loading cached VPIN for {symbol}")
@@ -396,17 +394,8 @@ def main():
             vpin_series = vpin_df.iloc[:, 0]
             vpin_series.index = pd.DatetimeIndex(vpin_series.index)
         else:
-            print(f"Computing VPIN for {symbol} (sampled months)...")
-            try:
-                vpin_series = compute_vpin_chunked(
-                    parquet_path,
-                    sample_months=['2023-03', '2023-07', '2023-11', '2024-01', '2024-05', '2024-09'],
-                )
-                vpin_series.to_frame('vpin').to_parquet(vpin_cache)
-                print(f"Saved VPIN to {vpin_cache}")
-            except Exception as e:
-                print(f"VPIN computation failed: {e}")
-                vpin_series = pd.Series(dtype=float)
+            print(f"VPIN not found for {symbol}, skipping")
+            vpin_series = pd.Series(dtype=float)
 
         vpin_dict[symbol] = vpin_series
 

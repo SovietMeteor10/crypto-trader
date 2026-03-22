@@ -96,10 +96,47 @@ Three experiments attempted to push V3 holdout Sharpe above 1.2:
 - `strategies/sol_1c_sjm_pullback.py` — pullback strategy
 - `improve_v3_results.json` — structured results
 
+## 2026-03-22 — Order Flow Phase 1: Characterisation Complete
+
+### Data acquired
+- BTCUSDT: 936M aggTrades (5.9 GB parquet), 2023-01 to 2024-12
+- SOLUSDT: 516M aggTrades (3.1 GB parquet), 2023-01 to 2024-12
+- 70,080 15-min bars per asset with full order flow features
+- Macro data: VIX, DXY, US10Y, S&P500 (503 days)
+
+### Key findings
+
+**Statistically significant but economically marginal signals:**
+- Best: BTC Roll Spread → 1h return (t=4.19, R²=0.025%)
+- BTC Kyle's Lambda → 15min (t=3.85), Arrival Rate → 15min (t=3.18)
+- SOL Arrival Rate → 15min (t=3.28), OFI → 4h (t=2.21)
+- All R² < 0.03% — insufficient for standalone strategy
+
+**Regime-dependent:** Signal works in ranging/transitional periods (P2, P4), fails during strong bull moves (P3 ETF rally). Phase 2 must include regime filter.
+
+**Null results:**
+- VPIN does NOT predict larger price moves (contradicts literature)
+- Cross-asset flow (BTC→SOL, SOL→BTC) has no significant signal
+- OFI does not predict BTC returns at any horizon
+- Amihud illiquidity has zero predictive power
+
+**Recommendation:** Do not build standalone order flow strategy. Use features as entry timing filters within V3 framework.
+
+### Deliverables
+- `data/download_aggtrades.py` — monthly file downloader with streaming merge
+- `data/order_flow.py` — OFI, Kyle's Lambda, Roll, VPIN feature pipeline
+- `data/compute_features.py` — memory-efficient bar computation
+- `data/characterise_order_flow.py` — full statistical analysis (3A-3E)
+- `data/macro_features.py` — macro data fetcher
+- `research/ORDER_FLOW_CHARACTERISATION.md` — full characterisation report
+- `outputs/research/characterisation_results.json` — structured results
+- `outputs/research/basic_stats/` — all plots
+
 ## Next steps
 
 1. **V3 is deployable** with the active drawdown metric interpretation
 2. The EVT conservative config is the safest option (0.34% max DD, 0.90 Sharpe)
 3. Recommend 3-month paper trade before live deployment
 4. Only viable at funded account scale ($25k+), not retail ($1k)
-5. If seeking higher Sharpe: consider different asset class or higher-frequency data
+5. Order flow features may add marginal value as entry timing filters in V3
+6. Phase 2 (if pursued): integrate Roll spread + arrival rate as V3 entry confirmation
