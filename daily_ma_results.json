@@ -1,0 +1,68 @@
+{
+  "raw_train": {
+    "sharpe": 2.4376,
+    "trades": 80
+  },
+  "raw_val": {
+    "sharpe": 3.0299,
+    "trades": 40
+  },
+  "raw_holdout": {
+    "sharpe": 6.0805,
+    "trades": 83
+  },
+  "best_params": {
+    "ma_period": 10,
+    "buffer_pct": 1.5515768816280384
+  },
+  "train_sharpe": 5.6522,
+  "val_sharpe": 6.1294,
+  "train_trades": 114,
+  "val_trades": 56,
+  "overfit_check": "PASS",
+  "wf_pct": 100.0,
+  "wf_mean": 6.7878,
+  "wf_sharpes": [
+    7.7731,
+    8.9691,
+    10.0,
+    2.7039,
+    8.617,
+    3.2432,
+    10.0,
+    8.5629,
+    4.7718,
+    3.9647,
+    10.0,
+    10.0,
+    3.8169,
+    10.0,
+    5.6629,
+    10.0,
+    2.0793,
+    5.0875,
+    3.3976,
+    2.4949,
+    10.0,
+    10.0,
+    4.7325,
+    2.9652,
+    10.0,
+    10.0,
+    7.5852,
+    3.6298
+  ],
+  "holdout_sharpe": 9.7375,
+  "holdout_trades": 133,
+  "holdout_passes_all": true,
+  "delta_vs_v3": 8.831,
+  "holdout_flags": {
+    "overfit": "False",
+    "insufficient_trades": false,
+    "high_btc_correlation": false,
+    "negative_skew": false,
+    "long_drawdown": false,
+    "consecutive_losses": false
+  },
+  "conclusion": "PASS"
+}

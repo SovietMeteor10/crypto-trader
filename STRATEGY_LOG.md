@@ -422,3 +422,16 @@ WF % positive: 92.9
 Holdout Sharpe: 3.3687
 Correlation with V3 holdout: 0.5277
 Conclusion: holdout 3.37, corr 0.53
+
+
+### Daily MA SOL: Pure daily MA trend signal
+
+Best params: ma_period=10, buffer_pct=1.5515768816280384
+Unoptimised (MA=26, buf=0) holdout Sharpe: 6.0805
+Train Sharpe: 5.6522
+Val Sharpe: 6.1294
+WF % positive: 100.0
+Holdout Sharpe: 9.7375
+Delta vs V3 (0.91): +8.83
+All flags clear: YES
+Conclusion: PASS
