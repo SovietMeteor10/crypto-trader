@@ -1,0 +1,44 @@
+[
+  {
+    "label": "V3 (SOL)",
+    "sharpe": 0.91,
+    "total_return_pct": 5.4,
+    "max_dd_pct": -3.2,
+    "trades": 133,
+    "monthly_mean_pct": 0.2,
+    "monthly_std_pct": 0.78,
+    "worst_month_pct": -1.21,
+    "best_month_pct": 2.33,
+    "win_months": 17,
+    "total_months": 26,
+    "annualised_return_pct": 2.5
+  },
+  {
+    "label": "Daily MA SOL (26)",
+    "sharpe": 6.08,
+    "total_return_pct": 50.1,
+    "max_dd_pct": -2.1,
+    "trades": 83,
+    "monthly_mean_pct": 1.54,
+    "monthly_std_pct": 0.88,
+    "worst_month_pct": 0.1,
+    "best_month_pct": 4.41,
+    "win_months": 26,
+    "total_months": 26,
+    "annualised_return_pct": 18.5
+  },
+  {
+    "label": "Daily MA BTC (26)",
+    "sharpe": 5.04,
+    "total_return_pct": 29.1,
+    "max_dd_pct": -1.2,
+    "trades": 83,
+    "monthly_mean_pct": 0.92,
+    "monthly_std_pct": 0.63,
+    "worst_month_pct": -0.22,
+    "best_month_pct": 2.75,
+    "win_months": 25,
+    "total_months": 26,
+    "annualised_return_pct": 11.1
+  }
+]

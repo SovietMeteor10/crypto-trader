@@ -182,9 +182,9 @@ class BacktestEngine:
             "size", "direction", "pnl_usdt", "pnl_pct", "cost_usdt", "funding_cost_usdt",
         ])
 
-        # Monthly returns
+        # Monthly returns (decimal, not percentage — 5% = 0.05)
         monthly = eq_series.resample("ME").last()
-        monthly_ret = monthly.pct_change().dropna() * 100
+        monthly_ret = monthly.pct_change().dropna()
 
         return ResultsBundle(
             symbol=symbol,
