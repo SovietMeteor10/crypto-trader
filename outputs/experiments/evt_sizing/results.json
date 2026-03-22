@@ -1,0 +1,87 @@
+{
+  "experiment": "B \u2014 EVT-based position sizing on V3",
+  "elapsed_seconds": 485.6,
+  "baseline": {
+    "train_sharpe": 1.7705,
+    "val_sharpe": 2.0036,
+    "holdout_sharpe": 0.9065,
+    "max_dd_pct": 3.22,
+    "max_dd_days": 241,
+    "active_dd_days": 14,
+    "worst_month": -1.21,
+    "total_trades": 133
+  },
+  "evt_configs": [
+    {
+      "config": "conservative",
+      "train_sharpe": 1.7731,
+      "val_sharpe": 1.9812,
+      "holdout_sharpe": 0.8959,
+      "max_dd_pct": 0.34,
+      "max_dd_days": 241,
+      "active_dd_days": 14,
+      "worst_month": -0.12,
+      "total_trades": 133,
+      "total_return_pct": 0.53,
+      "win_rate": 0.5113,
+      "profit_factor": 1.492,
+      "leverage_mean": 0.31,
+      "leverage_min": 0.3,
+      "leverage_max": 0.52,
+      "failed_flags": [
+        "long_dd"
+      ],
+      "passes_all_original": false,
+      "passes_all_active_dd": true
+    },
+    {
+      "config": "moderate",
+      "train_sharpe": 1.8042,
+      "val_sharpe": 1.7902,
+      "holdout_sharpe": 0.8833,
+      "max_dd_pct": 0.43,
+      "max_dd_days": 241,
+      "active_dd_days": 14,
+      "worst_month": -0.15,
+      "total_trades": 133,
+      "total_return_pct": 0.62,
+      "win_rate": 0.5113,
+      "profit_factor": 1.4394,
+      "leverage_mean": 0.41,
+      "leverage_min": 0.3,
+      "leverage_max": 0.87,
+      "failed_flags": [
+        "overfit",
+        "long_dd"
+      ],
+      "passes_all_original": false,
+      "passes_all_active_dd": false
+    },
+    {
+      "config": "aggressive",
+      "train_sharpe": 1.801,
+      "val_sharpe": 1.8031,
+      "holdout_sharpe": 0.8779,
+      "max_dd_pct": 0.69,
+      "max_dd_days": 241,
+      "active_dd_days": 14,
+      "worst_month": -0.25,
+      "total_trades": 133,
+      "total_return_pct": 1.01,
+      "win_rate": 0.5113,
+      "profit_factor": 1.4387,
+      "leverage_mean": 0.66,
+      "leverage_min": 0.5,
+      "leverage_max": 1.4,
+      "failed_flags": [
+        "overfit",
+        "long_dd"
+      ],
+      "passes_all_original": false,
+      "passes_all_active_dd": false
+    }
+  ],
+  "best_config": "conservative",
+  "best_holdout_sharpe": 0.8959,
+  "conclusion": "Best config: conservative with holdout Sharpe 0.8959. Passes all (active DD): True. Max DD: 0.34%, DD days: 241, Active DD: 14 days."
+}
