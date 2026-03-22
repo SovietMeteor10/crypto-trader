@@ -1,0 +1,734 @@
+2026-03-21 19:48:13,298 Loading data...
+2026-03-21 19:48:13,362 BTC data: 12714 bars, SOL data: 11430 bars
+2026-03-21 19:48:13,362 
+======================================================================
+2026-03-21 19:48:13,362 VARIANT: SJM-V1: BTC Feature Set A, 3 regimes
+2026-03-21 19:48:13,362 ======================================================================
+2026-03-21 19:48:13,362 Running Optuna optimisation on training period...
+2026-03-21 19:49:37,169 Best SJM params: {'sjm_lambda': 1.9255250932419297, 'sjm_window': 329, 'trade_in_neutral': True}
+2026-03-21 19:49:37,169 Best train Sharpe: 1.8775
+2026-03-21 19:49:37,170 Running three-split evaluation...
+2026-03-21 19:49:41,102 Train Sharpe: 1.8775 (168 trades)
+2026-03-21 19:49:41,103 Val Sharpe:   1.0730 (70 trades)
+2026-03-21 19:49:41,103 Overfit check (val >= 0.5 * train): PASS
+2026-03-21 19:49:41,121 
+Train metrics:
+2026-03-21 19:49:41,121 === Train ===
+Total Return:       15.96%
+Annualised Return:  7.70%
+Sharpe Ratio:       1.88
+Sortino Ratio:      4.72
+Max Drawdown:       2.95%
+Max DD Duration:    148 days
+Total Trades:       168
+Win Rate:           56.5%
+Profit Factor:      1.73
+Avg Win:            0.38%
+Avg Loss:           -0.29%
+Monthly Mean:       0.65%
+Monthly Worst:      -1.37%
+Monthly Best:       2.85%
+Monthly Skewness:   0.31
+BTC Correlation:    -0.14
+Total Fees:         $10.90
+Cost Drag (ann.):   0.51%
+
+Flags:
+  Overfit....................... PASS
+  Insufficient Trades........... PASS
+  High BTC Correlation.......... PASS
+  Negative Skew................. PASS
+  Long Drawdown................. FAIL
+  Consecutive Losses............ PASS
+  Fragile Params................ PASS
+
+All Checks: FAIL
+2026-03-21 19:49:41,121 
+Validation metrics:
+2026-03-21 19:49:41,122 === Validation ===
+Total Return:       3.21%
+Annualised Return:  3.22%
+Sharpe Ratio:       1.07
+Sortino Ratio:      2.26
+Max Drawdown:       2.41%
+Max DD Duration:    129 days
+Total Trades:       70
+Win Rate:           40.0%
+Profit Factor:      1.59
+Avg Win:            0.33%
+Avg Loss:           -0.14%
+Monthly Mean:       0.29%
+Monthly Worst:      -1.09%
+Monthly Best:       2.66%
+Monthly Skewness:   1.57
+BTC Correlation:    0.03
+Total Fees:         $4.23
+Cost Drag (ann.):   0.42%
+
+Flags:
+  Overfit....................... PASS
+  Insufficient Trades........... PASS
+  High BTC Correlation.......... PASS
+  Negative Skew................. PASS
+  Long Drawdown................. FAIL
+  Consecutive Losses............ PASS
+  Fragile Params................ PASS
+
+All Checks: FAIL
+2026-03-21 19:49:41,122 
+Running walk-forward validation (22 windows)...
+Window 1/28: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 2.45, params: {'sjm_lambda': 4.330860356536826, 'sjm_window': 631, 'trade_in_neutral': False}
+Window 2/28: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 5.38, params: {'sjm_lambda': 0.31180820491483674, 'sjm_window': 384, 'trade_in_neutral': False}
+Window 3/28: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 3.98, params: {'sjm_lambda': 0.879992318913364, 'sjm_window': 293, 'trade_in_neutral': True}
+Window 4/28: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 3.30, params: {'sjm_lambda': 1.8020329219305073, 'sjm_window': 343, 'trade_in_neutral': False}
+Window 5/28: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 1.87, params: {'sjm_lambda': 3.1045504710619736, 'sjm_window': 198, 'trade_in_neutral': False}
+Window 6/28: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 2.06, params: {'sjm_lambda': 1.2960090628429897, 'sjm_window': 484, 'trade_in_neutral': True}
+Window 7/28: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 4.36, params: {'sjm_lambda': 1.3147429477672352, 'sjm_window': 596, 'trade_in_neutral': False}
+Window 8/28: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 3.41, params: {'sjm_lambda': 3.012334329357884, 'sjm_window': 616, 'trade_in_neutral': True}
+Window 9/28: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 0.22, params: {'sjm_lambda': 1.756234957162677, 'sjm_window': 661, 'trade_in_neutral': False}
+Window 10/28: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 1.63, params: {'sjm_lambda': 1.2537886154166453, 'sjm_window': 320, 'trade_in_neutral': False}
+Window 11/28: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 3.74, params: {'sjm_lambda': 0.9644310241356057, 'sjm_window': 502, 'trade_in_neutral': True}
+Window 12/28: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 3.01, params: {'sjm_lambda': 3.758499198603138, 'sjm_window': 585, 'trade_in_neutral': True}
+Window 13/28: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 2.09, params: {'sjm_lambda': 2.7005499474572, 'sjm_window': 503, 'trade_in_neutral': True}
+Window 14/28: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 3.00, params: {'sjm_lambda': 3.941878058518371, 'sjm_window': 499, 'trade_in_neutral': False}
+Window 15/28: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 2.89, params: {'sjm_lambda': 0.1454484290014554, 'sjm_window': 621, 'trade_in_neutral': False}
+Window 16/28: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 7.19, params: {'sjm_lambda': 4.401173471495866, 'sjm_window': 285, 'trade_in_neutral': True}
+Window 17/28: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 4.18, params: {'sjm_lambda': 0.976549990052913, 'sjm_window': 500, 'trade_in_neutral': False}
+Window 18/28: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 1.72, params: {'sjm_lambda': 0.7773987472299752, 'sjm_window': 322, 'trade_in_neutral': False}
+Window 19/28: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 2.17, params: {'sjm_lambda': 1.6630992255539068, 'sjm_window': 399, 'trade_in_neutral': False}
+Window 20/28: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 2.59, params: {'sjm_lambda': 2.282029384600968, 'sjm_window': 358, 'trade_in_neutral': False}
+Window 21/28: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 2.53, params: {'sjm_lambda': 3.5392910412987826, 'sjm_window': 437, 'trade_in_neutral': False}
+Window 22/28: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 3.63, params: {'sjm_lambda': 0.587705200092318, 'sjm_window': 541, 'trade_in_neutral': False}
+Window 23/28: train 2024-09-01 to 2025-03-01, test 2025-03-15 to 2025-05-15
+  best train Sharpe: 2.99, params: {'sjm_lambda': 4.688175037878675, 'sjm_window': 491, 'trade_in_neutral': True}
+Window 24/28: train 2024-11-01 to 2025-05-01, test 2025-05-15 to 2025-07-15
+  best train Sharpe: 0.89, params: {'sjm_lambda': 3.30509453489113, 'sjm_window': 560, 'trade_in_neutral': False}
+Window 25/28: train 2025-01-01 to 2025-07-01, test 2025-07-15 to 2025-09-15
+  best train Sharpe: 2.86, params: {'sjm_lambda': 4.999104939766247, 'sjm_window': 718, 'trade_in_neutral': False}
+Window 26/28: train 2025-03-01 to 2025-09-01, test 2025-09-15 to 2025-11-15
+  best train Sharpe: 0.08, params: {'sjm_lambda': 1.090153976226012, 'sjm_window': 334, 'trade_in_neutral': False}
+Window 27/28: train 2025-05-01 to 2025-11-01, test 2025-11-15 to 2026-01-15
+  best train Sharpe: 0.02, params: {'sjm_lambda': 0.9185618258843095, 'sjm_window': 525, 'trade_in_neutral': False}
+Window 28/28: train 2025-07-01 to 2026-01-01, test 2026-01-15 to 2026-03-15
+  best train Sharpe: -0.69, params: {'sjm_lambda': 4.309140472175613, 'sjm_window': 278, 'trade_in_neutral': True}
+2026-03-21 19:53:31,715 Walk-forward: 57.1% positive (16/28)
+2026-03-21 19:53:31,715 WF mean OOS Sharpe: 0.0504
+2026-03-21 19:53:31,715 Skipping holdout (overfit_check=PASS, WF%=57.1%)
+2026-03-21 19:53:31,717 
+Loading funding rates for Variant 2...
+2026-03-21 19:53:31,728 
+======================================================================
+2026-03-21 19:53:31,728 VARIANT: SJM-V2: BTC Feature Set B (funding), 3 regimes
+2026-03-21 19:53:31,728 ======================================================================
+2026-03-21 19:53:31,728 Running Optuna optimisation on training period...
+2026-03-21 19:54:51,120 Best SJM params: {'sjm_lambda': 3.6061385036954263, 'sjm_window': 299, 'trade_in_neutral': True}
+2026-03-21 19:54:51,120 Best train Sharpe: 2.3008
+2026-03-21 19:54:51,120 Running three-split evaluation...
+2026-03-21 19:54:54,884 Train Sharpe: 2.3008 (138 trades)
+2026-03-21 19:54:54,884 Val Sharpe:   1.0444 (59 trades)
+2026-03-21 19:54:54,884 Overfit check (val >= 0.5 * train): FAIL
+2026-03-21 19:54:54,901 
+Train metrics:
+2026-03-21 19:54:54,901 === Train ===
+Total Return:       15.77%
+Annualised Return:  7.62%
+Sharpe Ratio:       2.30
+Sortino Ratio:      10.85
+Max Drawdown:       3.36%
+Max DD Duration:    148 days
+Total Trades:       138
+Win Rate:           58.7%
+Profit Factor:      1.90
+Avg Win:            0.39%
+Avg Loss:           -0.29%
+Monthly Mean:       0.64%
+Monthly Worst:      -0.78%
+Monthly Best:       2.66%
+Monthly Skewness:   0.30
+BTC Correlation:    -0.08
+Total Fees:         $9.11
+Cost Drag (ann.):   0.42%
+
+Flags:
+  Overfit....................... PASS
+  Insufficient Trades........... PASS
+  High BTC Correlation.......... PASS
+  Negative Skew................. PASS
+  Long Drawdown................. FAIL
+  Consecutive Losses............ FAIL
+  Fragile Params................ PASS
+
+All Checks: FAIL
+2026-03-21 19:54:54,901 
+Validation metrics:
+2026-03-21 19:54:54,901 === Validation ===
+Total Return:       3.50%
+Annualised Return:  3.51%
+Sharpe Ratio:       1.04
+Sortino Ratio:      3.12
+Max Drawdown:       2.51%
+Max DD Duration:    225 days
+Total Trades:       59
+Win Rate:           40.7%
+Profit Factor:      1.53
+Avg Win:            0.44%
+Avg Loss:           -0.20%
+Monthly Mean:       0.32%
+Monthly Worst:      -0.87%
+Monthly Best:       2.67%
+Monthly Skewness:   1.20
+BTC Correlation:    -0.01
+Total Fees:         $3.55
+Cost Drag (ann.):   0.36%
+
+Flags:
+  Overfit....................... FAIL
+  Insufficient Trades........... PASS
+  High BTC Correlation.......... PASS
+  Negative Skew................. PASS
+  Long Drawdown................. FAIL
+  Consecutive Losses............ FAIL
+  Fragile Params................ PASS
+
+All Checks: FAIL
+2026-03-21 19:54:54,901 
+Running walk-forward validation (22 windows)...
+Window 1/28: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 2.18, params: {'sjm_lambda': 0.29153329756727964, 'sjm_window': 538, 'trade_in_neutral': True}
+Window 2/28: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 4.92, params: {'sjm_lambda': 3.7002059423111313, 'sjm_window': 200, 'trade_in_neutral': False}
+Window 3/28: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 3.66, params: {'sjm_lambda': 1.4896015436459231, 'sjm_window': 712, 'trade_in_neutral': True}
+Window 4/28: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 2.76, params: {'sjm_lambda': 2.7264034965391644, 'sjm_window': 716, 'trade_in_neutral': True}
+Window 5/28: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 2.65, params: {'sjm_lambda': 2.9578029594588413, 'sjm_window': 569, 'trade_in_neutral': False}
+Window 6/28: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 1.96, params: {'sjm_lambda': 1.0478113954435653, 'sjm_window': 342, 'trade_in_neutral': False}
+Window 7/28: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 2.81, params: {'sjm_lambda': 1.9241530615978029, 'sjm_window': 295, 'trade_in_neutral': True}
+Window 8/28: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 2.60, params: {'sjm_lambda': 1.4813871292093024, 'sjm_window': 508, 'trade_in_neutral': True}
+Window 9/28: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 0.02, params: {'sjm_lambda': 0.44227811255768723, 'sjm_window': 527, 'trade_in_neutral': False}
+Window 10/28: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 2.19, params: {'sjm_lambda': 0.462794777995104, 'sjm_window': 240, 'trade_in_neutral': True}
+Window 11/28: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 2.56, params: {'sjm_lambda': 2.3788757305451527, 'sjm_window': 317, 'trade_in_neutral': False}
+Window 12/28: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 2.52, params: {'sjm_lambda': 4.801562322279729, 'sjm_window': 357, 'trade_in_neutral': True}
+Window 13/28: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 4.28, params: {'sjm_lambda': 0.9365956405991879, 'sjm_window': 643, 'trade_in_neutral': True}
+Window 14/28: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 2.42, params: {'sjm_lambda': 4.122356954655282, 'sjm_window': 235, 'trade_in_neutral': False}
+Window 15/28: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 2.84, params: {'sjm_lambda': 4.904890542739854, 'sjm_window': 708, 'trade_in_neutral': False}
+Window 16/28: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 3.80, params: {'sjm_lambda': 1.2663459847279384, 'sjm_window': 713, 'trade_in_neutral': False}
+Window 17/28: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 3.38, params: {'sjm_lambda': 4.230591061799514, 'sjm_window': 429, 'trade_in_neutral': True}
+Window 18/28: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 5.12, params: {'sjm_lambda': 0.6645306585339933, 'sjm_window': 203, 'trade_in_neutral': True}
+Window 19/28: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 2.18, params: {'sjm_lambda': 0.33410903993457153, 'sjm_window': 656, 'trade_in_neutral': True}
+Window 20/28: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 4.68, params: {'sjm_lambda': 2.0805288831159676, 'sjm_window': 265, 'trade_in_neutral': False}
+Window 21/28: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 2.83, params: {'sjm_lambda': 1.193911760003334, 'sjm_window': 390, 'trade_in_neutral': False}
+Window 22/28: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 7.33, params: {'sjm_lambda': 4.920336028556403, 'sjm_window': 490, 'trade_in_neutral': False}
+Window 23/28: train 2024-09-01 to 2025-03-01, test 2025-03-15 to 2025-05-15
+  best train Sharpe: 2.20, params: {'sjm_lambda': 3.3180304260020637, 'sjm_window': 483, 'trade_in_neutral': False}
+Window 24/28: train 2024-11-01 to 2025-05-01, test 2025-05-15 to 2025-07-15
+  best train Sharpe: 0.71, params: {'sjm_lambda': 2.844219814335494, 'sjm_window': 270, 'trade_in_neutral': True}
+Window 25/28: train 2025-01-01 to 2025-07-01, test 2025-07-15 to 2025-09-15
+  best train Sharpe: 2.37, params: {'sjm_lambda': 2.192143056453003, 'sjm_window': 397, 'trade_in_neutral': False}
+Window 26/28: train 2025-03-01 to 2025-09-01, test 2025-09-15 to 2025-11-15
+  best train Sharpe: 2.12, params: {'sjm_lambda': 1.8569788022928613, 'sjm_window': 630, 'trade_in_neutral': True}
+Window 27/28: train 2025-05-01 to 2025-11-01, test 2025-11-15 to 2026-01-15
+  best train Sharpe: -1.17, params: {'sjm_lambda': 1.358853898815654, 'sjm_window': 482, 'trade_in_neutral': False}
+Window 28/28: train 2025-07-01 to 2026-01-01, test 2026-01-15 to 2026-03-15
+  best train Sharpe: 1.29, params: {'sjm_lambda': 2.437783863201797, 'sjm_window': 715, 'trade_in_neutral': False}
+2026-03-21 19:58:41,762 Walk-forward: 57.1% positive (16/28)
+2026-03-21 19:58:41,762 WF mean OOS Sharpe: 0.6999
+2026-03-21 19:58:41,762 Skipping holdout (overfit_check=FAIL, WF%=57.1%)
+2026-03-21 19:58:41,764 
+======================================================================
+2026-03-21 19:58:41,764 VARIANT: SJM-V3: SOL Feature Set A, 3 regimes
+2026-03-21 19:58:41,764 ======================================================================
+2026-03-21 19:58:41,765 Running Optuna optimisation on training period...
+2026-03-21 20:00:01,042 Best SJM params: {'sjm_lambda': 1.6573239546018446, 'sjm_window': 378, 'trade_in_neutral': True}
+2026-03-21 20:00:01,042 Best train Sharpe: 1.7705
+2026-03-21 20:00:01,042 Running three-split evaluation...
+2026-03-21 20:00:04,953 Train Sharpe: 1.7705 (142 trades)
+2026-03-21 20:00:04,953 Val Sharpe:   2.0036 (66 trades)
+2026-03-21 20:00:04,953 Overfit check (val >= 0.5 * train): PASS
+2026-03-21 20:00:04,971 
+Train metrics:
+2026-03-21 20:00:04,971 === Train ===
+Total Return:       20.15%
+Annualised Return:  9.64%
+Sharpe Ratio:       1.77
+Sortino Ratio:      8.78
+Max Drawdown:       4.05%
+Max DD Duration:    221 days
+Total Trades:       142
+Win Rate:           55.6%
+Profit Factor:      2.09
+Avg Win:            0.46%
+Avg Loss:           -0.27%
+Monthly Mean:       0.81%
+Monthly Worst:      -0.88%
+Monthly Best:       6.49%
+Monthly Skewness:   2.26
+BTC Correlation:    -0.01
+Total Fees:         $9.56
+Cost Drag (ann.):   0.43%
+
+Flags:
+  Overfit....................... PASS
+  Insufficient Trades........... PASS
+  High BTC Correlation.......... PASS
+  Negative Skew................. PASS
+  Long Drawdown................. FAIL
+  Consecutive Losses............ FAIL
+  Fragile Params................ PASS
+
+All Checks: FAIL
+2026-03-21 20:00:04,971 
+Validation metrics:
+2026-03-21 20:00:04,971 === Validation ===
+Total Return:       7.11%
+Annualised Return:  7.14%
+Sharpe Ratio:       2.00
+Sortino Ratio:      6.45
+Max Drawdown:       2.06%
+Max DD Duration:    115 days
+Total Trades:       66
+Win Rate:           53.0%
+Profit Factor:      2.13
+Avg Win:            0.38%
+Avg Loss:           -0.20%
+Monthly Mean:       0.63%
+Monthly Worst:      -0.78%
+Monthly Best:       3.16%
+Monthly Skewness:   1.19
+BTC Correlation:    0.10
+Total Fees:         $4.06
+Cost Drag (ann.):   0.40%
+
+Flags:
+  Overfit....................... PASS
+  Insufficient Trades........... PASS
+  High BTC Correlation.......... PASS
+  Negative Skew................. PASS
+  Long Drawdown................. FAIL
+  Consecutive Losses............ PASS
+  Fragile Params................ PASS
+
+All Checks: FAIL
+2026-03-21 20:00:04,971 
+Running walk-forward validation (22 windows)...
+Window 1/28: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 2.89, params: {'sjm_lambda': 4.51794341361413, 'sjm_window': 562, 'trade_in_neutral': False}
+Window 2/28: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 2.78, params: {'sjm_lambda': 0.09882314965998551, 'sjm_window': 208, 'trade_in_neutral': True}
+Window 3/28: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 4.34, params: {'sjm_lambda': 1.2451824297470804, 'sjm_window': 259, 'trade_in_neutral': True}
+Window 4/28: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 3.05, params: {'sjm_lambda': 0.1617669712484822, 'sjm_window': 330, 'trade_in_neutral': True}
+Window 5/28: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 3.11, params: {'sjm_lambda': 4.907809977971981, 'sjm_window': 607, 'trade_in_neutral': False}
+Window 6/28: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 5.50, params: {'sjm_lambda': 2.107524429290409, 'sjm_window': 580, 'trade_in_neutral': False}
+Window 7/28: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 4.01, params: {'sjm_lambda': 0.250503583260844, 'sjm_window': 568, 'trade_in_neutral': True}
+Window 8/28: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 1.85, params: {'sjm_lambda': 0.5666686052403554, 'sjm_window': 698, 'trade_in_neutral': True}
+Window 9/28: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 2.67, params: {'sjm_lambda': 2.5982517372942686, 'sjm_window': 423, 'trade_in_neutral': False}
+Window 10/28: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 1.68, params: {'sjm_lambda': 4.541991061124714, 'sjm_window': 206, 'trade_in_neutral': False}
+Window 11/28: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 2.78, params: {'sjm_lambda': 2.1612950132760247, 'sjm_window': 457, 'trade_in_neutral': False}
+Window 12/28: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 4.09, params: {'sjm_lambda': 2.6645016310110656, 'sjm_window': 268, 'trade_in_neutral': False}
+Window 13/28: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 1.05, params: {'sjm_lambda': 0.028921350920761375, 'sjm_window': 251, 'trade_in_neutral': False}
+Window 14/28: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 1.84, params: {'sjm_lambda': 3.1741556189495097, 'sjm_window': 517, 'trade_in_neutral': False}
+Window 15/28: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 1.79, params: {'sjm_lambda': 1.4417742908759648, 'sjm_window': 350, 'trade_in_neutral': False}
+Window 16/28: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 5.09, params: {'sjm_lambda': 0.17477032408533777, 'sjm_window': 703, 'trade_in_neutral': True}
+Window 17/28: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 4.07, params: {'sjm_lambda': 0.2515427498984232, 'sjm_window': 615, 'trade_in_neutral': True}
+Window 18/28: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 0.65, params: {'sjm_lambda': 3.0027191780241784, 'sjm_window': 330, 'trade_in_neutral': True}
+Window 19/28: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 4.49, params: {'sjm_lambda': 3.236004567571132, 'sjm_window': 434, 'trade_in_neutral': True}
+Window 20/28: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 3.51, params: {'sjm_lambda': 2.291753735593335, 'sjm_window': 275, 'trade_in_neutral': True}
+Window 21/28: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 1.82, params: {'sjm_lambda': 2.1466415469278664, 'sjm_window': 406, 'trade_in_neutral': False}
+Window 22/28: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 2.77, params: {'sjm_lambda': 4.7929487831226725, 'sjm_window': 575, 'trade_in_neutral': True}
+Window 23/28: train 2024-09-01 to 2025-03-01, test 2025-03-15 to 2025-05-15
+  best train Sharpe: 2.64, params: {'sjm_lambda': 1.7707394649138979, 'sjm_window': 593, 'trade_in_neutral': False}
+Window 24/28: train 2024-11-01 to 2025-05-01, test 2025-05-15 to 2025-07-15
+  best train Sharpe: 0.51, params: {'sjm_lambda': 3.580062788705157, 'sjm_window': 304, 'trade_in_neutral': False}
+Window 25/28: train 2025-01-01 to 2025-07-01, test 2025-07-15 to 2025-09-15
+  best train Sharpe: 1.78, params: {'sjm_lambda': 2.1659285926989242, 'sjm_window': 202, 'trade_in_neutral': True}
+Window 26/28: train 2025-03-01 to 2025-09-01, test 2025-09-15 to 2025-11-15
+  best train Sharpe: 0.77, params: {'sjm_lambda': 4.76280715641658, 'sjm_window': 578, 'trade_in_neutral': False}
+Window 27/28: train 2025-05-01 to 2025-11-01, test 2025-11-15 to 2026-01-15
+  best train Sharpe: 0.63, params: {'sjm_lambda': 3.75917287431038, 'sjm_window': 287, 'trade_in_neutral': False}
+Window 28/28: train 2025-07-01 to 2026-01-01, test 2026-01-15 to 2026-03-15
+  best train Sharpe: 3.67, params: {'sjm_lambda': 1.093577941248047, 'sjm_window': 580, 'trade_in_neutral': False}
+2026-03-21 20:03:57,676 Walk-forward: 60.7% positive (17/28)
+2026-03-21 20:03:57,676 WF mean OOS Sharpe: 1.4391
+2026-03-21 20:03:57,676 
+Running holdout evaluation...
+2026-03-21 20:04:00,334 
+Holdout metrics:
+2026-03-21 20:04:00,334 === Holdout ===
+Total Return:       5.37%
+Annualised Return:  2.39%
+Sharpe Ratio:       0.91
+Sortino Ratio:      1.78
+Max Drawdown:       3.22%
+Max DD Duration:    241 days
+Total Trades:       133
+Win Rate:           51.1%
+Profit Factor:      1.50
+Avg Win:            0.25%
+Avg Loss:           -0.17%
+Monthly Mean:       0.20%
+Monthly Worst:      -1.21%
+Monthly Best:       2.33%
+Monthly Skewness:   0.42
+BTC Correlation:    -0.03
+Total Fees:         $8.22
+Cost Drag (ann.):   0.36%
+
+Flags:
+  Overfit....................... PASS
+  Insufficient Trades........... PASS
+  High BTC Correlation.......... PASS
+  Negative Skew................. PASS
+  Long Drawdown................. FAIL
+  Consecutive Losses............ PASS
+  Fragile Params................ PASS
+
+All Checks: FAIL
+2026-03-21 20:04:00,334 
+Conclusion: FAIL: flags ['long_drawdown']
+2026-03-21 20:04:00,336 
+======================================================================
+2026-03-21 20:04:00,336 VARIANT: SJM-V4: BTC Feature Set A, 2 regimes (bull/bear)
+2026-03-21 20:04:00,336 ======================================================================
+2026-03-21 20:04:00,336 Running Optuna optimisation on training period...
+2026-03-21 20:05:06,858 Best SJM params: {'sjm_lambda': 5.428544151001011, 'sjm_window': 340, 'trade_in_neutral': False}
+2026-03-21 20:05:06,858 Best train Sharpe: 2.8717
+2026-03-21 20:05:06,858 Running three-split evaluation...
+2026-03-21 20:05:10,010 Train Sharpe: 2.8717 (105 trades)
+2026-03-21 20:05:10,010 Val Sharpe:   1.3891 (56 trades)
+2026-03-21 20:05:10,010 Overfit check (val >= 0.5 * train): FAIL
+2026-03-21 20:05:10,026 
+Train metrics:
+2026-03-21 20:05:10,026 === Train ===
+Total Return:       12.13%
+Annualised Return:  5.90%
+Sharpe Ratio:       2.87
+Sortino Ratio:      0.00
+Max Drawdown:       2.09%
+Max DD Duration:    101 days
+Total Trades:       105
+Win Rate:           61.0%
+Profit Factor:      2.19
+Avg Win:            0.34%
+Avg Loss:           -0.24%
+Monthly Mean:       0.50%
+Monthly Worst:      -0.35%
+Monthly Best:       1.99%
+Monthly Skewness:   1.27
+BTC Correlation:    -0.08
+Total Fees:         $6.65
+Cost Drag (ann.):   0.32%
+
+Flags:
+  Overfit....................... PASS
+  Insufficient Trades........... PASS
+  High BTC Correlation.......... PASS
+  Negative Skew................. PASS
+  Long Drawdown................. FAIL
+  Consecutive Losses............ PASS
+  Fragile Params................ PASS
+
+All Checks: FAIL
+2026-03-21 20:05:10,026 
+Validation metrics:
+2026-03-21 20:05:10,026 === Validation ===
+Total Return:       2.49%
+Annualised Return:  2.50%
+Sharpe Ratio:       1.39
+Sortino Ratio:      5.58
+Max Drawdown:       1.83%
+Max DD Duration:    195 days
+Total Trades:       56
+Win Rate:           48.2%
+Profit Factor:      1.77
+Avg Win:            0.23%
+Avg Loss:           -0.12%
+Monthly Mean:       0.23%
+Monthly Worst:      -0.42%
+Monthly Best:       1.66%
+Monthly Skewness:   1.72
+BTC Correlation:    -0.02
+Total Fees:         $3.38
+Cost Drag (ann.):   0.34%
+
+Flags:
+  Overfit....................... FAIL
+  Insufficient Trades........... PASS
+  High BTC Correlation.......... PASS
+  Negative Skew................. PASS
+  Long Drawdown................. FAIL
+  Consecutive Losses............ FAIL
+  Fragile Params................ PASS
+
+All Checks: FAIL
+2026-03-21 20:05:10,026 
+Running walk-forward validation (22 windows)...
+Window 1/28: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 4.23, params: {'sjm_lambda': 2.8672661727212385, 'sjm_window': 589, 'trade_in_neutral': True}
+Window 2/28: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 2.82, params: {'sjm_lambda': 1.1067576263568921, 'sjm_window': 265, 'trade_in_neutral': True}
+Window 3/28: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 5.92, params: {'sjm_lambda': 4.100139666850081, 'sjm_window': 328, 'trade_in_neutral': False}
+Window 4/28: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 3.97, params: {'sjm_lambda': 4.133166666607784, 'sjm_window': 686, 'trade_in_neutral': False}
+Window 5/28: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 0.98, params: {'sjm_lambda': 2.244182096084447, 'sjm_window': 428, 'trade_in_neutral': False}
+Window 6/28: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 1.29, params: {'sjm_lambda': 0.42815375026575964, 'sjm_window': 493, 'trade_in_neutral': True}
+Window 7/28: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 1.91, params: {'sjm_lambda': 1.6550585779880045, 'sjm_window': 283, 'trade_in_neutral': False}
+Window 8/28: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 3.85, params: {'sjm_lambda': 3.532712634515039, 'sjm_window': 530, 'trade_in_neutral': False}
+Window 9/28: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 2.91, params: {'sjm_lambda': 2.644329690778575, 'sjm_window': 347, 'trade_in_neutral': False}
+Window 10/28: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 2.50, params: {'sjm_lambda': 4.994719854136281, 'sjm_window': 603, 'trade_in_neutral': False}
+Window 11/28: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 2.67, params: {'sjm_lambda': 0.5428955567001362, 'sjm_window': 684, 'trade_in_neutral': False}
+Window 12/28: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 2.52, params: {'sjm_lambda': 0.7849122398306732, 'sjm_window': 442, 'trade_in_neutral': False}
+Window 13/28: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 2.05, params: {'sjm_lambda': 2.7352538922151837, 'sjm_window': 642, 'trade_in_neutral': False}
+Window 14/28: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 1.62, params: {'sjm_lambda': 2.094974332896191, 'sjm_window': 586, 'trade_in_neutral': True}
+Window 15/28: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 2.24, params: {'sjm_lambda': 1.682875033210408, 'sjm_window': 588, 'trade_in_neutral': False}
+Window 16/28: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 10.84, params: {'sjm_lambda': 3.2164889861410004, 'sjm_window': 422, 'trade_in_neutral': True}
+Window 17/28: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 4.22, params: {'sjm_lambda': 1.692265147232427, 'sjm_window': 249, 'trade_in_neutral': True}
+Window 18/28: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 1.03, params: {'sjm_lambda': 4.546891251513079, 'sjm_window': 267, 'trade_in_neutral': True}
+Window 19/28: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 2.68, params: {'sjm_lambda': 3.2896799332377102, 'sjm_window': 262, 'trade_in_neutral': False}
+Window 20/28: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 5.21, params: {'sjm_lambda': 0.20994344405674958, 'sjm_window': 478, 'trade_in_neutral': True}
+Window 21/28: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 2.30, params: {'sjm_lambda': 0.6653905474074819, 'sjm_window': 245, 'trade_in_neutral': False}
+Window 22/28: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 4.58, params: {'sjm_lambda': 2.0701664210565967, 'sjm_window': 528, 'trade_in_neutral': True}
+Window 23/28: train 2024-09-01 to 2025-03-01, test 2025-03-15 to 2025-05-15
+  best train Sharpe: 2.03, params: {'sjm_lambda': 4.409250914183371, 'sjm_window': 463, 'trade_in_neutral': False}
+Window 24/28: train 2024-11-01 to 2025-05-01, test 2025-05-15 to 2025-07-15
+  best train Sharpe: 1.07, params: {'sjm_lambda': 4.937052152216976, 'sjm_window': 541, 'trade_in_neutral': True}
+Window 25/28: train 2025-01-01 to 2025-07-01, test 2025-07-15 to 2025-09-15
+  best train Sharpe: 3.49, params: {'sjm_lambda': 4.681339930416486, 'sjm_window': 709, 'trade_in_neutral': False}
+Window 26/28: train 2025-03-01 to 2025-09-01, test 2025-09-15 to 2025-11-15
+  best train Sharpe: 0.27, params: {'sjm_lambda': 3.2481585998646265, 'sjm_window': 706, 'trade_in_neutral': False}
+Window 27/28: train 2025-05-01 to 2025-11-01, test 2025-11-15 to 2026-01-15
+  best train Sharpe: 0.26, params: {'sjm_lambda': 3.7395350084387537, 'sjm_window': 192, 'trade_in_neutral': True}
+Window 28/28: train 2025-07-01 to 2026-01-01, test 2026-01-15 to 2026-03-15
+  best train Sharpe: -0.80, params: {'sjm_lambda': 3.058459960129201, 'sjm_window': 182, 'trade_in_neutral': False}
+2026-03-21 20:08:40,662 Walk-forward: 60.7% positive (17/28)
+2026-03-21 20:08:40,662 WF mean OOS Sharpe: 0.5789
+2026-03-21 20:08:40,663 Skipping holdout (overfit_check=FAIL, WF%=60.7%)
+2026-03-21 20:08:40,664 
+======================================================================
+2026-03-21 20:08:40,664 VARIANT: SJM-V5: Joint optimisation, BTC Feature Set A, 3 regimes
+2026-03-21 20:08:40,664 ======================================================================
+2026-03-21 20:08:40,664 Running Optuna optimisation on training period...
+2026-03-21 20:11:05,176 Best SJM params: {'fast_period': 38, 'slow_period': 147, 'adx_period': 17, 'adx_threshold': 23, 'sjm_lambda': 4.9893012157580205, 'sjm_window': 675, 'trade_in_neutral': True}
+2026-03-21 20:11:05,176 Best train Sharpe: 2.0031
+2026-03-21 20:11:05,176 Running three-split evaluation...
+2026-03-21 20:11:09,249 Train Sharpe: 2.0031 (230 trades)
+2026-03-21 20:11:09,249 Val Sharpe:   0.9406 (78 trades)
+2026-03-21 20:11:09,249 Overfit check (val >= 0.5 * train): FAIL
+2026-03-21 20:11:09,268 
+Train metrics:
+2026-03-21 20:11:09,268 === Train ===
+Total Return:       27.12%
+Annualised Return:  12.78%
+Sharpe Ratio:       2.00
+Sortino Ratio:      9.67
+Max Drawdown:       4.26%
+Max DD Duration:    202 days
+Total Trades:       230
+Win Rate:           59.1%
+Profit Factor:      1.89
+Avg Win:            0.38%
+Avg Loss:           -0.28%
+Monthly Mean:       1.06%
+Monthly Worst:      -1.00%
+Monthly Best:       5.79%
+Monthly Skewness:   1.29
+BTC Correlation:    -0.03
+Total Fees:         $16.38
+Cost Drag (ann.):   0.70%
+
+Flags:
+  Overfit....................... PASS
+  Insufficient Trades........... PASS
+  High BTC Correlation.......... PASS
+  Negative Skew................. PASS
+  Long Drawdown................. FAIL
+  Consecutive Losses............ FAIL
+  Fragile Params................ PASS
+
+All Checks: FAIL
+2026-03-21 20:11:09,268 
+Validation metrics:
+2026-03-21 20:11:09,268 === Validation ===
+Total Return:       4.66%
+Annualised Return:  4.68%
+Sharpe Ratio:       0.94
+Sortino Ratio:      2.07
+Max Drawdown:       4.64%
+Max DD Duration:    234 days
+Total Trades:       78
+Win Rate:           44.9%
+Profit Factor:      1.67
+Avg Win:            0.35%
+Avg Loss:           -0.17%
+Monthly Mean:       0.43%
+Monthly Worst:      -1.87%
+Monthly Best:       4.02%
+Monthly Skewness:   1.29
+BTC Correlation:    0.00
+Total Fees:         $4.69
+Cost Drag (ann.):   0.47%
+
+Flags:
+  Overfit....................... FAIL
+  Insufficient Trades........... PASS
+  High BTC Correlation.......... PASS
+  Negative Skew................. PASS
+  Long Drawdown................. FAIL
+  Consecutive Losses............ FAIL
+  Fragile Params................ PASS
+
+All Checks: FAIL
+2026-03-21 20:11:09,268 
+Running walk-forward validation (22 windows)...
+Window 1/28: train 2021-01-01 to 2021-07-01, test 2021-07-15 to 2021-09-15
+  best train Sharpe: 2.03, params: {'fast_period': 45, 'slow_period': 143, 'adx_period': 15, 'adx_threshold': 15, 'sjm_lambda': 3.5494958768008176, 'sjm_window': 600, 'trade_in_neutral': True}
+Window 2/28: train 2021-03-01 to 2021-09-01, test 2021-09-15 to 2021-11-15
+  best train Sharpe: 2.44, params: {'fast_period': 11, 'slow_period': 198, 'adx_period': 30, 'adx_threshold': 40, 'sjm_lambda': 2.084308486896178, 'sjm_window': 522, 'trade_in_neutral': False}
+Window 3/28: train 2021-05-01 to 2021-11-01, test 2021-11-15 to 2022-01-15
+  best train Sharpe: 3.58, params: {'fast_period': 21, 'slow_period': 172, 'adx_period': 8, 'adx_threshold': 27, 'sjm_lambda': 3.292052515670939, 'sjm_window': 326, 'trade_in_neutral': True}
+Window 4/28: train 2021-07-01 to 2022-01-01, test 2022-01-15 to 2022-03-15
+  best train Sharpe: 3.70, params: {'fast_period': 47, 'slow_period': 196, 'adx_period': 7, 'adx_threshold': 17, 'sjm_lambda': 0.08876853245705663, 'sjm_window': 414, 'trade_in_neutral': False}
+Window 5/28: train 2021-09-01 to 2022-03-01, test 2022-03-15 to 2022-05-15
+  best train Sharpe: 2.09, params: {'fast_period': 50, 'slow_period': 62, 'adx_period': 24, 'adx_threshold': 18, 'sjm_lambda': 4.872999928293619, 'sjm_window': 466, 'trade_in_neutral': False}
+Window 6/28: train 2021-11-01 to 2022-05-01, test 2022-05-15 to 2022-07-15
+  best train Sharpe: 2.46, params: {'fast_period': 32, 'slow_period': 60, 'adx_period': 13, 'adx_threshold': 17, 'sjm_lambda': 0.8736545075808521, 'sjm_window': 212, 'trade_in_neutral': False}
+Window 7/28: train 2022-01-01 to 2022-07-01, test 2022-07-15 to 2022-09-15
+  best train Sharpe: 3.04, params: {'fast_period': 43, 'slow_period': 158, 'adx_period': 13, 'adx_threshold': 23, 'sjm_lambda': 3.9925282107429165, 'sjm_window': 203, 'trade_in_neutral': True}
+Window 8/28: train 2022-03-01 to 2022-09-01, test 2022-09-15 to 2022-11-15
+  best train Sharpe: 3.28, params: {'fast_period': 34, 'slow_period': 173, 'adx_period': 14, 'adx_threshold': 30, 'sjm_lambda': 1.1231256854692926, 'sjm_window': 708, 'trade_in_neutral': False}
+Window 9/28: train 2022-05-01 to 2022-11-01, test 2022-11-15 to 2023-01-15
+  best train Sharpe: 2.54, params: {'fast_period': 44, 'slow_period': 194, 'adx_period': 12, 'adx_threshold': 32, 'sjm_lambda': 3.6046804479872483, 'sjm_window': 272, 'trade_in_neutral': True}
+Window 10/28: train 2022-07-01 to 2023-01-01, test 2023-01-15 to 2023-03-15
+  best train Sharpe: 0.90, params: {'fast_period': 31, 'slow_period': 87, 'adx_period': 8, 'adx_threshold': 21, 'sjm_lambda': 4.049131469509104, 'sjm_window': 618, 'trade_in_neutral': False}
+Window 11/28: train 2022-09-01 to 2023-03-01, test 2023-03-15 to 2023-05-15
+  best train Sharpe: 3.41, params: {'fast_period': 32, 'slow_period': 137, 'adx_period': 11, 'adx_threshold': 18, 'sjm_lambda': 1.295880442787439, 'sjm_window': 488, 'trade_in_neutral': True}
+Window 12/28: train 2022-11-01 to 2023-05-01, test 2023-05-15 to 2023-07-15
+  best train Sharpe: 2.57, params: {'fast_period': 47, 'slow_period': 143, 'adx_period': 28, 'adx_threshold': 24, 'sjm_lambda': 2.427782073961882, 'sjm_window': 342, 'trade_in_neutral': True}
+Window 13/28: train 2023-01-01 to 2023-07-01, test 2023-07-15 to 2023-09-15
+  best train Sharpe: 1.84, params: {'fast_period': 50, 'slow_period': 178, 'adx_period': 22, 'adx_threshold': 40, 'sjm_lambda': 4.761655078655387, 'sjm_window': 597, 'trade_in_neutral': True}
+Window 14/28: train 2023-03-01 to 2023-09-01, test 2023-09-15 to 2023-11-15
+  best train Sharpe: 3.05, params: {'fast_period': 22, 'slow_period': 80, 'adx_period': 16, 'adx_threshold': 25, 'sjm_lambda': 4.8515444507770455, 'sjm_window': 625, 'trade_in_neutral': True}
+Window 15/28: train 2023-05-01 to 2023-11-01, test 2023-11-15 to 2024-01-15
+  best train Sharpe: 2.26, params: {'fast_period': 5, 'slow_period': 113, 'adx_period': 22, 'adx_threshold': 32, 'sjm_lambda': 3.0717573091322565, 'sjm_window': 377, 'trade_in_neutral': True}
+Window 16/28: train 2023-07-01 to 2024-01-01, test 2024-01-15 to 2024-03-15
+  best train Sharpe: 4.11, params: {'fast_period': 35, 'slow_period': 60, 'adx_period': 16, 'adx_threshold': 26, 'sjm_lambda': 3.080068980921896, 'sjm_window': 674, 'trade_in_neutral': True}
+Window 17/28: train 2023-09-01 to 2024-03-01, test 2024-03-15 to 2024-05-15
+  best train Sharpe: 3.24, params: {'fast_period': 21, 'slow_period': 101, 'adx_period': 25, 'adx_threshold': 26, 'sjm_lambda': 0.7339247408069194, 'sjm_window': 558, 'trade_in_neutral': False}
+Window 18/28: train 2023-11-01 to 2024-05-01, test 2024-05-15 to 2024-07-15
+  best train Sharpe: 3.11, params: {'fast_period': 35, 'slow_period': 198, 'adx_period': 26, 'adx_threshold': 34, 'sjm_lambda': 1.316647380409851, 'sjm_window': 502, 'trade_in_neutral': True}
+Window 19/28: train 2024-01-01 to 2024-07-01, test 2024-07-15 to 2024-09-15
+  best train Sharpe: 3.78, params: {'fast_period': 47, 'slow_period': 148, 'adx_period': 19, 'adx_threshold': 35, 'sjm_lambda': 4.738804136965817, 'sjm_window': 504, 'trade_in_neutral': True}
+Window 20/28: train 2024-03-01 to 2024-09-01, test 2024-09-15 to 2024-11-15
+  best train Sharpe: 2.56, params: {'fast_period': 30, 'slow_period': 119, 'adx_period': 16, 'adx_threshold': 25, 'sjm_lambda': 3.4838534194766684, 'sjm_window': 535, 'trade_in_neutral': False}
+Window 21/28: train 2024-05-01 to 2024-11-01, test 2024-11-15 to 2025-01-15
+  best train Sharpe: 4.00, params: {'fast_period': 26, 'slow_period': 171, 'adx_period': 11, 'adx_threshold': 18, 'sjm_lambda': 3.5225643204403188, 'sjm_window': 193, 'trade_in_neutral': False}
+Window 22/28: train 2024-07-01 to 2025-01-01, test 2025-01-15 to 2025-03-15
+  best train Sharpe: 7.62, params: {'fast_period': 16, 'slow_period': 105, 'adx_period': 18, 'adx_threshold': 32, 'sjm_lambda': 3.366151478085195, 'sjm_window': 296, 'trade_in_neutral': True}
+Window 23/28: train 2024-09-01 to 2025-03-01, test 2025-03-15 to 2025-05-15
+  best train Sharpe: 4.79, params: {'fast_period': 36, 'slow_period': 151, 'adx_period': 20, 'adx_threshold': 19, 'sjm_lambda': 1.3386355635195004, 'sjm_window': 323, 'trade_in_neutral': False}
+Window 24/28: train 2024-11-01 to 2025-05-01, test 2025-05-15 to 2025-07-15
+  best train Sharpe: 3.16, params: {'fast_period': 18, 'slow_period': 110, 'adx_period': 18, 'adx_threshold': 19, 'sjm_lambda': 0.6018664284940435, 'sjm_window': 397, 'trade_in_neutral': True}
+Window 25/28: train 2025-01-01 to 2025-07-01, test 2025-07-15 to 2025-09-15
+  best train Sharpe: 3.76, params: {'fast_period': 31, 'slow_period': 94, 'adx_period': 25, 'adx_threshold': 24, 'sjm_lambda': 1.564564112951503, 'sjm_window': 215, 'trade_in_neutral': False}
+Window 26/28: train 2025-03-01 to 2025-09-01, test 2025-09-15 to 2025-11-15
+  best train Sharpe: 9.34, params: {'fast_period': 42, 'slow_period': 199, 'adx_period': 11, 'adx_threshold': 20, 'sjm_lambda': 1.1556816354682813, 'sjm_window': 631, 'trade_in_neutral': True}
+Window 27/28: train 2025-05-01 to 2025-11-01, test 2025-11-15 to 2026-01-15
+  best train Sharpe: 1.01, params: {'fast_period': 39, 'slow_period': 50, 'adx_period': 8, 'adx_threshold': 22, 'sjm_lambda': 4.752532245923188, 'sjm_window': 352, 'trade_in_neutral': False}
+Window 28/28: train 2025-07-01 to 2026-01-01, test 2026-01-15 to 2026-03-15
+  best train Sharpe: 1.55, params: {'fast_period': 39, 'slow_period': 108, 'adx_period': 30, 'adx_threshold': 34, 'sjm_lambda': 3.01575011785973, 'sjm_window': 715, 'trade_in_neutral': False}
+2026-03-21 20:15:07,142 Walk-forward: 50.0% positive (14/28)
+2026-03-21 20:15:07,142 WF mean OOS Sharpe: 0.7986
+2026-03-21 20:15:07,142 Skipping holdout (overfit_check=FAIL, WF%=50.0%)
+2026-03-21 20:15:07,143 
+======================================================================
+2026-03-21 20:15:07,144 ALL VARIANTS COMPLETE in 1614s (26.9min)
+2026-03-21 20:15:07,144 ======================================================================
+2026-03-21 20:15:07,144 
+Variant                                               Train      Val    WF%  Holdout Result
+2026-03-21 20:15:07,144 ----------------------------------------------------------------------------------------------------
+2026-03-21 20:15:07,144 SJM-V1: BTC Feature Set A, 3 regimes                 1.8775    1.073   57.1  not run FAIL: WF too low
+2026-03-21 20:15:07,144 SJM-V2: BTC Feature Set B (funding), 3 regimes       2.3008   1.0444   57.1  not run FAIL: overfit
+2026-03-21 20:15:07,144 SJM-V3: SOL Feature Set A, 3 regimes                 1.7705   2.0036   60.7   0.9065 FAIL: flags ['long_drawdown']
+2026-03-21 20:15:07,144 SJM-V4: BTC Feature Set A, 2 regimes (bull/bear)     2.8717   1.3891   60.7  not run FAIL: overfit
+2026-03-21 20:15:07,144 SJM-V5: Joint optimisation, BTC Feature Set A, 3 r   2.0031   0.9406   50.0  not run FAIL: overfit
+2026-03-21 20:15:07,145 
+Results saved to /home/ubuntu/projects/crypto-trader/sjm_results.json
+2026-03-21 20:15:07,145 Report saved to /home/ubuntu/projects/crypto-trader/REPORT_SJM.md

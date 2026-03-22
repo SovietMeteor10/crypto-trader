@@ -1,0 +1,17 @@
+{
+  "exp1_pullback": {
+    "best_params": {
+      "sjm_lambda": 2.972432956272954,
+      "sjm_window": 615,
+      "trade_in_neutral": false,
+      "pullback_atr_mult": 1.3858949275277663,
+      "require_reversal_bar": false
+    },
+    "train_sharpe": 1.4977,
+    "val_sharpe": -0.5645,
+    "train_trades": 34,
+    "val_trades": 19,
+    "overfit_check": "FAIL",
+    "conclusion": "FAIL: overfit"
+  }
+}
