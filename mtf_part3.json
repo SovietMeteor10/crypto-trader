@@ -1,0 +1,30 @@
+{
+  "SOL_Holdout": {
+    "sharpe_d": 0.15,
+    "return": -36.1,
+    "max_dd": -69.1,
+    "mean_mo": 1.26,
+    "worst_mo": -37.44
+  },
+  "SOL_2022": {
+    "sharpe_d": 0.37,
+    "return": -8.5,
+    "max_dd": -73.2,
+    "mean_mo": 0.67,
+    "worst_mo": -35.32
+  },
+  "BTC_Holdout": {
+    "sharpe_d": 0.02,
+    "return": -18.3,
+    "max_dd": -52.9,
+    "mean_mo": 0.53,
+    "worst_mo": -20.58
+  },
+  "BTC_2022": {
+    "sharpe_d": -0.24,
+    "return": -21.6,
+    "max_dd": -37.9,
+    "mean_mo": -2.27,
+    "worst_mo": -14.64
+  }
+}
