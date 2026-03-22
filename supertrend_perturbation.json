@@ -1,0 +1,208 @@
+{
+  "check1": {
+    "total_trades": 41,
+    "total_pnl": 0,
+    "top5_pnl": 0,
+    "top5_fraction_pct": 0,
+    "trades": [
+      {
+        "idx": 1,
+        "entry": "?",
+        "exit": "?",
+        "direction": "0",
+        "pnl": 0
+      },
+      {
+        "idx": 2,
+        "entry": "?",
+        "exit": "?",
+        "direction": "0",
+        "pnl": 0
+      },
+      {
+        "idx": 3,
+        "entry": "?",
+        "exit": "?",
+        "direction": "0",
+        "pnl": 0
+      },
+      {
+        "idx": 4,
+        "entry": "?",
+        "exit": "?",
+        "direction": "0",
+        "pnl": 0
+      },
+      {
+        "idx": 5,
+        "entry": "?",
+        "exit": "?",
+        "direction": "0",
+        "pnl": 0
+      },
+      {
+        "idx": 6,
+        "entry": "?",
+        "exit": "?",
+        "direction": "0",
+        "pnl": 0
+      },
+      {
+        "idx": 7,
+        "entry": "?",
+        "exit": "?",
+        "direction": "0",
+        "pnl": 0
+      },
+      {
+        "idx": 8,
+        "entry": "?",
+        "exit": "?",
+        "direction": "0",
+        "pnl": 0
+      },
+      {
+        "idx": 9,
+        "entry": "?",
+        "exit": "?",
+        "direction": "0",
+        "pnl": 0
+      },
+      {
+        "idx": 10,
+        "entry": "?",
+        "exit": "?",
+        "direction": "0",
+        "pnl": 0
+      }
+    ]
+  },
+  "check2": {
+    "total_windows": 28,
+    "failed_windows": [
+      {
+        "window": 1,
+        "start": "2021-07-15",
+        "end": "2021-09-14",
+        "sharpe": 0.0,
+        "trades": 1
+      },
+      {
+        "window": 2,
+        "start": "2021-09-15",
+        "end": "2021-11-14",
+        "sharpe": -2.4495,
+        "trades": 2
+      },
+      {
+        "window": 14,
+        "start": "2023-09-15",
+        "end": "2023-11-14",
+        "sharpe": 0.0,
+        "trades": 2
+      },
+      {
+        "window": 23,
+        "start": "2025-03-15",
+        "end": "2025-05-14",
+        "sharpe": -3.5804,
+        "trades": 1
+      },
+      {
+        "window": 25,
+        "start": "2025-07-15",
+        "end": "2025-09-14",
+        "sharpe": -2.4495,
+        "trades": 3
+      }
+    ],
+    "wf_pct_positive": 82.1
+  },
+  "check3": {
+    "perturbation": [
+      {
+        "name": "baseline",
+        "params": {
+          "atr_period": 19,
+          "multiplier": 3.5104482600764686,
+          "use_daily_filter": true,
+          "daily_ma_period": 26,
+          "daily_buffer_pct": 0.1049375497071539
+        },
+        "holdout_sharpe": 3.3687,
+        "trades": 41,
+        "max_dd_pct": -1.73
+      },
+      {
+        "name": "ATR 17",
+        "params": {
+          "atr_period": 17,
+          "multiplier": 3.5104482600764686,
+          "use_daily_filter": true,
+          "daily_ma_period": 26,
+          "daily_buffer_pct": 0.1049375497071539
+        },
+        "holdout_sharpe": 3.3687,
+        "trades": 41,
+        "max_dd_pct": -1.73
+      },
+      {
+        "name": "ATR 21",
+        "params": {
+          "atr_period": 21,
+          "multiplier": 3.5104482600764686,
+          "use_daily_filter": true,
+          "daily_ma_period": 26,
+          "daily_buffer_pct": 0.1049375497071539
+        },
+        "holdout_sharpe": 3.3687,
+        "trades": 41,
+        "max_dd_pct": -1.73
+      },
+      {
+        "name": "mult 3.0",
+        "params": {
+          "atr_period": 19,
+          "multiplier": 3.0,
+          "use_daily_filter": true,
+          "daily_ma_period": 26,
+          "daily_buffer_pct": 0.1049375497071539
+        },
+        "holdout_sharpe": 3.3687,
+        "trades": 41,
+        "max_dd_pct": -1.73
+      },
+      {
+        "name": "mult 4.0",
+        "params": {
+          "atr_period": 19,
+          "multiplier": 4.0,
+          "use_daily_filter": true,
+          "daily_ma_period": 26,
+          "daily_buffer_pct": 0.1049375497071539
+        },
+        "holdout_sharpe": 3.3687,
+        "trades": 41,
+        "max_dd_pct": -1.73
+      },
+      {
+        "name": "no daily filter",
+        "params": {
+          "atr_period": 19,
+          "multiplier": 3.5104482600764686,
+          "use_daily_filter": false,
+          "daily_ma_period": 26,
+          "daily_buffer_pct": 0.1049375497071539
+        },
+        "holdout_sharpe": 0.0618,
+        "trades": 1,
+        "max_dd_pct": -11.66
+      }
+    ],
+    "robustness": "FRAGILE",
+    "min_sharpe": 0.0618,
+    "max_sharpe": 3.3687,
+    "all_above_2": false,
+    "any_below_1": true
+  }
+}
