@@ -200,3 +200,78 @@ Leverage cap: 3x
 **ZERO strategies passed all validation checks.**
 
 The three closest candidates (SOL 1C trend+regime 4h, SOL 4A vol breakout 1h, SOL 1A dual MA 4h) all failed walk-forward validation with fewer than 50% positive OOS windows.
+
+---
+
+## V3 Improvement Experiments (2026-03-22)
+
+Baseline: SOL 1C SJM V3 — Holdout Sharpe 0.91, WF 60.7%, all flags CLEAR (active DD metric).
+
+### Exp1-Pullback: SOL 1C SJM + Pullback Entry
+Pullback atr mult: 1.386
+Require reversal bar: False
+Signal density vs base: 11.2% of base signals used (very aggressive filter)
+Train Sharpe: 1.4977 (34 trades)
+Val Sharpe: -0.5645 (19 trades)
+WF % positive: not run
+Mean OOS Sharpe: not run
+Holdout Sharpe: not run
+All flags clear: N/A
+Conclusion: FAIL: overfit — train positive, validation negative
+Delta vs V3: N/A
+
+Notes: Pullback filter reduced signals dramatically (11.2% of base). Optuna
+pushed pullback_atr_mult to 1.39 (near max range), effectively minimising the
+filter. Even so, only 34 train trades — insufficient for reliable statistics.
+The pullback concept needs a different base signal with more frequent entries.
+
+### Exp2-Trailing: SOL 1C SJM + ATR Trailing Stop
+ATR stop mult: 2.571
+ATR stop period: 8
+Exit breakdown: trailing stop reduces avg trade duration from 39.4h to 27.2h
+Avg trade duration: 27.2h (V3 base: 39.4h)
+Train Sharpe: 1.7201 (168 trades)
+Val Sharpe: 1.5431 (78 trades)
+WF % positive: 53.6% (threshold: 60%)
+Mean OOS Sharpe: 1.0633
+Holdout Sharpe: not run
+All flags clear: N/A
+Conclusion: FAIL: WF too low (53.6%) — 7 points below threshold
+Delta vs V3: N/A
+
+Notes: Trailing stop showed promise — val Sharpe strong (1.54) and WF mean
+OOS Sharpe actually higher than V3 (1.06 vs 0.91). But WF consistency dropped
+from 60.7% to 53.6%. The stop cuts trades short too often in choppy markets,
+hurting consistency even though average OOS Sharpe improved.
+
+### Exp3-Portfolio: SOL V3 + BTC 1C SJM Two-Asset Portfolio
+SOL V3 vs BTC 1C return correlation: 0.237
+BTC 1C SJM train Sharpe: 1.325
+BTC 1C SJM val Sharpe: 0.869
+BTC 1C SJM WF % positive: 42.9%
+BTC 1C SJM WF mean Sharpe: -0.584
+Portfolio holdout Sharpe: not run (BTC SJM failed WF)
+Conclusion: FAIL: BTC SJM failed walk-forward (42.9%)
+Delta vs SOL V3 alone: N/A
+
+Notes: Correlation was low (0.24), confirming diversification potential exists.
+BTC SJM passed overfit check but failed WF comprehensively (42.9%, negative mean).
+BTC is harder to trade with trend-following than SOL at 4H — lower volatility
+and more mean-reverting behaviour at this timeframe.
+
+### Combination: Pullback + Trailing Stop
+Not run — neither individual experiment reached holdout, so combination
+was not triggered per the stopping rules.
+
+### Summary
+
+| Configuration | WF% | Val Sharpe | Holdout Sharpe | Conclusion |
+|--------------|------|------------|----------------|------------|
+| V3 baseline | 60.7 | 2.00 | 0.91 | PASS (best) |
+| V3 + Pullback | N/A | -0.56 | N/A | FAIL: overfit |
+| V3 + Trailing | 53.6 | 1.54 | N/A | FAIL: WF low |
+| BTC 1C SJM | 42.9 | 0.87 | N/A | FAIL: WF low |
+
+**V3 baseline remains the best configuration.** None of the three improvements
+managed to pass all validation gates. The trailing stop (Exp 2) came closest
+with strong val Sharpe and OOS mean, but lacked consistency across WF windows.

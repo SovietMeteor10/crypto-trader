@@ -81,9 +81,25 @@ Key findings:
 - `outputs/experiments/evt_sizing/SUMMARY.md`
 - `outputs/experiments/evt_sizing/leverage_over_time_*.png`
 
+## 2026-03-22 — V3 Improvement Experiments: ALL FAILED
+
+Three experiments attempted to push V3 holdout Sharpe above 1.2:
+
+1. **Pullback entry**: FAIL — overfit (train 1.50, val -0.56). Only 34 trades in training. Pullback filter too aggressive.
+2. **ATR trailing stop**: FAIL — WF too low (53.6% vs 60% threshold). Val Sharpe strong (1.54) and mean OOS Sharpe good (1.06), but inconsistent across windows.
+3. **BTC 1C SJM + portfolio**: FAIL — BTC SJM WF only 42.9%. Correlation was low (0.24) so diversification potential exists, but BTC trend-following doesn't work at 4H.
+
+**V3 baseline remains the best configuration at Sharpe 0.91.**
+
+### Deliverables
+- `REPORT_IMPROVED.md` — full experiment report
+- `strategies/sol_1c_sjm_pullback.py` — pullback strategy
+- `improve_v3_results.json` — structured results
+
 ## Next steps
 
 1. **V3 is deployable** with the active drawdown metric interpretation
 2. The EVT conservative config is the safest option (0.34% max DD, 0.90 Sharpe)
-3. Consider: paper trade V3 + EVT conservative for 1-2 months before live deployment
-4. The fixed fractional baseline (Sharpe 0.91, 3.22% max DD) is also acceptable if the 241-day flat period is understood as regime-correct behaviour
+3. Recommend 3-month paper trade before live deployment
+4. Only viable at funded account scale ($25k+), not retail ($1k)
+5. If seeking higher Sharpe: consider different asset class or higher-frequency data
