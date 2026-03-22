@@ -349,3 +349,18 @@ Holdout Sharpe: not run
 All flags clear: NO
 Delta vs V3 (0.91): N/A
 Conclusion: FAIL: WF too low (22.7%)
+
+
+### LGBM: LightGBM market structure model
+
+Features: 1H MS aggregated + 4H OHLCV + regime context + time (79 total)
+Best config: conf=0.52, depth=4, leaves=15, lr=0.05
+Disguised momentum: NO
+Top features: ['rvol_1w', 'dow_sin', 'ret_4h', 'ret_1d', 'trend_regime']
+WF % positive: 100.0%
+WF mean OOS Sharpe: 1.11
+Holdout Sharpe: 0.05
+Dir accuracy: 43.0%
+Coverage: 28.2%
+Delta vs V3: -0.86
+Conclusion: FAIL

@@ -1,0 +1,225 @@
+{
+  "best": {
+    "config": {
+      "confidence_threshold": 0.52,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 1.0,
+    "wf_mean_sharpe": 1.1088000640383069,
+    "mean_coverage": 0.003703703703703704,
+    "mean_dir_accuracy": 0.5,
+    "per_window": [
+      {
+        "window": 0,
+        "test_sharpe": 1.1088000640383069,
+        "train_sharpe": 0.3214853493187129,
+        "dir_acc": 0.5,
+        "coverage": 0.003703703703703704,
+        "n_trades": 4,
+        "top_features": [
+          "rvol_1w",
+          "basis_vs_ma_change",
+          "taker_momentum_change",
+          "ret_1d",
+          "ls_ratio_std"
+        ]
+      }
+    ]
+  },
+  "config_0": {
+    "config": {
+      "confidence_threshold": 0.52,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 1.0,
+    "wf_mean_sharpe": 1.1088000640383069,
+    "mean_coverage": 0.003703703703703704,
+    "mean_dir_accuracy": 0.5,
+    "per_window": [
+      {
+        "window": 0,
+        "test_sharpe": 1.1088000640383069,
+        "train_sharpe": 0.3214853493187129,
+        "dir_acc": 0.5,
+        "coverage": 0.003703703703703704,
+        "n_trades": 4,
+        "top_features": [
+          "rvol_1w",
+          "basis_vs_ma_change",
+          "taker_momentum_change",
+          "ret_1d",
+          "ls_ratio_std"
+        ]
+      }
+    ]
+  },
+  "config_1": {
+    "config": {
+      "confidence_threshold": 0.55,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 0.0,
+    "wf_mean_sharpe": 0.0,
+    "mean_coverage": 0.0,
+    "mean_dir_accuracy": 0.0,
+    "per_window": [
+      {
+        "window": 0,
+        "test_sharpe": 0.0,
+        "train_sharpe": -1.8542613265335302,
+        "dir_acc": 0.0,
+        "coverage": 0.0,
+        "n_trades": 0,
+        "top_features": [
+          "rvol_1w",
+          "basis_vs_ma_change",
+          "taker_momentum_change",
+          "ret_1d",
+          "ls_ratio_std"
+        ]
+      }
+    ]
+  },
+  "config_2": {
+    "config": {
+      "confidence_threshold": 0.52,
+      "max_depth": 3,
+      "num_leaves": 8,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 0.0,
+    "wf_mean_sharpe": -2.07637761896128,
+    "mean_coverage": 0.003703703703703704,
+    "mean_dir_accuracy": 0.0,
+    "per_window": [
+      {
+        "window": 0,
+        "test_sharpe": -2.07637761896128,
+        "train_sharpe": -0.9770862530719835,
+        "dir_acc": 0.0,
+        "coverage": 0.003703703703703704,
+        "n_trades": 4,
+        "top_features": [
+          "rvol_1w",
+          "ret_1d",
+          "ls_ratio_std",
+          "smart_dumb_div_std",
+          "taker_momentum_change"
+        ]
+      }
+    ]
+  },
+  "config_3": {
+    "config": {
+      "confidence_threshold": 0.52,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.02,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 0.0,
+    "wf_mean_sharpe": -1.7698600588666735,
+    "mean_coverage": 0.001851851851851852,
+    "mean_dir_accuracy": 0.0,
+    "per_window": [
+      {
+        "window": 0,
+        "test_sharpe": -1.7698600588666735,
+        "train_sharpe": -0.030963962873301394,
+        "dir_acc": 0.0,
+        "coverage": 0.001851851851851852,
+        "n_trades": 2,
+        "top_features": [
+          "rvol_1w",
+          "basis_vs_ma_change",
+          "trend_regime",
+          "ret_1d",
+          "taker_momentum_change"
+        ]
+      }
+    ]
+  },
+  "config_4": {
+    "config": {
+      "confidence_threshold": 0.55,
+      "max_depth": 4,
+      "num_leaves": 31,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 0.0,
+    "wf_mean_sharpe": 0.0,
+    "mean_coverage": 0.0,
+    "mean_dir_accuracy": 0.0,
+    "per_window": [
+      {
+        "window": 0,
+        "test_sharpe": 0.0,
+        "train_sharpe": -1.8542613265335302,
+        "dir_acc": 0.0,
+        "coverage": 0.0,
+        "n_trades": 0,
+        "top_features": [
+          "rvol_1w",
+          "basis_vs_ma_change",
+          "taker_momentum_change",
+          "ret_1d",
+          "ls_ratio_std"
+        ]
+      }
+    ]
+  },
+  "holdout": {
+    "sharpe": 0.05024512429667871,
+    "trades": 740,
+    "coverage": 0.28236262605474377,
+    "dir_accuracy": 0.43002915451895046,
+    "worst_month": -0.2451993207515203,
+    "best_month": 0.4243745340456142,
+    "mean_month": 0.002323343875077772,
+    "disguised_momentum": false,
+    "top_features": [
+      "rvol_1w",
+      "smart_dumb_div_std",
+      "rvol_1d",
+      "ret_1w",
+      "taker_momentum_mean",
+      "ret_1d",
+      "dow_sin",
+      "taker_momentum_change",
+      "body_ratio",
+      "ret_12h",
+      "rvol_ratio",
+      "basis_vs_ma_change",
+      "ret_4h",
+      "oi_chg_1h_std",
+      "ls_ratio_std"
+    ]
+  },
+  "summary": {
+    "best_wf_consistency": 1.0,
+    "best_wf_mean_sharpe": 1.1088000640383069,
+    "holdout_sharpe": 0.05024512429667871,
+    "holdout_trades": 740,
+    "holdout_coverage": 0.28236262605474377,
+    "holdout_dir_acc": 0.43002915451895046,
+    "disguised_momentum": false,
+    "delta_vs_v3": -0.8597548757033213
+  }
+}
