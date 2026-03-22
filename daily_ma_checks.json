@@ -1,0 +1,76 @@
+{
+  "check1": [
+    {
+      "total_ret": 50.1,
+      "max_dd": -2.1,
+      "worst_month": 0.1,
+      "sharpe": 6.08,
+      "trades": 83,
+      "win_months": 26,
+      "total_months": 26,
+      "fraction": 0.02
+    },
+    {
+      "total_ret": 173.0,
+      "max_dd": -4.8,
+      "worst_month": 0.46,
+      "sharpe": 6.19,
+      "trades": 83,
+      "win_months": 26,
+      "total_months": 26,
+      "fraction": 0.05
+    },
+    {
+      "total_ret": 619.6,
+      "max_dd": -8.7,
+      "worst_month": 1.49,
+      "sharpe": 6.35,
+      "trades": 83,
+      "win_months": 26,
+      "total_months": 26,
+      "fraction": 0.1
+    },
+    {
+      "total_ret": 4461.9,
+      "max_dd": -15.0,
+      "worst_month": 4.61,
+      "sharpe": 6.6,
+      "trades": 83,
+      "win_months": 26,
+      "total_months": 26,
+      "fraction": 0.2
+    },
+    {
+      "total_ret": 25925.6,
+      "max_dd": -21.0,
+      "worst_month": 7.0,
+      "sharpe": 6.75,
+      "trades": 83,
+      "win_months": 26,
+      "total_months": 26,
+      "fraction": 0.3
+    }
+  ],
+  "check2": {
+    "sol_start_price": 103.18,
+    "sol_end_price": 89.8,
+    "buy_hold_ret_pct": -13.0,
+    "strategy_ret_pct": 50.1,
+    "long_pct": 49.4,
+    "short_pct": 50.6,
+    "flat_pct": 0.0,
+    "correlation_with_bh": 0.4096,
+    "monthly_alpha_pct": 1.38
+  },
+  "check3": {
+    "sol_bh_2022_pct": -94.3,
+    "strategy_2022_ret_pct": 29.2,
+    "strategy_2022_sharpe": 7.38,
+    "strategy_2022_max_dd": -2.1,
+    "strategy_2022_trades": 47,
+    "strategy_2022_losing_months": 0,
+    "strategy_2022_worst_month": 0.57,
+    "long_pct_2022": 29.7,
+    "short_pct_2022": 70.3
+  }
+}
