@@ -13,5 +13,23 @@
     "val_trades": 19,
     "overfit_check": "FAIL",
     "conclusion": "FAIL: overfit"
+  },
+  "exp2_trailing": {
+    "best_params": {
+      "sjm_lambda": 1.5837953148080575,
+      "sjm_window": 515,
+      "trade_in_neutral": true,
+      "atr_stop_mult": 2.5712630214482086,
+      "atr_stop_period": 8
+    },
+    "train_sharpe": 1.7201,
+    "val_sharpe": 1.5431,
+    "train_trades": 168,
+    "val_trades": 78,
+    "overfit_check": "PASS",
+    "wf_windows": 28,
+    "wf_pct_positive": 53.6,
+    "wf_mean_sharpe": 1.0633,
+    "conclusion": "FAIL: WF too low (53.6%)"
   }
 }
