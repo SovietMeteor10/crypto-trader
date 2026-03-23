@@ -1,0 +1,1287 @@
+{
+  "all_combos": [
+    {
+      "z_window": 336,
+      "entry_z": 2.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.2984,
+        "max_dd": -78.79,
+        "worst_month": -29.35,
+        "total_return": -73.22,
+        "mean_monthly": -4.1341
+      },
+      "val": {
+        "sharpe": 0.389,
+        "max_dd": -14.28,
+        "worst_month": -6.88,
+        "total_return": 5.09,
+        "mean_monthly": 0.5696
+      },
+      "holdout": {
+        "sharpe": 0.992,
+        "max_dd": -36.68,
+        "worst_month": -25.13,
+        "total_return": 74.76,
+        "mean_monthly": 2.5765
+      },
+      "n_trades_total": 123,
+      "train_trades": 98,
+      "val_trades": 37,
+      "ho_trades": 111,
+      "ho_trades_per_month": 4.2
+    },
+    {
+      "z_window": 336,
+      "entry_z": 2.0,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.2723,
+        "max_dd": -81.03,
+        "worst_month": -31.8,
+        "total_return": -75.27,
+        "mean_monthly": -4.2893
+      },
+      "val": {
+        "sharpe": 0.2694,
+        "max_dd": -18.17,
+        "worst_month": -10.11,
+        "total_return": 3.27,
+        "mean_monthly": 0.4819
+      },
+      "holdout": {
+        "sharpe": 0.6083,
+        "max_dd": -38.65,
+        "worst_month": -26.14,
+        "total_return": 37.72,
+        "mean_monthly": 1.6859
+      },
+      "n_trades_total": 174,
+      "train_trades": 142,
+      "val_trades": 57,
+      "ho_trades": 149,
+      "ho_trades_per_month": 5.6
+    },
+    {
+      "z_window": 336,
+      "entry_z": 1.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.3169,
+        "max_dd": -82.17,
+        "worst_month": -33.21,
+        "total_return": -77.67,
+        "mean_monthly": -4.4209
+      },
+      "val": {
+        "sharpe": 0.286,
+        "max_dd": -16.82,
+        "worst_month": -10.8,
+        "total_return": 3.67,
+        "mean_monthly": 0.5082
+      },
+      "holdout": {
+        "sharpe": 0.2881,
+        "max_dd": -40.63,
+        "worst_month": -25.05,
+        "total_return": 9.37,
+        "mean_monthly": 0.8015
+      },
+      "n_trades_total": 238,
+      "train_trades": 200,
+      "val_trades": 81,
+      "ho_trades": 195,
+      "ho_trades_per_month": 7.3
+    },
+    {
+      "z_window": 168,
+      "entry_z": 2.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.2783,
+        "max_dd": -76.56,
+        "worst_month": -35.44,
+        "total_return": -72.52,
+        "mean_monthly": -3.9585
+      },
+      "val": {
+        "sharpe": -1.1698,
+        "max_dd": -24.42,
+        "worst_month": -9.83,
+        "total_return": -19.03,
+        "mean_monthly": -1.652
+      },
+      "holdout": {
+        "sharpe": 0.1316,
+        "max_dd": -42.2,
+        "worst_month": -14.96,
+        "total_return": -0.86,
+        "mean_monthly": 0.4195
+      },
+      "n_trades_total": 234,
+      "train_trades": 186,
+      "val_trades": 82,
+      "ho_trades": 200,
+      "ho_trades_per_month": 7.5
+    },
+    {
+      "z_window": 168,
+      "entry_z": 1.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.3887,
+        "max_dd": -82.55,
+        "worst_month": -38.52,
+        "total_return": -80.38,
+        "mean_monthly": -5.0145
+      },
+      "val": {
+        "sharpe": -0.2965,
+        "max_dd": -25.54,
+        "worst_month": -11.36,
+        "total_return": -7.42,
+        "mean_monthly": -0.4629
+      },
+      "holdout": {
+        "sharpe": -0.0356,
+        "max_dd": -55.08,
+        "worst_month": -19.55,
+        "total_return": -13.77,
+        "mean_monthly": 0.0789
+      },
+      "n_trades_total": 450,
+      "train_trades": 372,
+      "val_trades": 148,
+      "ho_trades": 377,
+      "ho_trades_per_month": 14.2
+    },
+    {
+      "z_window": 48,
+      "entry_z": 2.0,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -1.8161,
+        "max_dd": -81.34,
+        "worst_month": -29.21,
+        "total_return": -79.83,
+        "mean_monthly": -5.2917
+      },
+      "val": {
+        "sharpe": -1.2876,
+        "max_dd": -29.12,
+        "worst_month": -15.81,
+        "total_return": -20.01,
+        "mean_monthly": -1.6413
+      },
+      "holdout": {
+        "sharpe": -0.1677,
+        "max_dd": -35.29,
+        "worst_month": -12.24,
+        "total_return": -17.01,
+        "mean_monthly": -0.4128
+      },
+      "n_trades_total": 1162,
+      "train_trades": 956,
+      "val_trades": 437,
+      "ho_trades": 925,
+      "ho_trades_per_month": 34.7
+    },
+    {
+      "z_window": 336,
+      "entry_z": 2.5,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -0.7469,
+        "max_dd": -57.76,
+        "worst_month": -17.03,
+        "total_return": -49.95,
+        "mean_monthly": -2.154
+      },
+      "val": {
+        "sharpe": -0.8435,
+        "max_dd": -20.4,
+        "worst_month": -7.71,
+        "total_return": -12.3,
+        "mean_monthly": -1.0236
+      },
+      "holdout": {
+        "sharpe": -0.3038,
+        "max_dd": -36.32,
+        "worst_month": -16.14,
+        "total_return": -22.13,
+        "mean_monthly": -0.7563
+      },
+      "n_trades_total": 138,
+      "train_trades": 112,
+      "val_trades": 41,
+      "ho_trades": 122,
+      "ho_trades_per_month": 4.6
+    },
+    {
+      "z_window": 168,
+      "entry_z": 2.0,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.3534,
+        "max_dd": -81.51,
+        "worst_month": -38.91,
+        "total_return": -77.3,
+        "mean_monthly": -4.5193
+      },
+      "val": {
+        "sharpe": -1.5595,
+        "max_dd": -29.09,
+        "worst_month": -11.66,
+        "total_return": -25.5,
+        "mean_monthly": -2.2898
+      },
+      "holdout": {
+        "sharpe": -0.3186,
+        "max_dd": -49.49,
+        "worst_month": -18.34,
+        "total_return": -27.88,
+        "mean_monthly": -0.6947
+      },
+      "n_trades_total": 310,
+      "train_trades": 254,
+      "val_trades": 108,
+      "ho_trades": 258,
+      "ho_trades_per_month": 9.7
+    },
+    {
+      "z_window": 96,
+      "entry_z": 2.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -0.5136,
+        "max_dd": -57.81,
+        "worst_month": -27.02,
+        "total_return": -46.13,
+        "mean_monthly": -1.6877
+      },
+      "val": {
+        "sharpe": -1.1038,
+        "max_dd": -26.54,
+        "worst_month": -7.71,
+        "total_return": -18.75,
+        "mean_monthly": -1.5917
+      },
+      "holdout": {
+        "sharpe": -0.3428,
+        "max_dd": -47.62,
+        "worst_month": -21.58,
+        "total_return": -26.59,
+        "mean_monthly": -0.5893
+      },
+      "n_trades_total": 378,
+      "train_trades": 310,
+      "val_trades": 140,
+      "ho_trades": 306,
+      "ho_trades_per_month": 11.5
+    },
+    {
+      "z_window": 48,
+      "entry_z": 1.5,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 0.9048,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 118.73,
+        "mean_monthly": 4.6788
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 48,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 0.9212,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 123.01,
+        "mean_monthly": 4.7412
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 48,
+      "entry_z": 2.5,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 0.9428,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 128.75,
+        "mean_monthly": 4.8248
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 96,
+      "entry_z": 1.5,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 0.907,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 119.26,
+        "mean_monthly": 4.6866
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 96,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 0.9212,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 123.01,
+        "mean_monthly": 4.7412
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 96,
+      "entry_z": 2.5,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 0.9625,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 134.24,
+        "mean_monthly": 4.9047
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 168,
+      "entry_z": 1.5,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 0.925,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 123.91,
+        "mean_monthly": 4.7543
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 168,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 0.9428,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 128.75,
+        "mean_monthly": 4.8248
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 168,
+      "entry_z": 2.5,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 0.9543,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 131.95,
+        "mean_monthly": 4.8713
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 336,
+      "entry_z": 1.5,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 1.0095,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 145.46,
+        "mean_monthly": 5.0679
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 336,
+      "entry_z": 2.0,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 1.0294,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 151.31,
+        "mean_monthly": 5.1532
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 336,
+      "entry_z": 2.5,
+      "exit_z": 0.0,
+      "train": {
+        "sharpe": 1.0294,
+        "max_dd": -41.57,
+        "worst_month": -21.4,
+        "total_return": 151.31,
+        "mean_monthly": 5.1532
+      },
+      "val": {
+        "sharpe": -1.124,
+        "max_dd": -36.07,
+        "worst_month": -15.65,
+        "total_return": -25.76,
+        "mean_monthly": -2.2678
+      },
+      "holdout": {
+        "sharpe": -0.357,
+        "max_dd": -69.69,
+        "worst_month": -16.82,
+        "total_return": -39.87,
+        "mean_monthly": -1.0605
+      },
+      "n_trades_total": 1,
+      "train_trades": 1,
+      "val_trades": 0,
+      "ho_trades": 0,
+      "ho_trades_per_month": 0.0
+    },
+    {
+      "z_window": 48,
+      "entry_z": 2.0,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.6042,
+        "max_dd": -83.46,
+        "worst_month": -33.87,
+        "total_return": -81.23,
+        "mean_monthly": -5.3312
+      },
+      "val": {
+        "sharpe": -1.2804,
+        "max_dd": -27.55,
+        "worst_month": -16.54,
+        "total_return": -22.38,
+        "mean_monthly": -1.8483
+      },
+      "holdout": {
+        "sharpe": -0.4312,
+        "max_dd": -50.07,
+        "worst_month": -20.18,
+        "total_return": -33.77,
+        "mean_monthly": -1.0662
+      },
+      "n_trades_total": 948,
+      "train_trades": 770,
+      "val_trades": 363,
+      "ho_trades": 760,
+      "ho_trades_per_month": 28.5
+    },
+    {
+      "z_window": 96,
+      "entry_z": 1.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.2786,
+        "max_dd": -79.33,
+        "worst_month": -34.9,
+        "total_return": -78.14,
+        "mean_monthly": -4.764
+      },
+      "val": {
+        "sharpe": -1.2997,
+        "max_dd": -35.44,
+        "worst_month": -14.46,
+        "total_return": -24.07,
+        "mean_monthly": -2.0968
+      },
+      "holdout": {
+        "sharpe": -0.5613,
+        "max_dd": -63.25,
+        "worst_month": -23.52,
+        "total_return": -42.03,
+        "mean_monthly": -1.3719
+      },
+      "n_trades_total": 723,
+      "train_trades": 588,
+      "val_trades": 258,
+      "ho_trades": 596,
+      "ho_trades_per_month": 22.4
+    },
+    {
+      "z_window": 96,
+      "entry_z": 2.0,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -0.9909,
+        "max_dd": -70.62,
+        "worst_month": -33.01,
+        "total_return": -68.01,
+        "mean_monthly": -3.5419
+      },
+      "val": {
+        "sharpe": -1.7318,
+        "max_dd": -33.03,
+        "worst_month": -9.46,
+        "total_return": -28.26,
+        "mean_monthly": -2.6117
+      },
+      "holdout": {
+        "sharpe": -0.6826,
+        "max_dd": -55.81,
+        "worst_month": -22.58,
+        "total_return": -44.02,
+        "mean_monthly": -1.6142
+      },
+      "n_trades_total": 516,
+      "train_trades": 426,
+      "val_trades": 180,
+      "ho_trades": 423,
+      "ho_trades_per_month": 15.9
+    },
+    {
+      "z_window": 48,
+      "entry_z": 1.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.7653,
+        "max_dd": -87.37,
+        "worst_month": -36.93,
+        "total_return": -85.78,
+        "mean_monthly": -6.173
+      },
+      "val": {
+        "sharpe": -2.1487,
+        "max_dd": -36.83,
+        "worst_month": -15.74,
+        "total_return": -35.5,
+        "mean_monthly": -3.4189
+      },
+      "holdout": {
+        "sharpe": -0.8268,
+        "max_dd": -67.35,
+        "worst_month": -21.22,
+        "total_return": -52.58,
+        "mean_monthly": -2.1918
+      },
+      "n_trades_total": 1300,
+      "train_trades": 1052,
+      "val_trades": 465,
+      "ho_trades": 1078,
+      "ho_trades_per_month": 40.5
+    },
+    {
+      "z_window": 48,
+      "entry_z": 1.5,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -2.1422,
+        "max_dd": -88.28,
+        "worst_month": -31.3,
+        "total_return": -87.22,
+        "mean_monthly": -6.73
+      },
+      "val": {
+        "sharpe": -2.3651,
+        "max_dd": -37.27,
+        "worst_month": -16.08,
+        "total_return": -35.3,
+        "mean_monthly": -3.3935
+      },
+      "holdout": {
+        "sharpe": -0.8814,
+        "max_dd": -58.11,
+        "worst_month": -17.73,
+        "total_return": -49.81,
+        "mean_monthly": -2.2313
+      },
+      "n_trades_total": 1805,
+      "train_trades": 1470,
+      "val_trades": 643,
+      "ho_trades": 1489,
+      "ho_trades_per_month": 55.9
+    },
+    {
+      "z_window": 336,
+      "entry_z": 2.0,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -0.8348,
+        "max_dd": -66.03,
+        "worst_month": -23.92,
+        "total_return": -57.25,
+        "mean_monthly": -2.5289
+      },
+      "val": {
+        "sharpe": -0.9318,
+        "max_dd": -19.32,
+        "worst_month": -9.14,
+        "total_return": -14.94,
+        "mean_monthly": -1.2484
+      },
+      "holdout": {
+        "sharpe": -1.0275,
+        "max_dd": -56.3,
+        "worst_month": -18.18,
+        "total_return": -51.87,
+        "mean_monthly": -2.4698
+      },
+      "n_trades_total": 214,
+      "train_trades": 188,
+      "val_trades": 71,
+      "ho_trades": 168,
+      "ho_trades_per_month": 6.3
+    },
+    {
+      "z_window": 48,
+      "entry_z": 2.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.4255,
+        "max_dd": -75.37,
+        "worst_month": -28.26,
+        "total_return": -74.66,
+        "mean_monthly": -4.4676
+      },
+      "val": {
+        "sharpe": -1.3141,
+        "max_dd": -25.61,
+        "worst_month": -12.63,
+        "total_return": -21.26,
+        "mean_monthly": -1.8227
+      },
+      "holdout": {
+        "sharpe": -1.1735,
+        "max_dd": -65.73,
+        "worst_month": -19.97,
+        "total_return": -55.72,
+        "mean_monthly": -2.6485
+      },
+      "n_trades_total": 638,
+      "train_trades": 522,
+      "val_trades": 237,
+      "ho_trades": 515,
+      "ho_trades_per_month": 19.3
+    },
+    {
+      "z_window": 168,
+      "entry_z": 2.5,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -1.1484,
+        "max_dd": -66.05,
+        "worst_month": -19.2,
+        "total_return": -63.47,
+        "mean_monthly": -3.2678
+      },
+      "val": {
+        "sharpe": -1.2624,
+        "max_dd": -20.91,
+        "worst_month": -5.22,
+        "total_return": -17.63,
+        "mean_monthly": -1.5654
+      },
+      "holdout": {
+        "sharpe": -1.185,
+        "max_dd": -60.29,
+        "worst_month": -18.36,
+        "total_return": -52.95,
+        "mean_monthly": -2.5683
+      },
+      "n_trades_total": 258,
+      "train_trades": 212,
+      "val_trades": 94,
+      "ho_trades": 210,
+      "ho_trades_per_month": 7.9
+    },
+    {
+      "z_window": 336,
+      "entry_z": 1.5,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -1.2649,
+        "max_dd": -76.8,
+        "worst_month": -28.85,
+        "total_return": -72.93,
+        "mean_monthly": -3.9511
+      },
+      "val": {
+        "sharpe": -1.0837,
+        "max_dd": -22.49,
+        "worst_month": -8.55,
+        "total_return": -18.07,
+        "mean_monthly": -1.5355
+      },
+      "holdout": {
+        "sharpe": -1.2288,
+        "max_dd": -62.64,
+        "worst_month": -18.99,
+        "total_return": -60.71,
+        "mean_monthly": -3.1779
+      },
+      "n_trades_total": 341,
+      "train_trades": 294,
+      "val_trades": 119,
+      "ho_trades": 268,
+      "ho_trades_per_month": 10.1
+    },
+    {
+      "z_window": 168,
+      "entry_z": 1.5,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -1.2756,
+        "max_dd": -75.48,
+        "worst_month": -29.84,
+        "total_return": -74.02,
+        "mean_monthly": -4.2471
+      },
+      "val": {
+        "sharpe": -1.252,
+        "max_dd": -22.51,
+        "worst_month": -8.91,
+        "total_return": -20.51,
+        "mean_monthly": -1.8048
+      },
+      "holdout": {
+        "sharpe": -1.2594,
+        "max_dd": -69.26,
+        "worst_month": -19.6,
+        "total_return": -61.07,
+        "mean_monthly": -3.1239
+      },
+      "n_trades_total": 656,
+      "train_trades": 544,
+      "val_trades": 242,
+      "ho_trades": 523,
+      "ho_trades_per_month": 19.6
+    },
+    {
+      "z_window": 48,
+      "entry_z": 2.5,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -1.1327,
+        "max_dd": -60.55,
+        "worst_month": -19.37,
+        "total_return": -59.53,
+        "mean_monthly": -2.9505
+      },
+      "val": {
+        "sharpe": -1.4422,
+        "max_dd": -27.0,
+        "worst_month": -13.5,
+        "total_return": -20.07,
+        "mean_monthly": -1.69
+      },
+      "holdout": {
+        "sharpe": -1.3062,
+        "max_dd": -59.21,
+        "worst_month": -14.35,
+        "total_return": -52.6,
+        "mean_monthly": -2.5627
+      },
+      "n_trades_total": 709,
+      "train_trades": 590,
+      "val_trades": 253,
+      "ho_trades": 570,
+      "ho_trades_per_month": 21.4
+    },
+    {
+      "z_window": 96,
+      "entry_z": 1.5,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -1.5457,
+        "max_dd": -80.79,
+        "worst_month": -31.09,
+        "total_return": -78.94,
+        "mean_monthly": -5.0225
+      },
+      "val": {
+        "sharpe": -1.8182,
+        "max_dd": -30.6,
+        "worst_month": -12.23,
+        "total_return": -28.92,
+        "mean_monthly": -2.6917
+      },
+      "holdout": {
+        "sharpe": -1.4318,
+        "max_dd": -72.66,
+        "worst_month": -17.48,
+        "total_return": -65.19,
+        "mean_monthly": -3.5749
+      },
+      "n_trades_total": 1042,
+      "train_trades": 850,
+      "val_trades": 366,
+      "ho_trades": 864,
+      "ho_trades_per_month": 32.4
+    },
+    {
+      "z_window": 168,
+      "entry_z": 2.0,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -1.1996,
+        "max_dd": -72.77,
+        "worst_month": -25.76,
+        "total_return": -68.75,
+        "mean_monthly": -3.6585
+      },
+      "val": {
+        "sharpe": -1.7256,
+        "max_dd": -26.87,
+        "worst_month": -9.05,
+        "total_return": -24.96,
+        "mean_monthly": -2.2915
+      },
+      "holdout": {
+        "sharpe": -1.4681,
+        "max_dd": -68.58,
+        "worst_month": -18.76,
+        "total_return": -63.43,
+        "mean_monthly": -3.4249
+      },
+      "n_trades_total": 374,
+      "train_trades": 316,
+      "val_trades": 134,
+      "ho_trades": 298,
+      "ho_trades_per_month": 11.2
+    },
+    {
+      "z_window": 96,
+      "entry_z": 2.5,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -0.7855,
+        "max_dd": -52.74,
+        "worst_month": -16.64,
+        "total_return": -50.14,
+        "mean_monthly": -2.2497
+      },
+      "val": {
+        "sharpe": -0.6152,
+        "max_dd": -14.8,
+        "worst_month": -7.09,
+        "total_return": -9.87,
+        "mean_monthly": -0.7619
+      },
+      "holdout": {
+        "sharpe": -1.4918,
+        "max_dd": -62.72,
+        "worst_month": -19.88,
+        "total_return": -59.12,
+        "mean_monthly": -3.0052
+      },
+      "n_trades_total": 414,
+      "train_trades": 342,
+      "val_trades": 156,
+      "ho_trades": 330,
+      "ho_trades_per_month": 12.4
+    },
+    {
+      "z_window": 96,
+      "entry_z": 2.0,
+      "exit_z": 1.0,
+      "train": {
+        "sharpe": -1.2277,
+        "max_dd": -70.63,
+        "worst_month": -27.49,
+        "total_return": -68.35,
+        "mean_monthly": -3.6866
+      },
+      "val": {
+        "sharpe": -1.349,
+        "max_dd": -21.79,
+        "worst_month": -8.41,
+        "total_return": -20.72,
+        "mean_monthly": -1.8232
+      },
+      "holdout": {
+        "sharpe": -1.6541,
+        "max_dd": -69.09,
+        "worst_month": -16.62,
+        "total_return": -66.25,
+        "mean_monthly": -3.7648
+      },
+      "n_trades_total": 619,
+      "train_trades": 518,
+      "val_trades": 224,
+      "ho_trades": 493,
+      "ho_trades_per_month": 18.5
+    }
+  ],
+  "best_5": [
+    {
+      "z_window": 336,
+      "entry_z": 2.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.2984,
+        "max_dd": -78.79,
+        "worst_month": -29.35,
+        "total_return": -73.22,
+        "mean_monthly": -4.1341
+      },
+      "val": {
+        "sharpe": 0.389,
+        "max_dd": -14.28,
+        "worst_month": -6.88,
+        "total_return": 5.09,
+        "mean_monthly": 0.5696
+      },
+      "holdout": {
+        "sharpe": 0.992,
+        "max_dd": -36.68,
+        "worst_month": -25.13,
+        "total_return": 74.76,
+        "mean_monthly": 2.5765
+      },
+      "n_trades_total": 123,
+      "train_trades": 98,
+      "val_trades": 37,
+      "ho_trades": 111,
+      "ho_trades_per_month": 4.2
+    },
+    {
+      "z_window": 336,
+      "entry_z": 2.0,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.2723,
+        "max_dd": -81.03,
+        "worst_month": -31.8,
+        "total_return": -75.27,
+        "mean_monthly": -4.2893
+      },
+      "val": {
+        "sharpe": 0.2694,
+        "max_dd": -18.17,
+        "worst_month": -10.11,
+        "total_return": 3.27,
+        "mean_monthly": 0.4819
+      },
+      "holdout": {
+        "sharpe": 0.6083,
+        "max_dd": -38.65,
+        "worst_month": -26.14,
+        "total_return": 37.72,
+        "mean_monthly": 1.6859
+      },
+      "n_trades_total": 174,
+      "train_trades": 142,
+      "val_trades": 57,
+      "ho_trades": 149,
+      "ho_trades_per_month": 5.6
+    },
+    {
+      "z_window": 336,
+      "entry_z": 1.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.3169,
+        "max_dd": -82.17,
+        "worst_month": -33.21,
+        "total_return": -77.67,
+        "mean_monthly": -4.4209
+      },
+      "val": {
+        "sharpe": 0.286,
+        "max_dd": -16.82,
+        "worst_month": -10.8,
+        "total_return": 3.67,
+        "mean_monthly": 0.5082
+      },
+      "holdout": {
+        "sharpe": 0.2881,
+        "max_dd": -40.63,
+        "worst_month": -25.05,
+        "total_return": 9.37,
+        "mean_monthly": 0.8015
+      },
+      "n_trades_total": 238,
+      "train_trades": 200,
+      "val_trades": 81,
+      "ho_trades": 195,
+      "ho_trades_per_month": 7.3
+    },
+    {
+      "z_window": 168,
+      "entry_z": 2.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.2783,
+        "max_dd": -76.56,
+        "worst_month": -35.44,
+        "total_return": -72.52,
+        "mean_monthly": -3.9585
+      },
+      "val": {
+        "sharpe": -1.1698,
+        "max_dd": -24.42,
+        "worst_month": -9.83,
+        "total_return": -19.03,
+        "mean_monthly": -1.652
+      },
+      "holdout": {
+        "sharpe": 0.1316,
+        "max_dd": -42.2,
+        "worst_month": -14.96,
+        "total_return": -0.86,
+        "mean_monthly": 0.4195
+      },
+      "n_trades_total": 234,
+      "train_trades": 186,
+      "val_trades": 82,
+      "ho_trades": 200,
+      "ho_trades_per_month": 7.5
+    },
+    {
+      "z_window": 168,
+      "entry_z": 1.5,
+      "exit_z": 0.5,
+      "train": {
+        "sharpe": -1.3887,
+        "max_dd": -82.55,
+        "worst_month": -38.52,
+        "total_return": -80.38,
+        "mean_monthly": -5.0145
+      },
+      "val": {
+        "sharpe": -0.2965,
+        "max_dd": -25.54,
+        "worst_month": -11.36,
+        "total_return": -7.42,
+        "mean_monthly": -0.4629
+      },
+      "holdout": {
+        "sharpe": -0.0356,
+        "max_dd": -55.08,
+        "worst_month": -19.55,
+        "total_return": -13.77,
+        "mean_monthly": 0.0789
+      },
+      "n_trades_total": 450,
+      "train_trades": 372,
+      "val_trades": 148,
+      "ho_trades": 377,
+      "ho_trades_per_month": 14.2
+    }
+  ],
+  "positive_holdout_count": 4,
+  "qualifies": true,
+  "best_params": {
+    "z_window": 336,
+    "entry_z": 2.5,
+    "exit_z": 0.5
+  },
+  "best_holdout_sharpe": 0.992,
+  "best_holdout_max_dd": -36.68,
+  "elapsed_seconds": 98.91152834892273
+}
