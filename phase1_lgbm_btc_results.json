@@ -1,0 +1,558 @@
+{
+  "config_0": {
+    "params": {
+      "confidence_threshold": 0.53,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 0.9166666666666666,
+    "wf_mean": 0.8241452579781271,
+    "coverage": 0.4944444444444444,
+    "accuracy": 0.5408908930009785,
+    "windows": [
+      {
+        "test_sharpe": 1.1092741846447665,
+        "train_sharpe": 2.6368111379192363,
+        "dir_acc": 0.5153061224489796,
+        "coverage": 0.5444444444444444,
+        "n_trades": 89
+      },
+      {
+        "test_sharpe": 0.3817350725868862,
+        "train_sharpe": 3.537568365907423,
+        "dir_acc": 0.5219512195121951,
+        "coverage": 0.5694444444444444,
+        "n_trades": 95
+      },
+      {
+        "test_sharpe": 0.8384941314924858,
+        "train_sharpe": 2.06705731042751,
+        "dir_acc": 0.6285714285714286,
+        "coverage": 0.09722222222222222,
+        "n_trades": 30
+      },
+      {
+        "test_sharpe": 0.789899706607923,
+        "train_sharpe": 1.1824502542230289,
+        "dir_acc": 0.525,
+        "coverage": 0.6666666666666666,
+        "n_trades": 134
+      },
+      {
+        "test_sharpe": 0.5551277122844828,
+        "train_sharpe": 2.1546137799413096,
+        "dir_acc": 0.47151898734177217,
+        "coverage": 0.8777777777777778,
+        "n_trades": 62
+      },
+      {
+        "test_sharpe": 3.1527780146934448,
+        "train_sharpe": 2.86428094385011,
+        "dir_acc": 0.5685483870967742,
+        "coverage": 0.6888888888888889,
+        "n_trades": 45
+      },
+      {
+        "test_sharpe": 1.6742889651637118,
+        "train_sharpe": 2.216621191154959,
+        "dir_acc": 0.5555555555555556,
+        "coverage": 0.2,
+        "n_trades": 70
+      },
+      {
+        "test_sharpe": 0.3677853274278728,
+        "train_sharpe": 2.5743620958139233,
+        "dir_acc": 0.5527426160337553,
+        "coverage": 0.6583333333333333,
+        "n_trades": 88
+      },
+      {
+        "test_sharpe": 1.2666529882028743,
+        "train_sharpe": 3.6612803978736945,
+        "dir_acc": 0.5100671140939598,
+        "coverage": 0.41388888888888886,
+        "n_trades": 62
+      },
+      {
+        "test_sharpe": 0.5135471206609014,
+        "train_sharpe": 1.9346671038413479,
+        "dir_acc": 0.5289855072463768,
+        "coverage": 0.38333333333333336,
+        "n_trades": 73
+      },
+      {
+        "test_sharpe": -1.8151857187348432,
+        "train_sharpe": 0.514523393069304,
+        "dir_acc": 0.5689655172413793,
+        "coverage": 0.32222222222222224,
+        "n_trades": 87
+      },
+      {
+        "test_sharpe": 1.0553455907070206,
+        "train_sharpe": 1.9725247102894836,
+        "dir_acc": 0.5434782608695652,
+        "coverage": 0.5111111111111111,
+        "n_trades": 63
+      }
+    ]
+  },
+  "config_1": {
+    "params": {
+      "confidence_threshold": 0.55,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 0.5,
+    "wf_mean": 0.4075120378579538,
+    "coverage": 0.17129629629629628,
+    "accuracy": 0.37112462670899055,
+    "windows": [
+      {
+        "test_sharpe": 0.0,
+        "train_sharpe": 0.0,
+        "dir_acc": 0.0,
+        "coverage": 0.0,
+        "n_trades": 0
+      },
+      {
+        "test_sharpe": -0.4957548249919858,
+        "train_sharpe": 2.188655870004477,
+        "dir_acc": 0.5460526315789473,
+        "coverage": 0.4222222222222222,
+        "n_trades": 73
+      },
+      {
+        "test_sharpe": 0.0,
+        "train_sharpe": 0.0,
+        "dir_acc": 0.0,
+        "coverage": 0.0,
+        "n_trades": 0
+      },
+      {
+        "test_sharpe": -1.6717577124027527,
+        "train_sharpe": 2.086936992638115,
+        "dir_acc": 0.5,
+        "coverage": 0.005555555555555556,
+        "n_trades": 2
+      },
+      {
+        "test_sharpe": 1.6455999639409706,
+        "train_sharpe": 1.478971959070382,
+        "dir_acc": 0.14285714285714285,
+        "coverage": 0.03888888888888889,
+        "n_trades": 18
+      },
+      {
+        "test_sharpe": 1.7655817890938867,
+        "train_sharpe": 3.076719665234882,
+        "dir_acc": 0.5232558139534884,
+        "coverage": 0.2388888888888889,
+        "n_trades": 58
+      },
+      {
+        "test_sharpe": 0.0,
+        "train_sharpe": 0.0,
+        "dir_acc": 0.0,
+        "coverage": 0.0,
+        "n_trades": 0
+      },
+      {
+        "test_sharpe": 0.8199381015764047,
+        "train_sharpe": 2.986864693080961,
+        "dir_acc": 0.59375,
+        "coverage": 0.4444444444444444,
+        "n_trades": 86
+      },
+      {
+        "test_sharpe": 0.7526240314208757,
+        "train_sharpe": 2.9506554149404245,
+        "dir_acc": 0.5,
+        "coverage": 0.20555555555555555,
+        "n_trades": 60
+      },
+      {
+        "test_sharpe": 0.7108992708284246,
+        "train_sharpe": 1.2861934108154582,
+        "dir_acc": 0.48717948717948717,
+        "coverage": 0.10833333333333334,
+        "n_trades": 56
+      },
+      {
+        "test_sharpe": -0.611212196922753,
+        "train_sharpe": 1.3851373016144917,
+        "dir_acc": 0.5862068965517241,
+        "coverage": 0.16111111111111112,
+        "n_trades": 67
+      },
+      {
+        "test_sharpe": 1.974226031752375,
+        "train_sharpe": 1.825484568593406,
+        "dir_acc": 0.5741935483870968,
+        "coverage": 0.4305555555555556,
+        "n_trades": 60
+      }
+    ]
+  },
+  "config_2": {
+    "params": {
+      "confidence_threshold": 0.53,
+      "max_depth": 3,
+      "num_leaves": 8,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 0.5833333333333334,
+    "wf_mean": 0.8564618666187105,
+    "coverage": 0.5377314814814815,
+    "accuracy": 0.5529221346757712,
+    "windows": [
+      {
+        "test_sharpe": 0.9150068799335458,
+        "train_sharpe": 2.275661728607244,
+        "dir_acc": 0.518840579710145,
+        "coverage": 0.9583333333333334,
+        "n_trades": 18
+      },
+      {
+        "test_sharpe": 1.961148591940609,
+        "train_sharpe": 2.9191012464534905,
+        "dir_acc": 0.5353535353535354,
+        "coverage": 0.55,
+        "n_trades": 105
+      },
+      {
+        "test_sharpe": -0.6307562318913271,
+        "train_sharpe": 0.21964305241884347,
+        "dir_acc": 0.68,
+        "coverage": 0.06944444444444445,
+        "n_trades": 20
+      },
+      {
+        "test_sharpe": 1.4094383001410113,
+        "train_sharpe": 2.1130077899740893,
+        "dir_acc": 0.548,
+        "coverage": 0.6944444444444444,
+        "n_trades": 114
+      },
+      {
+        "test_sharpe": 0.0,
+        "train_sharpe": 0.0,
+        "dir_acc": 0.4777777777777778,
+        "coverage": 1.0,
+        "n_trades": 0
+      },
+      {
+        "test_sharpe": 2.75075682705586,
+        "train_sharpe": 3.257131382461234,
+        "dir_acc": 0.5567010309278351,
+        "coverage": 0.5388888888888889,
+        "n_trades": 29
+      },
+      {
+        "test_sharpe": 2.562623160209175,
+        "train_sharpe": 3.635566389207786,
+        "dir_acc": 0.5328467153284672,
+        "coverage": 0.38055555555555554,
+        "n_trades": 75
+      },
+      {
+        "test_sharpe": -0.3394390368217393,
+        "train_sharpe": 2.7362276201945686,
+        "dir_acc": 0.58,
+        "coverage": 0.5555555555555556,
+        "n_trades": 63
+      },
+      {
+        "test_sharpe": 0.7731934983981571,
+        "train_sharpe": 2.554146953810957,
+        "dir_acc": 0.5041666666666667,
+        "coverage": 0.6666666666666666,
+        "n_trades": 67
+      },
+      {
+        "test_sharpe": -0.5266290564614112,
+        "train_sharpe": 2.0517273115235315,
+        "dir_acc": 0.5466666666666666,
+        "coverage": 0.4166666666666667,
+        "n_trades": 74
+      },
+      {
+        "test_sharpe": -1.0789799197892846,
+        "train_sharpe": 1.3087671946962827,
+        "dir_acc": 0.58,
+        "coverage": 0.1388888888888889,
+        "n_trades": 36
+      },
+      {
+        "test_sharpe": 2.481179386709928,
+        "train_sharpe": 1.0539070921044091,
+        "dir_acc": 0.5747126436781609,
+        "coverage": 0.48333333333333334,
+        "n_trades": 51
+      }
+    ]
+  },
+  "config_3": {
+    "params": {
+      "confidence_threshold": 0.53,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.02,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 0.5,
+    "wf_mean": 0.653033160660965,
+    "coverage": 0.5175925925925925,
+    "accuracy": 0.464548519543626,
+    "windows": [
+      {
+        "test_sharpe": 0.0,
+        "train_sharpe": 0.0,
+        "dir_acc": 0.5222222222222223,
+        "coverage": 1.0,
+        "n_trades": 0
+      },
+      {
+        "test_sharpe": 2.568016032920504,
+        "train_sharpe": 3.601986870944035,
+        "dir_acc": 0.5302325581395348,
+        "coverage": 0.5972222222222222,
+        "n_trades": 82
+      },
+      {
+        "test_sharpe": -0.4049641961542436,
+        "train_sharpe": -1.2573935218004817,
+        "dir_acc": 0.8235294117647058,
+        "coverage": 0.04722222222222222,
+        "n_trades": 26
+      },
+      {
+        "test_sharpe": 2.285011360658397,
+        "train_sharpe": 2.4346939805940164,
+        "dir_acc": 0.5389048991354467,
+        "coverage": 0.9638888888888889,
+        "n_trades": 18
+      },
+      {
+        "test_sharpe": 0.0,
+        "train_sharpe": 0.0,
+        "dir_acc": 0.4777777777777778,
+        "coverage": 1.0,
+        "n_trades": 0
+      },
+      {
+        "test_sharpe": 3.430586125204602,
+        "train_sharpe": 3.0833222835525276,
+        "dir_acc": 0.5317073170731708,
+        "coverage": 0.5694444444444444,
+        "n_trades": 63
+      },
+      {
+        "test_sharpe": 0.0,
+        "train_sharpe": 2.126098995085266,
+        "dir_acc": 0.0,
+        "coverage": 0.0,
+        "n_trades": 0
+      },
+      {
+        "test_sharpe": 0.6455562599399666,
+        "train_sharpe": 2.7469648540951064,
+        "dir_acc": 0.5579399141630901,
+        "coverage": 0.6472222222222223,
+        "n_trades": 92
+      },
+      {
+        "test_sharpe": 1.3445381633444968,
+        "train_sharpe": 4.104304313209374,
+        "dir_acc": 0.49079754601226994,
+        "coverage": 0.4527777777777778,
+        "n_trades": 74
+      },
+      {
+        "test_sharpe": 0.0,
+        "train_sharpe": 0.9637833112001551,
+        "dir_acc": 0.0,
+        "coverage": 0.0,
+        "n_trades": 0
+      },
+      {
+        "test_sharpe": -2.443802916522001,
+        "train_sharpe": 0.12198363839331626,
+        "dir_acc": 0.5514705882352942,
+        "coverage": 0.37777777777777777,
+        "n_trades": 93
+      },
+      {
+        "test_sharpe": 0.4114570985398566,
+        "train_sharpe": 1.8348751235872371,
+        "dir_acc": 0.55,
+        "coverage": 0.5555555555555556,
+        "n_trades": 71
+      }
+    ]
+  },
+  "config_4": {
+    "params": {
+      "confidence_threshold": 0.55,
+      "max_depth": 4,
+      "num_leaves": 31,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "wf_pct": 0.5,
+    "wf_mean": 0.4075120378579538,
+    "coverage": 0.17129629629629628,
+    "accuracy": 0.37112462670899055,
+    "windows": [
+      {
+        "test_sharpe": 0.0,
+        "train_sharpe": 0.0,
+        "dir_acc": 0.0,
+        "coverage": 0.0,
+        "n_trades": 0
+      },
+      {
+        "test_sharpe": -0.4957548249919858,
+        "train_sharpe": 2.188655870004477,
+        "dir_acc": 0.5460526315789473,
+        "coverage": 0.4222222222222222,
+        "n_trades": 73
+      },
+      {
+        "test_sharpe": 0.0,
+        "train_sharpe": 0.0,
+        "dir_acc": 0.0,
+        "coverage": 0.0,
+        "n_trades": 0
+      },
+      {
+        "test_sharpe": -1.6717577124027527,
+        "train_sharpe": 2.086936992638115,
+        "dir_acc": 0.5,
+        "coverage": 0.005555555555555556,
+        "n_trades": 2
+      },
+      {
+        "test_sharpe": 1.6455999639409706,
+        "train_sharpe": 1.478971959070382,
+        "dir_acc": 0.14285714285714285,
+        "coverage": 0.03888888888888889,
+        "n_trades": 18
+      },
+      {
+        "test_sharpe": 1.7655817890938867,
+        "train_sharpe": 3.076719665234882,
+        "dir_acc": 0.5232558139534884,
+        "coverage": 0.2388888888888889,
+        "n_trades": 58
+      },
+      {
+        "test_sharpe": 0.0,
+        "train_sharpe": 0.0,
+        "dir_acc": 0.0,
+        "coverage": 0.0,
+        "n_trades": 0
+      },
+      {
+        "test_sharpe": 0.8199381015764047,
+        "train_sharpe": 2.986864693080961,
+        "dir_acc": 0.59375,
+        "coverage": 0.4444444444444444,
+        "n_trades": 86
+      },
+      {
+        "test_sharpe": 0.7526240314208757,
+        "train_sharpe": 2.9506554149404245,
+        "dir_acc": 0.5,
+        "coverage": 0.20555555555555555,
+        "n_trades": 60
+      },
+      {
+        "test_sharpe": 0.7108992708284246,
+        "train_sharpe": 1.2861934108154582,
+        "dir_acc": 0.48717948717948717,
+        "coverage": 0.10833333333333334,
+        "n_trades": 56
+      },
+      {
+        "test_sharpe": -0.611212196922753,
+        "train_sharpe": 1.3851373016144917,
+        "dir_acc": 0.5862068965517241,
+        "coverage": 0.16111111111111112,
+        "n_trades": 67
+      },
+      {
+        "test_sharpe": 1.974226031752375,
+        "train_sharpe": 1.825484568593406,
+        "dir_acc": 0.5741935483870968,
+        "coverage": 0.4305555555555556,
+        "n_trades": 60
+      }
+    ]
+  },
+  "holdout": {
+    "sharpe": -0.3020078381477884,
+    "trades": 32,
+    "trades_per_month": 1.2010850801479656,
+    "coverage": 0.0011059653003387018,
+    "dir_accuracy": 0.3125,
+    "worst_month": -0.02783097825907377,
+    "best_month": 0.012938622934945077,
+    "top_features": {
+      "ls_ratio_mean": 55.27341961860657,
+      "ls_ratio_last": 45.483789920806885,
+      "ret_1d": 44.491318702697754,
+      "taker_ratio_last": 36.39958047866821,
+      "adx_14": 31.537919998168945,
+      "ma_cross_12_26": 29.171470880508423,
+      "oi_chg_1h_mean": 26.390759706497192,
+      "ret_1w": 25.647720098495483,
+      "smart_dumb_div_mean": 10.042810201644897,
+      "btc_macro_trend": 5.489749908447266
+    }
+  },
+  "summary": {
+    "best_wf_pct": 0.9166666666666666,
+    "best_wf_mean": 0.8241452579781271,
+    "holdout_sharpe": -0.3020078381477884,
+    "holdout_trades_per_month": 1.2010850801479656,
+    "holdout_coverage": 0.0011059653003387018,
+    "holdout_dir_accuracy": 0.3125,
+    "features_used": [
+      "ls_ratio_last",
+      "ls_ratio_mean",
+      "smart_dumb_div_last",
+      "smart_dumb_div_mean",
+      "taker_ratio_last",
+      "crowd_long_last",
+      "oi_chg_1h_mean",
+      "ret_1d",
+      "ret_1w",
+      "rvol_1w",
+      "adx_14",
+      "ma_cross_12_26",
+      "btc_macro_trend",
+      "vol_regime"
+    ],
+    "n_features": 14,
+    "disguised_momentum": false,
+    "best_config": {
+      "confidence_threshold": 0.53,
+      "max_depth": 4,
+      "num_leaves": 15,
+      "learning_rate": 0.05,
+      "n_estimators": 200,
+      "min_child_samples": 50
+    },
+    "elapsed_seconds": 33.285091161727905
+  }
+}
