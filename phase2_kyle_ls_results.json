@@ -1,0 +1,60 @@
+{
+  "diagnostic": {
+    "layer2_pass_rate": 0.08976096599310004,
+    "trades_per_month_default": 8.195384615384615
+  },
+  "best_params": {
+    "kyle_quantile": 0.7700301719779362,
+    "ls_quantile_high": 0.817304698231061,
+    "ls_quantile_low": 0.10481902921044328,
+    "rolling_window": 108
+  },
+  "train_sharpe": 0.0,
+  "val_sharpe": -0.3557,
+  "train_trades_per_month": 0.0,
+  "val_trades_per_month": 23.8,
+  "wf_pct": 30.0,
+  "wf_mean": 0.4495,
+  "wf_sharpes": [
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    2.4495,
+    6.8707,
+    3.2415,
+    0.1524,
+    -0.7929,
+    -9.273,
+    2.9609,
+    -2.2615,
+    -2.5994,
+    0.6198,
+    6.1909,
+    3.476,
+    2.4495,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0,
+    0.0
+  ],
+  "holdout": {
+    "sharpe": -0.9575,
+    "trades": 280,
+    "trades_per_month": 10.5,
+    "win_rate": 0.4786,
+    "targets_met": false
+  },
+  "qualifies": false,
+  "conclusion": "FAIL: WF=30.0%, Sharpe=-0.96",
+  "elapsed_seconds": 331.50609493255615
+}
