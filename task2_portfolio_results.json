@@ -1,0 +1,83 @@
+{
+  "strategy_config": {
+    "daily_ma_btc": {
+      "fraction": 0.2,
+      "eff_leverage": 0.6000000000000001
+    },
+    "daily_ma_eth": {
+      "fraction": 0.2,
+      "eff_leverage": 0.6000000000000001
+    },
+    "daily_ma_sol": {
+      "fraction": 0.1,
+      "eff_leverage": 0.30000000000000004
+    },
+    "btc_eth_arb": {
+      "fraction": 0.36
+    }
+  },
+  "individual_metrics": {
+    "daily_ma_btc": {
+      "sharpe": 4.1,
+      "trades": 84,
+      "fraction": 0.2,
+      "effective_leverage": 0.6000000000000001
+    },
+    "daily_ma_eth": {
+      "sharpe": 3.97,
+      "trades": 76,
+      "fraction": 0.2,
+      "effective_leverage": 0.6000000000000001
+    },
+    "daily_ma_sol": {
+      "sharpe": 3.66,
+      "trades": 84,
+      "fraction": 0.1,
+      "effective_leverage": 0.30000000000000004
+    },
+    "btc_eth_arb": {
+      "sharpe": 0.99,
+      "trades": 111,
+      "fraction": 0.36
+    }
+  },
+  "correlation_matrix": {
+    "daily_ma_btc": {
+      "daily_ma_btc": 1.0,
+      "daily_ma_eth": 0.507,
+      "daily_ma_sol": 0.5605,
+      "btc_eth_arb": -0.0049
+    },
+    "daily_ma_eth": {
+      "daily_ma_btc": 0.507,
+      "daily_ma_eth": 1.0,
+      "daily_ma_sol": 0.4218,
+      "btc_eth_arb": -0.0817
+    },
+    "daily_ma_sol": {
+      "daily_ma_btc": 0.5605,
+      "daily_ma_eth": 0.4218,
+      "daily_ma_sol": 1.0,
+      "btc_eth_arb": -0.019
+    },
+    "btc_eth_arb": {
+      "daily_ma_btc": -0.0049,
+      "daily_ma_eth": -0.0817,
+      "daily_ma_sol": -0.019,
+      "btc_eth_arb": 1.0
+    }
+  },
+  "combined_portfolio": {
+    "sharpe": 4.94,
+    "max_dd_pct": -6.0,
+    "worst_month_pct": 0.7,
+    "mean_monthly_pct": 7.7,
+    "trades_per_month": 13.3,
+    "capital_for_1000_gbp": 12983.0
+  },
+  "daily_drawdown_check": {
+    "worst_day_pct": -3.39,
+    "safe_under_5pct": true
+  },
+  "elapsed_seconds": 3.8285202980041504
+}
