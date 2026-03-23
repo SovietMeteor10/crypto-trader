@@ -1,0 +1,63 @@
+{
+  "btc": {
+    "asset": "BTC",
+    "baseline": {
+      "sharpe": 4.86,
+      "max_dd_pct": -10.88,
+      "mean_monthly_pct": 13.17,
+      "worst_month_pct": 3.63,
+      "total_return_pct": 331.58
+    },
+    "overlay": {
+      "sharpe": 4.8,
+      "max_dd_pct": -5.4,
+      "mean_monthly_pct": 8.87,
+      "worst_month_pct": 0.92,
+      "total_return_pct": 170.88
+    },
+    "inverted": {
+      "sharpe": 3.64,
+      "max_dd_pct": -9.18,
+      "mean_monthly_pct": 5.87,
+      "worst_month_pct": 0.28,
+      "total_return_pct": 97.12
+    },
+    "sharpe_delta": -0.06,
+    "dd_delta": 5.48,
+    "monthly_delta": -4.3,
+    "avg_pos_baseline": 0.5997,
+    "avg_pos_overlay": 0.3949,
+    "verdict": "IMPROVEMENT \u2014 less drawdown with minimal Sharpe loss"
+  },
+  "sol": {
+    "asset": "SOL",
+    "baseline": {
+      "sharpe": 4.23,
+      "max_dd_pct": -10.35,
+      "mean_monthly_pct": 9.63,
+      "worst_month_pct": 2.01,
+      "total_return_pct": 197.51
+    },
+    "overlay": {
+      "sharpe": 3.94,
+      "max_dd_pct": -6.6,
+      "mean_monthly_pct": 4.9,
+      "worst_month_pct": 0.23,
+      "total_return_pct": 75.99
+    },
+    "inverted": {
+      "sharpe": 3.62,
+      "max_dd_pct": -6.21,
+      "mean_monthly_pct": 6.16,
+      "worst_month_pct": -1.48,
+      "total_return_pct": 103.48
+    },
+    "sharpe_delta": -0.29,
+    "dd_delta": 3.75,
+    "monthly_delta": -4.73,
+    "avg_pos_baseline": 0.2999,
+    "avg_pos_overlay": 0.1538,
+    "verdict": "DEGRADATION \u2014 overlay hurts performance"
+  },
+  "conclusion": "ls_ratio scaling shows genuine improvement for BTC but not both. Mixed evidence \u2014 the overlay primarily acts as a leverage reducer. For the other asset, DD improvement is proportional to smaller positions."
+}
