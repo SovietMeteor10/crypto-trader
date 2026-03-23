@@ -1,0 +1,52 @@
+{
+  "strategies_included": [
+    "daily_ma_btc",
+    "daily_ma_eth",
+    "daily_ma_sol",
+    "btc_eth_arb"
+  ],
+  "strategies_excluded_corr": [],
+  "combined_sharpe": 2.41,
+  "max_dd_pct": -9.0,
+  "worst_month_pct": -5.6,
+  "mean_monthly_pct": 1.56,
+  "trades_per_month": 9.2,
+  "capital_for_1000_per_month_gbp": 64160.0,
+  "correlation_matrix": {
+    "daily_ma_btc": {
+      "daily_ma_btc": 1.0,
+      "daily_ma_eth": 0.5233,
+      "daily_ma_sol": 0.5572,
+      "btc_eth_arb": -0.0046
+    },
+    "daily_ma_eth": {
+      "daily_ma_btc": 0.5233,
+      "daily_ma_eth": 1.0,
+      "daily_ma_sol": 0.4267,
+      "btc_eth_arb": -0.0811
+    },
+    "daily_ma_sol": {
+      "daily_ma_btc": 0.5572,
+      "daily_ma_eth": 0.4267,
+      "daily_ma_sol": 1.0,
+      "btc_eth_arb": -0.0183
+    },
+    "btc_eth_arb": {
+      "daily_ma_btc": -0.0046,
+      "daily_ma_eth": -0.0811,
+      "daily_ma_sol": -0.0183,
+      "btc_eth_arb": 1.0
+    }
+  },
+  "individual_sharpes": {
+    "daily_ma_btc": 3.86,
+    "daily_ma_eth": 3.7,
+    "daily_ma_sol": 3.47,
+    "lgbm_btc": -0.3,
+    "btc_eth_arb": 0.99
+  },
+  "phase1_included": true,
+  "phase2_included": false,
+  "phase3_included": true,
+  "elapsed_seconds": 14.682372808456421
+}
