@@ -1,0 +1,193 @@
+{
+  "full_history_metrics": {
+    "sharpe": -0.24,
+    "max_dd_pct": -78.79,
+    "mean_monthly_pct": -0.58,
+    "total_return_pct": -50.51
+  },
+  "train_metrics": {
+    "sharpe": -0.98,
+    "max_dd_pct": -78.79,
+    "mean_monthly_pct": -2.71,
+    "total_return_pct": -71.68
+  },
+  "holdout_metrics": {
+    "sharpe": 0.99,
+    "max_dd_pct": -36.68,
+    "mean_monthly_pct": 2.58,
+    "total_return_pct": 74.76
+  },
+  "worst_drawdowns_holdout": [
+    {
+      "rank": 1,
+      "start": "2025-06-24",
+      "end": "2026-03-22",
+      "trough": "2025-08-14",
+      "duration_days": 271,
+      "depth_pct": -36.68,
+      "btc_change_pct": -36.0,
+      "eth_change_pct": -16.4,
+      "ratio_change_pct": -23.42,
+      "avg_z": -0.03,
+      "avg_corr": 0.836,
+      "diagnosis": "SPREAD DIVERGENCE \u2014 large sustained BTC/ETH ratio move (structural risk)"
+    },
+    {
+      "rank": 2,
+      "start": "2025-01-15",
+      "end": "2025-05-08",
+      "trough": "2025-04-11",
+      "duration_days": 112,
+      "depth_pct": -18.07,
+      "btc_change_pct": 1.7,
+      "eth_change_pct": -39.8,
+      "ratio_change_pct": 68.84,
+      "avg_z": 0.86,
+      "avg_corr": 0.812,
+      "diagnosis": "SPREAD DIVERGENCE \u2014 large sustained BTC/ETH ratio move (structural risk)"
+    },
+    {
+      "rank": 3,
+      "start": "2024-09-10",
+      "end": "2024-11-29",
+      "trough": "2024-11-09",
+      "duration_days": 79,
+      "depth_pct": -10.04,
+      "btc_change_pct": 69.8,
+      "eth_change_pct": 50.8,
+      "ratio_change_pct": 12.66,
+      "avg_z": 0.59,
+      "avg_corr": 0.825,
+      "diagnosis": "MEAN-REVERSION FAILURE \u2014 spread not reverting, strategy stuck in position"
+    },
+    {
+      "rank": 4,
+      "start": "2024-01-25",
+      "end": "2024-04-30",
+      "trough": "2024-02-26",
+      "duration_days": 95,
+      "depth_pct": -9.11,
+      "btc_change_pct": 59.3,
+      "eth_change_pct": 42.9,
+      "ratio_change_pct": 11.44,
+      "avg_z": 0.45,
+      "avg_corr": 0.82,
+      "diagnosis": "MEAN-REVERSION FAILURE \u2014 spread not reverting, strategy stuck in position"
+    },
+    {
+      "rank": 5,
+      "start": "2025-05-14",
+      "end": "2025-06-12",
+      "trough": "2025-05-29",
+      "duration_days": 29,
+      "depth_pct": -8.53,
+      "btc_change_pct": 3.0,
+      "eth_change_pct": 0.8,
+      "ratio_change_pct": 2.1,
+      "avg_z": -0.42,
+      "avg_corr": 0.732,
+      "diagnosis": "SPREAD NOISE \u2014 spread moved against position before reverting (manageable)"
+    }
+  ],
+  "correlation_analysis": {
+    "corr_90d_mean": 0.82,
+    "corr_90d_min": 0.554,
+    "corr_90d_max": 0.957,
+    "conclusion": "Correlation stays above 0.5 but dips below 0.7 periodically. The stat arb drawdowns are primarily from spread noise during normal correlation, not from structural BTC/ETH decoupling."
+  },
+  "safe_sizing": {
+    "fraction": 0.36,
+    "max_dd_pct": -14.95,
+    "sharpe": 0.99,
+    "mean_monthly_pct": 0.89,
+    "worst_month_pct": -9.75,
+    "worst_day_pct": -2.61,
+    "capital_for_1000_gbp": 111846.0
+  },
+  "fraction_sweep": [
+    {
+      "fraction": 0.05,
+      "max_dd_pct": -2.21,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 0.12,
+      "capital_for_1000_gbp": 819959.0
+    },
+    {
+      "fraction": 0.1,
+      "max_dd_pct": -4.37,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 0.24,
+      "capital_for_1000_gbp": 408781.0
+    },
+    {
+      "fraction": 0.15,
+      "max_dd_pct": -6.49,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 0.37,
+      "capital_for_1000_gbp": 271726.0
+    },
+    {
+      "fraction": 0.2,
+      "max_dd_pct": -8.57,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 0.49,
+      "capital_for_1000_gbp": 203202.0
+    },
+    {
+      "fraction": 0.25,
+      "max_dd_pct": -10.61,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 0.62,
+      "capital_for_1000_gbp": 162089.0
+    },
+    {
+      "fraction": 0.3,
+      "max_dd_pct": -12.61,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 0.74,
+      "capital_for_1000_gbp": 134682.0
+    },
+    {
+      "fraction": 0.35,
+      "max_dd_pct": -14.57,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 0.87,
+      "capital_for_1000_gbp": 115108.0
+    },
+    {
+      "fraction": 0.4,
+      "max_dd_pct": -16.48,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 1.0,
+      "capital_for_1000_gbp": 100428.0
+    },
+    {
+      "fraction": 0.5,
+      "max_dd_pct": -20.21,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 1.25,
+      "capital_for_1000_gbp": 79880.0
+    },
+    {
+      "fraction": 0.6,
+      "max_dd_pct": -23.78,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 1.51,
+      "capital_for_1000_gbp": 66185.0
+    },
+    {
+      "fraction": 0.75,
+      "max_dd_pct": -28.87,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 1.9,
+      "capital_for_1000_gbp": 52494.0
+    },
+    {
+      "fraction": 1.0,
+      "max_dd_pct": -36.68,
+      "sharpe": 0.99,
+      "mean_monthly_pct": 2.58,
+      "capital_for_1000_gbp": 38813.0
+    }
+  ]
+}
